@@ -161,6 +161,9 @@ header .logo {
   letter-spacing: 2px;
   transition: 0.2s;
 }
+.AboutUs a:hover {
+  letter-spacing: 6px;
+}
 .ContactForm h2 {
   font-size: 5em;
   font-weight: 800;
@@ -202,7 +205,7 @@ header .logo {
   transform: scale(0.5);
   transition: 0.5s;
 }
-.Social li a a:hover {
+.Social li a:hover {
   transform: scale(0.5) translateY(-15px);
 }
 .Menu {
