@@ -161,7 +161,6 @@ header .logo {
   letter-spacing: 2px;
   transition: 0.2s;
 }
-
 .ContactForm h2 {
   font-size: 5em;
   font-weight: 800;
@@ -171,14 +170,6 @@ header .logo {
 .ContactForm h3 {
   font-size: 4em;
   font-weight: 700;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.ContactForm p {
-  font-size: 1.2em;
-  margin: 20px 0;
-  max-width: 700px;
-  font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
 }
