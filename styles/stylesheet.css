@@ -235,15 +235,21 @@ header .logo {
   font-size: 24px;
   color: rgb(42, 96, 167);
 }
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .Showcase,
   .Showcase .header {
     padding: 40px;
+  }
+  .Showcase.active {
+    right: 200px;
   }
   .AboutUs h2 {
     font-size: 3em;
   }
   .AboutUs h3 {
     font-size: 2em;
+  }
+  .Menu {
+    width: 200px;
   }
 }
