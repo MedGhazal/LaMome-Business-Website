@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <title>LaMome Business | Serices</title>
+    <link rel="shortcut icon" href="./img/MyLOGO.png" />
+</head>
+<body>
+    <section class="Services">
+        <header>
+            <h2 class="Logo">Fiduciaire Comptabilité</h2>
+            <div class="Toggle"></div>
+        </header>
+        <!--<div class="Overlay"></div>-->
+        <div class="AboutServices">
+            <h2>La Mome Business</h2>
+            <h3>Who we are</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique nunc ac lorem volutpat, ut elementum.</p>
+            <h3>The team</h3>
+            <img src="./img/Latifa.JPG" alt="">
+            <figcaption><pre>
+                Latifa Ait Ali Oubihi
+                Gerante
+            </pre></figcaption>
+        </div>
+        <ul class="Social">
+            <li><a href="facebook.com">
+                    <img src="./img/facebook.png" alt="My-Facebook" width=50px>
+                </a></li>
+            <li><a href="instagram.com">
+                    <img src="./img/instagram.png" alt="My-Instagram" width=50px>
+                </a></li>
+            <li><a href="twitter.com">
+                    <img src="./img/twitter.png" alt="My-Twitter" width=50px>
+                </a></li>
+            <li><a href="https://ma.linkedin.com/in/la-mome-business-372595122">
+                    <img src="./img/linkedin.png" alt="My-Twitter" width=50px>
+                </a></li>
+        </ul>
+    </section>
+    <div class="Menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector(".Toggle");
+        const showcaseToggle = document.querySelector(".Services");
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle("active");
+            showcaseToggle.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
