@@ -133,7 +133,7 @@ header .Logo {
   list-style-type: none;
   font-size: 1.3em;
   padding: 20px;
-  background: rgb(42, 96, 167);
+  background: rgb(46, 67, 95);
   color: #fff;
   border: none;
   margin-top: 10px;
@@ -155,7 +155,7 @@ header .Logo {
   list-style-type: none;
   font-size: 1.3em;
   padding: 20px;
-  background: rgb(42, 96, 167);
+  background: rgb(46, 67, 95);
   color: #fff;
   border: none;
   margin-top: 10px;
@@ -547,5 +547,11 @@ header .Logo {
     padding: 10px 30px;
     letter-spacing: 2px;
     transition: 0.2s;
+  }
+  .Info.active {
+    right: 200px;
+  }
+  .Services.active {
+    right: 200px;
   }
 }
