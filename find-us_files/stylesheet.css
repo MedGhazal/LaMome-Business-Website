@@ -359,7 +359,7 @@ header .Logo {
   transition: 0.5s;
 }
 .Social li a:hover {
-  transform: scale(1) translateY(-15px);
+  transform: scale(0.8) translateY(-15px);
 }
 .Menu {
   position: absolute;
@@ -396,7 +396,7 @@ header .Logo {
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -411,8 +411,8 @@ header .Logo {
 .Carte {
   text-align: center;
   position: relative;
-  width: 50%;
-  height: 55%;
+  width: 100%;
+  height: 100%;
   right: 50px;
 }
 .Carte h1 {
@@ -428,10 +428,12 @@ header .Logo {
 .OpeningHours {
   border-radius: 40px;
   border: 5px solid #fff;
-  position: relative;
-  right: 30%;
-  padding: 0px 20px 10px 15px; 
+  display: block;
+  padding: 0px 10px 10px 15px; 
   text-align: center;
+  position: relative;
+  left: 10%;
+  right: 20%;
 }
 .OpeningHours ul {
   right: 60px;
@@ -582,10 +584,11 @@ header .Logo {
   }
   .Carte {
     display: relative;
-    right: 10%;
   }
   .OpeningHours {
+    position: relative;
     right: 0;
+    left: 10;
   }
 }
 @media (max-width: 420px) {
@@ -594,11 +597,18 @@ header .Logo {
   }
   .OpeningHours {
     padding: 0px 5px 10px 5px; 
-    top: 30px;
+    top: 10px;
     font-size-adjust: 0.4;
-    right: 35%
+    right: 35%;
+    bottom: 10px;
+  }
+  .Info .Logo{
+    font-size: 1.5em;
   }
   .Carte {
     display: none;
+  }
+   .OpeningHours {
+    right: 0;
   }
 } 

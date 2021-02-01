@@ -5,7 +5,6 @@
 * {
   -webkit-text-stroke: 0.4px black;
   margin: 0;
-  /*! padding: 0; */
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
 }
@@ -29,7 +28,7 @@ header {
 }
 header .Logo {
   color: #fff;
-  font-size: 2em;
+  font-size: 3em;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -105,7 +104,7 @@ header .Logo {
   right: 0;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,13 +115,14 @@ header .Logo {
   color: #fff;
   z-index: 2;
   transition: 1s;
+  opacity: 1;
 }
 .Contact header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 20px 20px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -248,7 +248,7 @@ header .Logo {
   text-transform: uppercase;
 }
 .ContactForm h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   line-height: 1em;
   text-transform: uppercase;
@@ -258,7 +258,7 @@ header .Logo {
   padding: 3px;
   font-size: 1em;
   margin: 10px 9px;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 4px;
 }
 .ContactForm #title {
@@ -266,7 +266,7 @@ header .Logo {
   padding: 3px;
   font-size: 1em;
   margin: 10px 24px 20px;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 4px;
 }
 .ContactForm #email {
@@ -274,12 +274,12 @@ header .Logo {
   padding: 3px;
   font-size: 1em;
   margin: 10px 6px;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 4px;
 }
 .ContactForm #message {
   margin-top: 10px;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 4px;
   font-size: 1em;
   resize: none;
@@ -293,7 +293,7 @@ header .Logo {
   color: #fff;
   border: none;
   margin-top: 10px;
-  margin: 20px 260px;
+  margin: 20px 320px;
   padding: 10px 30px;
   letter-spacing: 2px;
   transition: 0.2s;
@@ -526,20 +526,27 @@ header .Logo {
   .Contact.active {
     right: 200px;
   }
+  .Contact .Logo {
+    font-size-adjust: 0.35;
+  }
+  .ContactForm {
+    position: relative;
+    right: 10%;
+  }
   .ContactForm #name {
-    width: 40%;
+    width: 65%;
     margin: 10px 11px;
   }
   .ContactForm #title {
-    width: 40%;
+    width: 65%;
     margin: 10px 23px;
   }
   .ContactForm #email {
-    width: 40%;
+    width: 65%;
     margin: 10px 8px;
   }
   .ContactForm #message {
-    width: 55%;
+    width: 80%;
     margin: 10px 10px;
   }
   .ConfirmButton {
@@ -606,5 +613,16 @@ header .Logo {
   }
   .Carte {
     display: none;
+  }
+  .Contact .Logo {
+    font-size: 1.8em;
+  }
+  .ContactForm {
+    position: relative;
+    right: 25%;
+    bottom: 12%;
+  }
+  .ContactForm .h3 {
+    font-size-adjust: 0.7; 
   }
 }
