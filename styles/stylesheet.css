@@ -5,7 +5,7 @@
 * {
   -webkit-text-stroke: 0.4px black;
   margin: 0;
-  padding: 0;
+  /*! padding: 0; */
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
 }
@@ -20,7 +20,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 20px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -33,6 +33,73 @@ header .Logo {
   text-transform: uppercase;
   cursor: pointer;
 }
+.Showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  -webkit-text-stroke: 1px black;
+  color: #fff;
+  z-index: 2;
+  transition: 1s;
+}
+.Showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: horizontal;
+}
+.AboutUs {
+  position: relative;
+  z-index: 10;
+}
+.AboutUs h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.AboutUs h3 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.AboutUs p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  max-width: 1000px;
+  font-weight: 400;
+  line-height: 1em;
+  -webkit-text-stroke: 0.3px black;
+  text-transform: uppercase;
+}
+.AboutUs a {
+  display: inline-block;
+  -webkit-text-stroke: 0px black;
+  font-size: 1em;
+  background: #fff;
+  text-decoration: none;
+  color: #111;
+  margin-top: 10px;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.AboutUs a:hover {
+  letter-spacing: 6px;
+}
+
 .Contact {
   position: absolute;
   right: 0;
@@ -171,32 +238,6 @@ header .Logo {
 .Contact.active {
   right: 300px;
 }
-.Showcase {
-  position: absolute;
-  right: 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  -webkit-text-stroke: 1px black;
-  color: #fff;
-  z-index: 2;
-  transition: 1s;
-}
-.Showcase header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: horizontal;
-}
 .ContactForm {
   margin-top: 20px;
 }
@@ -289,10 +330,6 @@ header .Logo {
 .Showcase.active {
   right: 300px;
 }
-.AboutUs {
-  position: relative;
-  z-index: 10;
-}
 .Overlay {
   position: absolute;
   top: 0;
@@ -302,42 +339,6 @@ header .Logo {
   background-color: #5ec0f1;
   mix-blend-mode: overlay;
 }
-.AboutUs h2 {
-  font-size: 5em;
-  font-weight: 800;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.AboutUs h3 {
-  font-size: 4em;
-  font-weight: 700;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.AboutUs p {
-  font-size: 1.2em;
-  margin: 20px 0;
-  max-width: 700px;
-  font-weight: 400;
-  line-height: 1em;
-  -webkit-text-stroke: 0.3px black;
-  text-transform: uppercase;
-}
-.AboutUs a {
-  display: inline-block;
-  -webkit-text-stroke: 0px black;
-  font-size: 1em;
-  background: #fff;
-  text-decoration: none;
-  color: #111;
-  margin-top: 10px;
-  padding: 10px 30px;
-  letter-spacing: 2px;
-  transition: 0.2s;
-}
-.AboutUs a:hover {
-  letter-spacing: 6px;
-}
 .Social {
   position: absolute;
   bottom: 20px;
@@ -345,6 +346,7 @@ header .Logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  right: 20px;
 }
 .Social li {
   list-style: none;
@@ -409,7 +411,7 @@ header .Logo {
 .Carte {
   text-align: center;
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 55%;
   right: 50px;
 }
@@ -427,9 +429,9 @@ header .Logo {
   border-radius: 40px;
   border: 5px solid #fff;
   position: relative;
-  right: 80px;
-  padding: 10px;
-  padding-right: 40px;
+  right: 20%;
+  padding: 10px 40px 10px 10px;
+  text-align: center;
 }
 .OpeningHours ul {
   right: 60px;
@@ -438,12 +440,12 @@ header .Logo {
   text-align: center;
   font-size: 2em;
 }
-.OpeningHours pre {
+.OpeningHours #address {
   text-align: center;
   display: block;
   border-radius: 40px;
   -webkit-text-stroke: 0px black;
-  font-size: 1em;
+  font-size: 1.5em;
   background: #fff;
   text-decoration: none;
   color: #111;
@@ -451,10 +453,11 @@ header .Logo {
   padding: 10px 30px;
   letter-spacing: 1px;
   transition: 0.2s;
+  font-size: 0.7em;
 }
-.OpeningHours pre:hover {
+.OpeningHours #address:hover {
   text-decoration: none;
-  font-size: 1.1em;
+  letter-spacing: 2px;
   color: rgb(42, 96, 167);
 }
 .OpeningHours a {
@@ -470,10 +473,13 @@ header .Logo {
   padding: 10px 30px;
   letter-spacing: 2px;
   transition: 0.2s;
+  width: 80%;
+  left: 10px;
+  position: relative;
 }
 .OpeningHours a:hover {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.1em;
   color: rgb(42, 96, 167);
 }
 .OpeningHours ul {
@@ -553,5 +559,52 @@ header .Logo {
   }
   .Services.active {
     right: 200px;
+  }
+  .Services .header {
+    padding: 0px;
+  }
+  .Services .Toggle {
+    left: 50px;
+  }
+  .AboutServices {
+    text-align: center;
+    width: 100%;
+  }
+  .AboutServices p {
+    font-size: 0.8em;
+    text-align: center;
+    right: 80px;
+    width: 80%;
+  }
+  .AboutServices h2 {
+    font-size: 2.5em;
+    margin-top: 30px;
+  }
+  .AboutServices h3 {
+    font-size: 1.5em;
+  }
+  .AboutServices ul {
+    font-size: 0.8em;
+  }
+  .Carte {
+    display: relative;
+    right: 10%;
+  }
+  .OpeningHours {
+    right: 0;
+  }
+}
+@media (max-width: 420px) {
+  header {
+    font-size-adjust: 0.4;
+  }
+  .OpeningHours {
+    padding: 0px 5px 10px 5px;
+    top: 30px;
+    font-size-adjust: 0.4;
+    right: 35%;
+  }
+  .Carte {
+    display: none;
   }
 }
