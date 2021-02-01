@@ -150,7 +150,7 @@ header .Logo {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 30px 30px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -159,29 +159,33 @@ header .Logo {
 .Services.active {
   right: 300px;
 }
+.AboutServices .Team {
+  display: flex;
+  position: relative;
+  align-items: center;
+  left: 25%;
+}
 .AboutServices {
+  margin: 10px;
+  display: flexbox;
   -webkit-text-stroke: 0.4px black;
+  background-color: rgb(46, 67, 95, 0.8);
+  border-radius: 40px;
   text-align: center;
   position: relative;
   z-index: 10;
 }
 .AboutServices h2 {
+  margin: 10px;
   font-size: 5em;
   font-weight: 800;
   line-height: 1em;
   text-transform: uppercase;
 }
 .AboutServices h3 {
+  margin: 10px;
   font-size: 2.5em;
   font-weight: 700;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.AboutServices p {
-  font-size: 1.2em;
-  margin: 20px 280px;
-  max-width: 700px;
-  font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
 }
@@ -191,16 +195,18 @@ header .Logo {
   border-radius: 40px;
   -webkit-text-stroke: 0.3px black;
   caption-side: "Latifa Ait Ali Oubihi";
+  margin: 20px;
 }
 .AboutServices .MenuServices ul {
   display: flex;
 }
 .AboutServices .MenuServices ul li {
   margin: 10px;
+  margin: 10px;
   list-style-type: none;
   font-size: 1.3em;
   padding: 20px;
-  background: rgb(46, 67, 95);
+  background: rgb(46, 67, 95, 0.6);
   color: #fff;
   border: none;
   margin-top: 10px;
@@ -567,8 +573,9 @@ header .Logo {
   .Services.active {
     right: 200px;
   }
-  .Services .header {
+  .Services .Logo {
     padding: 0px;
+    font-size-adjust: 0.4;
   }
   .Services .Toggle {
     left: 50px;
@@ -582,6 +589,12 @@ header .Logo {
     text-align: center;
     right: 80px;
     width: 80%;
+  }
+  .AboutServices .Team {
+    display: block;
+    position: relative;
+    align-items: center;
+    left: 0;
   }
   .AboutServices h2 {
     font-size: 2.5em;
@@ -623,6 +636,6 @@ header .Logo {
     bottom: 12%;
   }
   .ContactForm .h3 {
-    font-size-adjust: 0.7; 
+    font-size-adjust: 0.7;
   }
 }
