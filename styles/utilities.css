@@ -45,7 +45,7 @@
 	align-items: center;
 	height: 100%;
 }
-.grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+.grid-4 { grid-template-columns: 1fr 1fr; }
 .btn {
   	font-size: 1.1rem;
 	display: inline-block;
@@ -89,3 +89,4 @@
 .sm { font-size: 1rem; }
 .md { font-size: 2rem; }
 .kl { font-size: 4rem; }
+.footer .text { margin: 10px; padding: 10px; }

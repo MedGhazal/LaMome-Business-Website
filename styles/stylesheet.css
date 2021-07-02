@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 :root {
-	--primary-color: #b3b3ff;
-	--secondary-color: #b3b3ff;
-	--dark-color: #b3b3ff;
+	--primary-color: #b2bceb;
+	--secondary-color: #8e9de8;
+	--dark-color: #4d66e3;
 	--light-color: #f4f4f4;
 }
 *{
@@ -96,10 +96,14 @@ img { width: 100%; }
 	font-size: 40px;
 	font-weight: bold;
 }
-.cloud .grid { grid-template-columns: 7fr 10fr; }
-.cloud .card { text-align: center;}
-.cloud .card img { width: 200px; border-radius: 20px;}
-.cloud .owner { margin: 20px; }
+.owner .grid { grid-template-columns: 7fr 10fr; }
+.owner .card { text-align: center;}
+.owner .card img { width: 200px; border-radius: 20px;}
+.owner .owner { margin: 20px; }
+.collaborator .grid { grid-template-columns: 10fr 7fr; }
+.collaborator .card { text-align: center;}
+.collaborator .card img { width: 200px; border-radius: 20px; }
+.collaborator .owner { margin: 20px; }
 .stats .card { align-items: center; }
 .services .flex {
 	flex-wrap: wrap;
@@ -116,6 +120,9 @@ img { width: 100%; }
 .services .card:hover {
 	transform: translateY(-15px);
 }
+.infos { align-items: center; align-text: center; }
+.route { margin: 20px; padding: 20px; }
+.infos .email-tel { padding: 20px; margin: 20px; align-text: center; }
 .footer nav ul { display: flex; }
 .footer nav a {
 	color: #111;
