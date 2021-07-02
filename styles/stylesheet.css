@@ -15,6 +15,9 @@ body {
 	color: #333;
 	line-height: 1.6;
 }
+html {
+  	scroll-behavior: smooth;
+}
 ul { list-style-type: none; }
 a {
 	text-decoration: none;
@@ -123,6 +126,7 @@ img { width: 100%; }
 .infos { align-items: center; align-text: center; }
 .route { margin: 20px; padding: 20px; }
 .infos .email-tel { padding: 20px; margin: 20px; align-text: center; }
+.footer { justify-content: space-between; }
 .footer nav ul { display: flex; }
 .footer nav a {
 	color: #111;
