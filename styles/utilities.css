@@ -87,6 +87,7 @@
 .lead { font-size: 20px; }
 .lg { font-size: 3rem; }
 .sm { font-size: 1rem; }
+.xsm { font-size: .8rem; }
 .md { font-size: 2rem; }
 .kl { font-size: 4rem; }
 .footer .text { margin: 10px; padding: 10px; }
