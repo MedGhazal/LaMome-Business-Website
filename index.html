@@ -9,35 +9,90 @@
 	      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
 	      crossorigin="anonymous" 
 	      referrerpolicy="no-referrer" />
-	<title>LaMoMe Business</title>
+	<title>La Mome Business</title>
 	<link rel="shortcut icon" href="./img/logo.png" />
 </head>
 <body>
   	<!-- NavBar -->
 	<div class=navbar>
-		<div class=container> 
-		  	<h1 class=logo>LaMoMe Business</h1>			
+		<div class="container flex"> 
+		  	<h1 class=logo><img src="./img/complete_logo.png" alt=""></h1>			
 			<nav>
 			  <ul>
 				<li> <a href="./index.html">Home</a> </li>
 				<li> <a href="./find_us.html">Find us</a> </li>
-				<li> <a href="./contact.html">Contact us</a> </li>
-				<li> <a href="./log_in.html">Log in</a> </li>
+				<li> <a href="./contact_us.html">Contact us</a> </li>
+				<li> <a href="./login.html">Log in</a> </li>
 			  </ul>
 			</nav>
 		</div>
 	</div>
-	
-	<main>
-	<h1>LA MOME-Buisiness</h1>
-	<h2>Qui somme-nous?</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+	<!-- ShowCase -->
+	<section class="showcase">
+		<div class="container grid">
+	        	<div class="showcase-text">
+				<h2>Qui somme-nous?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
 	nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
 	reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
 	pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-	culpa qui officia deserunt mollit anim id est laborum.</p>
-	</main>
+	culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<a  href="contact_us.html" class="btn btn-outline">Contact us</a>
+	    		</div>
+			<div class="showcase-form card">
+			  	<h2>Request a consultation</h2>
+				<form>
+					<div class="form-control">
+						<input type="text" name="Name" placeholder="Name" required>
+					</div>
+					<div class="form-control">
+						<input type="text" name="Company" placeholder="Company" required>
+					</div>
+					<div class="form-control">
+						<input type="email" name="E-Mail" placeholder="E-Mail" required>
+					</div>
+					<input type="submit" value="Send" class="btn btn-primary">
+				</form>
+			</div>
+	    	</div>
+	</section>
+	<!-- Stats -->
+	<section class="stats">
+		<div class="container">
+			<h3 class="stats-heading text-center my-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</h3>
+			<div class="grid grid-3 text-center my-4">
+				<div>
+					<i class="fas fa-book fa-3x"></i>
+					<h3>Lorem</h3>
+					<ul>
+					  <li>List item 1</li>
+					  <li>List item 2</li>
+					  <li>List item 3</li>
+					</ul>
+				</div>
+				<div>
+					<i class="fas fa-euro-sign fa-3x"></i>
+					<h3>Lorem</h3>
+					<ul>
+					  <li>List item 1</li>
+					  <li>List item 2</li>
+					  <li>List item 3</li>
+					</ul>
+				</div>
+				<div>
+					<i class="fas fa-wrench fa-3x"></i>
+					<h3>Lorem</h3>
+					<ul>
+					  <li>List item 1</li>
+					  <li>List item 2</li>
+					  <li>List item 3</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
