@@ -20,21 +20,21 @@
 }
 .bg-primary, .btn-primary {
 	background-color: var(--primary-color);
-	color: #fff;
+	color: #000;
 }
 .bg-secondary, .btn-secondary {
 	background-color: var(--primary-color);
-	color: #fff;
+	color: #000;
 }
 .bg-dark, .btn-dark {
 	background-color: var(--primary-color);
-	color: #fff;
+	color: #000;
 }
 .bg-light, .btn-light {
 	background-color: var(--primary-color);
-	color: #fff;
+	color: #000;
 }
-.bg-primary a, .bg-secondary a, .bg-dark a, .bg-light a {
+.bg-primary i, .bg-secondary i, .bg-dark i, .bg-light i {
   color: #fff;
 }
 .grid {
