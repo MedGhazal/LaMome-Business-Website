@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,200;1,400&display=swap');
 :root {
-	--primary-color: #b2bceb;
-	--secondary-color: #8e9de8;
+	--primary-color: #84b4c2;
+	--secondary-color: #c2d2d6;
 	--dark-color: #4d66e3;
 	--light-color: #f4f4f4;
 }
@@ -11,7 +11,7 @@
 	margin: 0;
 }
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	line-height: 1.6;
 }
 html {
@@ -51,7 +51,6 @@ header {
 .navbar a:hover { border-bottom: 2px #111 solid; }
 .showcase {
 	height: 550px;
-	/*background-color: var(--primary-color);*/
 	position: relative;
 	z-index: 1000;
 }
@@ -165,7 +164,14 @@ header {
 .infos { align-items: center; align-text: center; }
 .route { margin: 20px; padding: 20px; }
 .infos .email-tel { padding: 20px; margin: 20px; align-text: center; }
-.footer { justify-content: space-between; }
+.footer { 
+  	position: relative;
+	left: 10%;
+	justify-content: space-between; 
+      	width: 80%; 
+      	border-radius: 20px;
+	margin-bottom: 20px;
+}
 .footer nav ul { display: flex; }
 .footer nav a {
 	color: #111;
