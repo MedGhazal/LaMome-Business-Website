@@ -52,7 +52,7 @@ img { width: 100%; }
 	background-color: var(--primary-color);
 	position: relative;
 }
-.showcase-text { padding: 15px; margin: 10px; }
+.showcase-text { padding: 15px; margin: 10px; animation: slideInFromLeft 1s ease-in;}
 .showcase h1 { font-size: 40px; padding: 10px; }
 .showcase p { margin: 20px 10px; }
 .showcase .grid {
@@ -67,6 +67,7 @@ img { width: 100%; }
 	width: 400px;
 	padding: 40px;
 	z-index: 100;
+	animation: slideInFromRight 1s ease-in;
 }
 .showcase-form .form-control { margin: 30px 0; }
 .showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] { 
@@ -77,7 +78,7 @@ img { width: 100%; }
 	font-size: 16px;
 }
 .showcase-form input:focus { outline: none; }
-.showcase::before, showcase::after {
+.showcase::before, .showcase::after {
 	content: '';
 	position: absolute;
 	height: 100px;
@@ -87,7 +88,10 @@ img { width: 100%; }
 	background: #fff;
 	transform: skewY(-3deg)
 }
-.stats { padding-top: 100px; }
+.stats { 
+  padding-top: 100px;
+  animation: slideInFromBottom 1s ease-in;
+}
 .stats-heading {
 	display: grid;
 	max-width: 100%;
