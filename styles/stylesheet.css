@@ -46,7 +46,7 @@ header {
 .navbar a {
 	color: #111;
 	padding: 10px;
-  	margin: 0 5px;	
+  	margin: 0 5px;
 }
 .navbar a:hover { border-bottom: 2px #111 solid; }
 .showcase {
@@ -72,15 +72,15 @@ header {
 	animation: slideInFromRight 1s ease-in;
 }
 .showcase-form .form-control { margin: 30px 0; }
-.showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] { 
+.showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] {
   	border: 0;
-	border-bottom: 1px solid #b4becb; 
+	border-bottom: 1px solid #b4becb;
         width: 100%;
 	padding: 3px;
 	font-size: 16px;
 }
 .showcase-form input:focus { outline: none; }
-.ocean { 
+.ocean {
   	height: 10%;
   	width: 100%;
   	position:absolute;
@@ -89,7 +89,7 @@ header {
 	background: #015871;
 }
 .wave {
-	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   	position: absolute;
   	top: -198px;
   	width: 6400px;
@@ -120,7 +120,7 @@ header {
     		transform: translate3d(0,5px,0);
   	}
 }
-.stats { 
+.stats {
   	background: rgb(1,88,113);
 	background: linear-gradient(180deg, rgba(1,88,113,1) 0%, rgba(100,163,167,1) 20%, rgba(255,255,255,1) 60%);
   	padding-top: 220px;
@@ -131,7 +131,7 @@ header {
 	margin: auto;
 	text-align: center;
 }
-.stats .grid-3 h3 { font-size: 55px; }
+.stats .grid-3 h3 { font-size: 55px; }
 .stats .grid-3 p {
 	font-size: 40px;
 	font-weight: bold;
@@ -151,7 +151,7 @@ header {
 .services .card {
 	text-align: center;
 	margin: 18px 10px 40px;
-	transition: transform 0.2s ease-in;	
+	transition: transform 0.2s ease-in;
 }
 .services .card h4 {
 	font-size: 20px;
@@ -164,11 +164,11 @@ header {
 .infos { align-items: center; align-text: center; }
 .route { margin: 20px; padding: 20px; }
 .infos .email-tel { padding: 20px; margin: 20px; align-text: center; }
-.footer { 
+.footer {
   	position: relative;
 	left: 10%;
-	justify-content: space-between; 
-      	width: 80%; 
+	justify-content: space-between;
+      	width: 80%;
       	border-radius: 20px;
 	margin-bottom: 20px;
 }
@@ -176,7 +176,7 @@ header {
 .footer nav a {
 	color: #111;
 	padding: 10px;
-  	margin: 0 5px;	
+  	margin: 0 5px;
 }
 .footer nav a:hover { border-bottom: 2px #111 solid; }
 .footer .social a { margin: 0px 10px; }
@@ -219,8 +219,11 @@ header {
   100% {
     transform: translateX(0);
   }
-}
+}	
 @media(max-width: 1200px) {
+  	body { x-overflow: hidden; }
+  	.wave, .ocean { width: 100%; opacity: 0;}
+  	.stats { padding-top: 280px; }
 	.showcase .grid { grid-template-columns: 1fr;}
 	.showcase { height: auto }
 	.showcase-text { text-align: center; margin-top: 40px; }
@@ -228,7 +231,7 @@ header {
 	.cloud .owner { margin: 20px; }
 }
 @media(max-width: 800px) {
-	.navbar { height: 150px; }
+	.navbar { height: 170px; }
 	.navbar .flex { flex-direction: column; }
 	.navbar ul { padding: 10px; background-color: rgba(0, 0, 0, 0.1); border-radius: 10px;}
 	.grid, .showcase .grid { grid-template-columns: 1fr;}
@@ -238,11 +241,18 @@ header {
 	.cloud .owner { margin: 20px; }
 }
 @media(max-width: 600px) {
-	.collaborator .grid { grid-template-columns: 1fr; }
-	.owner .grid { grid-template-columns: 1fr; }
+  	.stats { padding-top: 320px; }
+	.collaborator .grid { grid-template-columns: 1fr; width: 90%; }
+	.owner .grid { grid-template-columns: 1fr; width: 90%; }
 	.footer .grid-3 { grid-template-columns: 2fr 1fr; }
 	.waves {
-   		 height:40px;
+   		height:40px;
+		width: 100%;
     		min-height:40px;
   	}
 }
+@media(max-width: 400px) {
+  	.stats { padding-top: 480px; }
+	.stats { overflow-x: hidden; }
+  	.showcase-form { width: 80%; }
+  	.navbar ul { padding: 0; }}
