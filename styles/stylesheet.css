@@ -123,9 +123,8 @@ img { width: 100%; }
   	margin: 0 5px;	
 }
 .footer nav a:hover { border-bottom: 2px #111 solid; }
-.footer .social a {
-	margin: 0px 10px;
-}
+.footer .social a { margin: 0px 10px; }
+.footer .social i:hover { transform: scale(1.2); }
 @media(max-width: 1200px) {
 	.showcase .grid { grid-template-columns: 1fr;}
 	.showcase { height: auto }
