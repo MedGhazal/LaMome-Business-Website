@@ -155,6 +155,7 @@ img { width: 100%; }
 	.cloud .owner { margin: 20px; }
 }
 @media(max-width: 600px) {
-	.cloud .grid { grid-template-columns: 1fr; }
+	.collaborator .grid { grid-template-columns: 1fr; }
+	.owner .grid { grid-template-columns: 1fr; }
 	.footer .grid-3 { grid-template-columns: 2fr 1fr; }
 }
