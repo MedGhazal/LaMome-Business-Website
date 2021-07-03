@@ -92,10 +92,14 @@
 			</div>
 		</div>
 	    	</div>
-		<div class="ocean">
-  			<div class="wave"></div>
-  			<div class="wave"></div>
-		</div>	
+		<?php 
+			if (stripos( $user_agent, 'Safari') !== false) {
+				echo "<div class="ocean">
+  					<div class="wave"></div>
+  					<div class="wave"></div>
+				     </div>";	
+			}
+		?>
 	</section>
 	</div>
 	<!-- Persons -->
