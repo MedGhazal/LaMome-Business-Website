@@ -14,8 +14,7 @@ html, body {
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.6;
 	overflow-x: hidden;
-	x-overflow: hidden;
-	-webkit-overflow-scrolling-x: hidden;
+	position: relative;
 }
 ul { list-style-type: none; }
 a {
@@ -32,7 +31,7 @@ p { margin: 10px, 0px; font-size: 1.1rem;}
 img { width: 100%; }
 header {
 	background: radial-gradient(ellipse at center, rgba(255,254,234,1) 10%, rgba(255,255,255,1) 15%, #B7E8EB 70%);
-	height: 100vh;
+	height: 90vh;
 }
 .navbar {
 	height: 120px;
@@ -50,26 +49,24 @@ header {
 }
 .navbar a:hover { border-bottom: 2px #111 solid; }
 .showcase {
-	height: 550px;
+	height: 300px;
 	position: relative;
-	z-index: 1000;
+	z-index: 1;
 }
-.showcase-text { padding: 15px; margin: 10px; animation: slideInFromLeft 1s ease-in;}
-.showcase h1 { font-size: 40px; padding: 10px; }
-.showcase p { margin: 20px 10px; }
+.showcase-text { padding: 10px; margin: 10px; }
+.showcase h1 { font-size: 1.4rem; padding: 10px; }
+.showcase p { font-size: 1.1rem; margin: 20px 10px; }
 .showcase .grid {
 	grid-template-columns: 60% 40%;
-	gap: 30px;
+	gap: 20px;
 	overflow: visible;
 }
 .showcase-form {
 	position: relative;
-	top: 60px;
-	height: 400px;
-	width: 400px;
-	padding: 40px;
-	z-index: 100;
-	animation: slideInFromRight 1s ease-in;
+	top: 40px;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
 }
 .showcase-form .form-control { margin: 30px 0; }
 .showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] {
@@ -77,32 +74,31 @@ header {
 	border-bottom: 1px solid #b4becb;
         width: 100%;
 	padding: 3px;
-	font-size: 16px;
+	font-size: 1.1rem;
 }
 .showcase-form input:focus { outline: none; }
+.waves-container { position: absolute; top: 90vh; bottom: 0; left: 0;}
 .ocean {
-  	height: 10%;
+  	height: 40%;
   	width: 100%;
-  	position:absolute;
-  	bottom:0;
-  	left:0;
 	background: #015871;
+	z-index: -1;
 }
 .wave {
 	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
   	position: absolute;
   	top: -198px;
   	width: 6400px;
-  	height: 198px;
+  	height: 398px;
   	animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
   	transform: translate3d(0, 0, 0);
+	overflow-x: hidden;
 }
 .wave:nth-of-type(2) {
 	top: -175px;
 	animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
  	opacity: 1;
 }
-
 @keyframes wave {
 	0% {
     		margin-left: 0;
@@ -123,17 +119,15 @@ header {
 .stats {
   	background: rgb(1,88,113);
 	background: linear-gradient(180deg, rgba(1,88,113,1) 0%, rgba(100,163,167,1) 20%, rgba(255,255,255,1) 60%);
-  	padding-top: 220px;
 }
 .stats-heading {
+  	margin-top: 100px;
 	display: grid;
 	max-width: 100%;
 	margin: auto;
 	text-align: center;
 }
-.stats .grid-3 h3 { font-size: 55px; }
 .stats .grid-3 p {
-	font-size: 40px;
 	font-weight: bold;
 }
 .owner .grid { grid-template-columns: 7fr 10fr; }
@@ -181,76 +175,31 @@ header {
 .footer nav a:hover { border-bottom: 2px #111 solid; }
 .footer .social a { margin: 0px 10px; }
 .footer .social i:hover { transform: scale(1.2); }
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}	
 @media(max-width: 1200px) {
-  	.stats { padding-top: 280px; }
-	.showcase .grid { grid-template-columns: 1fr;}
-	.showcase { height: auto }
-	.showcase-text { text-align: center; margin-top: 40px; }
-	.showcase-form { justify-self: center; margin: auto; }
-	.cloud .owner { margin: 20px; }
+	.showcase-form { width: 80%; justify-self: center; margin: auto; }
 }
 @media(max-width: 800px) {
 	.navbar { height: 170px; }
 	.navbar .flex { flex-direction: column; }
 	.navbar ul { padding: 10px; background-color: rgba(0, 0, 0, 0.1); border-radius: 10px;}
 	.grid, .showcase .grid { grid-template-columns: 1fr;}
-	.showcase { height: auto }
-	.showcase-text { text-align: center; margin-top: 40px; }
-	.showcase-form { justify-self: center; margin: auto; }
-	.cloud .owner { margin: 20px; }
+	.showcase { height: auto; }
+	.showcase-text { text-align: center; font-size: .9rem; padding-top: 20px; }
+	.showcase-form { font-size: .9rem; }
+	.showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] {
+	  	font-size: .85rem;
+	}
+	.showcase-form .btn { font-size: .9rem; }
 }
 @media(max-width: 600px) {
-  	.stats { padding-top: 320px; }
+  	.stats { font-size: .9rem; }
+  	.stats .stats-heading { font-size: .9rem; padding-top: 40px; }
 	.collaborator .grid { grid-template-columns: 1fr; width: 90%; }
 	.owner .grid { grid-template-columns: 1fr; width: 90%; }
-	.footer .grid-3 { grid-template-columns: 2fr 1fr; }
-	.waves {
-   		height:40px;
-		width: 100%;
-    		min-height:40px;
-  	}
 }
-@media(max-width: 400px) {
-  	.stats { padding-top: 480px; }
-	.stats { overflow-x: hidden; }
+@media(max-width: 450px) {
+  	.stats .stats-heading { font-size: .9rem; padding-top: 60px; }
+  	.stats .stats-heading p { font-size: .9rem; }
   	.showcase-form { width: 80%; }
-  	.navbar ul { padding: 0; }}
+  	.navbar ul { padding: 0; }
+}
