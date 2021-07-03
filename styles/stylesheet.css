@@ -10,12 +10,10 @@
 	padding: 0;
 	margin: 0;
 }
-body {
+html, body {
 	font-family: 'Raleway', sans-serif;
 	line-height: 1.6;
-}
-html {
-  	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 ul { list-style-type: none; }
 a {
@@ -221,8 +219,6 @@ header {
   }
 }	
 @media(max-width: 1200px) {
-  	body { x-overflow: hidden; }
-  	.wave, .ocean { width: 100%; opacity: 0;}
   	.stats { padding-top: 280px; }
 	.showcase .grid { grid-template-columns: 1fr;}
 	.showcase { height: auto }
