@@ -33,9 +33,7 @@ header {
 	background: radial-gradient(ellipse at center, rgba(255,254,234,1) 10%, rgba(255,255,255,1) 15%, #B7E8EB 70%);
 	height: 90vh;
 }
-.navbar {
-	height: 120px;
-}
+.navbar { height: 120px; }
 .navbar .logo {
 	width: 300px;
 	padding: 10px;
@@ -57,18 +55,18 @@ header {
 .showcase h1 { font-size: 1.4rem; padding: 10px; }
 .showcase p { font-size: 1.1rem; margin: 20px 10px; }
 .showcase .grid {
-	grid-template-columns: 60% 40%;
-	gap: 20px;
+	grid-template-columns: 65% 35%;
+	gap: 10px;
 	overflow: visible;
 }
 .showcase-form {
 	position: relative;
-	top: 40px;
+	top: 50px;
 	height: 100%;
 	width: 100%;
-	padding: 10px;
+	padding: 5px;
 }
-.showcase-form .form-control { margin: 30px 0; }
+.showcase-form .form-control { margin: 25px 0; }
 .showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] {
   	border: 0;
 	border-bottom: 1px solid #b4becb;
@@ -100,26 +98,18 @@ header {
  	opacity: 1;
 }
 @keyframes wave {
-	0% {
-    		margin-left: 0;
-  	}
-  	100% {
-    		margin-left: -1600px;
-  	}
+	0% { margin-left: 0; }
+  	100% { margin-left: -1600px;}
 }
 
 @keyframes swell {
-  	0%, 100% {
-    		transform: translate3d(0,-25px,0);
-  	}
-  	50% {
-    		transform: translate3d(0,5px,0);
-  	}
+  	0%, 100% { transform: translate3d(0,-25px,0); }
+  	50% { transform: translate3d(0,5px,0); }
 }
 .stats {
   	background: rgb(1,88,113);
 	background: linear-gradient(180deg, rgba(1,88,113,1) 0%, rgba(100,163,167,1) 20%, rgba(255,255,255,1) 60%);
-	padding-top: 40px;
+	padding-top: 20px;
 }
 .stats-heading {
 	display: grid;
@@ -127,11 +117,9 @@ header {
 	margin: auto;
 	text-align: center;
 }
-.stats .grid-3 p {
-	font-weight: bold;
-}
+.stats .grid-3 p { font-weight: bold; }
 .owner .grid { grid-template-columns: 7fr 10fr; }
-.owner .card { text-align: center;}
+.owner .card { text-align: left;}
 .owner .card img { width: 200px; border-radius: 20px;}
 .owner .owner { margin: 20px; }
 .collaborator .grid { grid-template-columns: 10fr 7fr; }
@@ -139,9 +127,7 @@ header {
 .collaborator .card img { width: 200px; border-radius: 20px; }
 .collaborator .owner { margin: 20px; }
 .stats .card { align-items: center; }
-.services .flex {
-	flex-wrap: wrap;
-}
+.services .flex { flex-wrap: wrap; }
 .services .card {
 	text-align: center;
 	margin: 18px 10px 40px;
@@ -151,9 +137,7 @@ header {
 	font-size: 20px;
 	margin-bottom: 10px;
 }
-.services .card:hover {
-	transform: translateY(-15px);
-}
+.services .card:hover { transform: translateY(-15px); }
 .services .card a { margin: 10px; }
 .infos { align-items: center; align-text: center; }
 .route { margin: 20px; padding: 20px; }
@@ -166,27 +150,30 @@ header {
 	.showcase-form { width: 80%; justify-self: center; margin: auto; padding-bottom: 100px; }
   	.stats .stats-heading p { opacity: 0; }
 }
-@media(max-width: 1200px) {
-	.showcase-form { width: 80%; justify-self: center; margin: auto; }
-}
+@media(max-width: 1200px) { .showcase-form { width: 80%; justify-self: center; margin: auto; } }
 @media(max-width: 800px) {
 	.navbar { height: 170px; }
 	.navbar .flex { flex-direction: column; }
 	.navbar ul { padding: 10px; background-color: rgba(0, 0, 0, 0.1); border-radius: 10px;}
-	.grid, .showcase .grid { grid-template-columns: 1fr;}
+	.showcase .grid { grid-template-columns: 1fr;}
 	.showcase { height: auto; }
 	.showcase-text { text-align: center; font-size: .9rem; padding-top: 20px; }
-	.showcase-form { font-size: .9rem; }
-	.showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] {
-	  	font-size: .85rem;
-	}
+	.showcase-form { font-size: .9rem; display: none; }
+	.showcase-form input[type=text], .showcase-form input[type=email], .showcase-form input[type=tel] { font-size: .85rem; }
 	.showcase-form .btn { font-size: .9rem; }
 }
 @media(max-width: 600px) {
+	nav a { font-size: .9rem; }
+	.showcase-text h2 { font-size: 1rem; }
+	.showcase-text p { font-size: .9rem; }
   	.stats { font-size: .9rem; }
-  	.stats .stats-heading { font-size: .9rem; padding-top: 40px; }
-	.collaborator .grid { grid-template-columns: 1fr; width: 90%; }
+  	.stats .stats-heading { padding-top: 40px; }
+  	.stats .stats-heading p { font-size: .9rem; padding-top: 40px; }
+	.stats .grid-4 { grid-template-columns: 1fr; }
+	.collaborator .grid { grid-template-columns: 1fr; width: 95%; }
+	.collaborator .card p { font-size: .9rem; }
 	.owner .grid { grid-template-columns: 1fr; width: 90%; }
+	.owner .card p { font-size: .9rem; }
 }
 @media(max-width: 450px) {
   	.showcase-form { width: 80%; }
