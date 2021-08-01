@@ -51,7 +51,7 @@ header {
 	position: relative;
 	z-index: 1;
 }
-.showcase-text { padding: 10px; margin: 10px; }
+.showcase-text { padding: 10px; margin: 10px; padding-top: 80px; }
 .showcase h1 { font-size: 1.4rem; padding: 10px; }
 .showcase p { font-size: 1.1rem; margin: 20px 10px; }
 .showcase .grid {
