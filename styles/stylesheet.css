@@ -437,9 +437,27 @@ textarea {
 		margin-top: 40%;
 	}
 }
-@media(max-width: 350px) {
+@media(max-width: 375px) {
+	.stats {
+		margin-top: 70%;
+	}
 	.navbar img {
 		height: auto;
 		width: 100%;
+	}
+}
+@media(max-width: 350px) {
+	.stats {
+		margin-top: 120%;
+	}
+}
+@media(max-width: 320px) {
+	.stats {
+		margin-top: 140%;
+	}
+}
+@media(max-width: 300px) {
+	.stats {
+		margin-top: 160%;
 	}
 }
