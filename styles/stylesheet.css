@@ -31,7 +31,8 @@ img { width: 100%; }
 
 header {
 	background: radial-gradient(ellipse at center, rgba(255,254,234,1) 10%, rgba(255,255,255,1) 15%, #B7E8EB 70%);
-	height: 100vh;
+	margin-bottom: 40px;
+	height: auto;
 }
 
 .navbar {
