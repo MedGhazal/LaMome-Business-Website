@@ -6,7 +6,7 @@
   	<meta name="description" content="Website of an entreprise et Comptabilité France er Maroc">
   	<meta name="keywords" content="Comptabilté, création, entreprise, administrative, AIT ALI OUBIHI Latifa, 
 				       Création de société, Changement des statuts, Dissolution et Liquidation, Comptabilité Maroc, 
-				       Comptabilité France, Fudiciére Marrakech, La Mome Business, La Mome business Marrakech">
+				       Comptabilité France, Fudiciére Marrakech, La Mome Business, La Mome business Marrakech, Business Marrakech, Fudiciere marrakech, Comptabilité Marrakech, Comptabilité Marocaine, Comptabilité Maroc, Comptabilité Française, Managment, Conseil des sociétés marocaines, Conseil des société française, administratif, comptabilité, création sociéte, Fisc Marocain, Fisc français, Fiscalité, Conseil de fisc">
   	<meta name="author" content="Mohamed Ghazal">
 	<meta name="robots" content="index, follow"/>
 	<link rel="stylesheet" href="./styles/stylesheet.css">
@@ -17,42 +17,31 @@
 	      crossorigin="anonymous" 
 	      referrerpolicy="no-referrer" />
 	<title>LA MOME Business</title>
-	<link rel="stylesheet" 
-	      href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-	<script type="text/javascript" 
-		src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-	<script type="text/javascript">
-  		algoliasearchNetlify({
-    			appId: 'YOPTC5CQB9',
-    			apiKey: 'MedGhazal',
-    			siteId: 'b5f0ed14-1fb2-4eda-9200-ac8d8325a6c2',
-    			branch: 'main',
-    			selector: 'div#search',
-  		});
-	</script>
-	<link rel="shortcut icon" href="./img/logo.png" />
+	<link rel="shortcut icon" href="./img/small_logo.png" />
 </head>
 <body>
   	<!-- section with wave animation -->
 	<header>
 	<!-- NavBar -->
 	<div class=navbar>
-		<div class="container flex"> 
-		  	<h1 class=logo><img src="./img/complete_logo.png" alt=""></h1>			
+		<div class="container-left"> 
+		  	<img src="./img/complete_logo.png" alt="">
+		</div>
+		<div class="container-right"> 
 			<nav>
 			  <ul>
 				<li> <a href="./index.html">Home</a> </li>
 				<li> <a href="#route">Route</a> </li>
-				<li> <a href="mailto:lamome.business@gmail.com">Contact</a> </li>
+				<li> <a href="#form">Consultation</a> </li>
 				<li> <a href="#services">Services</a> </li>
 			  </ul>
 			</nav>
 		</div>
 	</div>
 	<!-- ShowCase -->
-	<section class="showcase">
-		<div class="container grid">
-	        	<div class="showcase-text">
+	<div class="about">
+		<div class="about-text">
+	        	<div class="container-text">
 				<h2>Qui somme-nous?</h2>
 				<p>LA MOME Business est une société qui a vu le jour après de longues années d’études, 
 				d’expérience en collaborant avec toutes sortes de sociétés et 14 ans d’éxperience dans 
@@ -61,45 +50,37 @@
 				Avec une grande joie que LA MOME Business vous accueillera, vous assistera et vous guidera 
 				vers votre but et voir les premières lumières de votre projet jaillit.
 				</p>
-				<a  href="mailto:lamome.business@gmail.com" class="btn btn-outline">Contactez-nous</a>
-	    		</div>
-			<div class="showcase-form card">
-			  	<h2>Demander une consultation</h2>
-				<form class="form" name="contact" netlify>
-					<div class="form-control">
-						<input type="text" name="Nom" placeholder="Nom" required>
-					</div>
-					<div class="form-control" >
-						<input type="text" name="Société" placeholder="Société" required>
-					</div>
-					<div class="form-control" >
-						<input type="tel" name="Tel" placeholder="Tel" required>
-					</div>
-					<div class="form-control" >
-						<input type="email" name="E-Mail" placeholder="E-Mail" required>
-					</div>
-					<input type="submit" value="Envoyer" class="btn btn-primary">
-				</form>
+				<a  href="mailto:lamome.business@gmail.com" class="btn">Contactez-nous</a>
 			</div>
-	</section>
-	<!-- Animated Waves -->
-	<div class="waves-container">
-		<div class="ocean">
-			<div class="wave"></div>
-			<div class="wave"></div>
-       		</div>	
+		</div>
+		<div class="about-img">
+			<div class="box">
+				<img src="./img/accounting_4.jpeg">
+			</div>
+			<div class="box">
+				<img src="./img/accounting_5.jpeg">
+			</div>
+			<div class="box">
+				<img src="./img/accounting_6.jpeg" alt="">
+			</div>
+			<div class="box">
+				<img src="./img/accounting_7.jpeg" alt="">
+			</div>
+		</div>
 	</div>
+	<!-- Animated Waves -->
 	</header>
-	<!-- Transition -->
-	<div class="transition">
 	<!-- Stats -->
 	<section class="stats">
+	<hr style="width:50%; 
+		   text-align:center; 
+		   margin-left:25%">
 		<div class="container">
-		  	<div class="stats-heading text-center m-6"><p>Nous pouvons faire le suivi de votre projet depuis sa naissance 
+		  	<div class="services-heading"><p>Nous pouvons faire le suivi de votre projet depuis sa naissance 
 				    et durant son développement, en vous guidant vers le plus court chemin vers votre réussite.</p>
 			</div>
-			<div class="grid grid-4 text-center my-4">
-				<div>
+			<div class="services-elements">
+				<div class="service-element">
 					<i class="fas fa-book fa-4x"></i>
 					<h3>Comptabilité</h3>
 					<div class="text-center">
@@ -108,25 +89,7 @@
 						    administratif.
 					</div>
 				</div>
-				<div>
-					<i class="fas fa-euro-sign fa-4x"></i>
-					<h3>Création d'entreprise</h3>
-					<div class="text-center">
-						    La MOME business facilite et assure votre premier pas, nous prendrons 
-						    en charge la mise en œuvre de vos idées originales afin de garantir 
-						    la performance de vos objectifs sur le plan réel.
-					</div>
-				</div>
-				<div>
-					<i class="fas fa-users-cog fa-4x"></i>
-					<h3>Mise à jour administrative</h3>
-					<div class="text-center">
-						    Afin d'aboutir à un bon déroulement de travail, une ambiance saine
-						    et un bon rendement, votre staff administratif bénéficiera 
-						    des formations continues pour améliorer ses performances.
-					</div>
-				</div>
-				<div>
+				<div class="service-element">
 					<i class="fas fa-chart-pie fa-4x"></i>
 					<h3>Analyse des comptes</h3>
 					<div class="text-center">
@@ -136,109 +99,193 @@
 						    projet, c’est un diagnostic nécessaire au développement de toute entreprise.
 					</div>
 				</div>
+				<div class="service-element">
+					<i class="fas fa-euro-sign fa-4x"></i>
+					<h3>Création d'entreprise</h3>
+					<div class="text-center">
+						    La MOME business facilite et assure votre premier pas, nous prendrons 
+						    en charge la mise en œuvre de vos idées originales afin de garantir 
+						    la performance de vos objectifs sur le plan réel.
+					</div>
+				</div>
+				<div class="service-element">
+					<i class="fas fa-users-cog fa-4x"></i>
+					<h3>Mise à jour administrative</h3>
+					<div class="text-center">
+						    Afin d'aboutir à un bon déroulement de travail, une ambiance saine
+						    et un bon rendement, votre staff administratif bénéficiera 
+						    des formations continues pour améliorer ses performances.
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	</div>
+	<hr style="width:50%; 
+		   text-align:center; 
+		   margin-left:25%">
 	<!-- Persons -->
-	<section class="owner pg-primary my-2 py-2">
-		<div class="container grid">
-			<div class="owner">
-			<h2 class="lg">Latifa Ait Ali Oubihi</h2>
-			<h3 class="md">Gérante</h3>
-			<a class="btn btn-dark" href="https://www.linkedin.com/in/latifa-ait-ali-4061673b/">Plus d'informations</a>
-			</div>
-			<div class="card">
-			<p class="lead my-1">Je suis AIT ALI OUBIHI Latifa, titulaire d'un diplôme de l'Ecole Supérieure d’Informatique 
-			appliqué à la Gestion et d'un Master Européen en Management et Stratégie d’Entreprises de la Fédération Européenne
-			Des Ecole. j’ai commencé ma carrière en 1990 juste aprés l'obtention de mon premiér diplome. 
+	<div class="owner">
+		<div class="presentation">
+			<h2>Latifa Ait Ali Oubihi</h2>
+			<img src="./img/latifa.jpeg" alt="" style="width: 150px;" class="m-1">
+			<h3>Gérante</h3>
+		</div>
+		<div class="presentation-text">
+			<p>Je suis AIT ALI OUBIHI Latifa, titulaire d'un diplôme de l'Ecole Supérieure d’Informatique 
+			appliqué à la Gestion et d'un Master Européen en Management et Stratégie d’Entreprises de la Fédération 
+			Européenne Des Ecole. j’ai commencé ma carrière en 1990 juste aprés l'obtention de mon premiér diplome. 
 			En 2007 et jusqu'à aujourd'hui je prends en charge la comptabilité des plusieures sociétés française. D'ailleurs 
 			cette aventure a vue le jour avec Filovent, l'une des premières plateforme de location 
 			de bateaux de plaisance.</p>
-			<img src="./img/latifa.jpeg" alt="" style="width: 150px;" class="m-1"></div>
-		</div>
-	</section>
+		</div>		
+		<div class="presentation-link">
+			<a class="btn-link" href="https://www.linkedin.com/in/latifa-ait-ali-4061673b/">
+				Plus d'informations
+			</a>
+		</div>		
+	</div>
+	<hr style="width:50%; 
+		   text-align:center; 
+		   margin-left:25%">
 	<!-- sevices -->
-	<section class="services" id="services">
-		<h2 class="md text-center my2">Services</h2>
-		<div class="container flex">
-			<div class="card">
-			<h3 class="sm">Comptabilité</h3>
-			<i class="fas fa-book fa-3x"></i>
+	<section class="activities" id="services">
+		<div class="activities-header">
+			<h2>Services</h2>
+		</div>
+		<div class="activities-elements">
+			<div class="activities-element">
+				<h3 class="sm">Comptabilité</h3>
+				<i class="fas fa-book fa-3x"></i>
 			</div>
-			<div class="card">
-			<h3 class="sm">Gestion RH</h3>
-			<i class="fas fa-male fa-3x"></i>
+			<div class="activities-element">
+				<h3 class="sm">Gestion RH</h3>
+				<i class="fas fa-male fa-3x"></i>
 			</div>
-			<div class="card">
-			<h3 class="sm">Création de société</h3>
-			<i class="fas fa-plus-square fa-3x"></i>
+			<div class="activities-element">
+				<h3 class="sm">Création de société</h3>
+				<i class="fas fa-plus-square fa-3x"></i>
 			</div>
-			<div class="card">
-			<h3 class="sm">Gestion d'entreprise</h3>
-			<i class="fas fa-tasks fa-3x"></i>
+			<div class="activities-element">
+				<h3 class="sm">Gestion d'entreprise</h3>
+				<i class="fas fa-tasks fa-3x"></i>
 			</div>
-			<div class="card">
-			<h3 class="sm">Changement des statuts</h3>
-			<i class="fas fa-exchange-alt fa-3x"></i>
+			<div class="activities-element">
+				<h3 class="sm">Changement des statuts</h3>
+				<i class="fas fa-exchange-alt fa-3x"></i>
 			</div>
-			<div class="card">
-			<h3 class="sm">Conseils et assistance</h3>
-			<i class="fas fa-comment-medical fa-3x"></i>
+			<div class="activities-element">
+				<h3 class="sm">Conseils et assistance</h3>
+				<i class="fas fa-comment-medical fa-3x"></i>
 			</div>
-			<div class="card">
-			  <h3 class="sm">Dissolution et Liquidation</h3>
-			<i class="fas fa-power-off fa-3x"></i>
+			<div class="activities-element">
+				<h3 class="sm">Dissolution et Liquidation</h3>
+				<i class="fas fa-power-off fa-3x"></i>
 			</div>
-			<div class="card">
-			<h3 class="sm">Autre service et renseignement</h3>
-			<i class="fas fa-file-invoice-dollar fa-3x"></i><br>
-			<a class="btn btn-dark" href="./more.html">Plus d'informations</a>
+			<div class="activities-element">
+				<h3 class="sm">Création de site web</h3>
+				<i class="fas fa-globe fa-3x"></i>
 			</div>
+			<div class="activities-element">
+				<h3 class="sm">Conseil et accompagnement</h3>
+				<i class="fas fa-skiing-nordic fa-3x"></i>
+			</div>
+			<!--<div class="activities-element">
+				<h3 class="sm">Autre service et renseignement</h3>
+				<i class="fas fa-file-invoice-dollar fa-3x"></i><br>
+				<a class="btn btn-dark" href="./more.html">Plus d'informations</a>
+			</div>-->
 		</div>
 	</section>
+	<hr style="width:50%; 
+		   text-align:center; 
+		   margin-left:25%">
 	<!-- Collaborations -->
-	<section class="collaborator pg-primary my-2 py-2">
-		<div class="container grid">
-			<div class="card">
-			<p class="lead my-1">
-			Je collabore avec Latifa depuis 15 années et j’ai toujours été satisfait de son travail. 
+	<section class="collaborators">
+	<div class="collaborators-header">
+		<h2>Collaborateurs</h2>
+	</div>
+	<div class="owner">
+		<div class="presentation">
+			<h2>Zakaria Talib</h2>
+			<img src="./img/ztalibe.jpg" alt="" style="width: 150px;">
+			<h3>webcinq</h3>
+		</div>
+		<div class="presentation-text">
+			<p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de 
+			LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes  et serviables</p>
+		</div>		
+		<div class="presentation-link">
+			<a class="btn-link" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
+				Plus d'informations
+			</a>
+		</div>		
+	</div>
+	<div class="owner">
+		<div class="presentation">
+			<h2>Philippe Brunet</h2>
+			<img src="./img/p_brunet.jpg" alt="" style="width: 150px;">
+			<h3>Gérant de la société Filovent</h3>
+		</div>
+		<div class="presentation-text">
+			<p>Je collabore avec Latifa depuis 15 années et j’ai toujours été satisfait de son travail. 
 			Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
-			<img src="./img/p_brunet.jpg" alt="" style="width: 150px;" class="m-1"></div>
-			<div class="owner">
-			<h2 class="lg">Philippe Brunet</h2>
-			<h3 class="md">Gérant de la société Filovent</h3>
-			<a class="btn btn-dark" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">Plus d'informations</a>
+		</div>		
+		<div class="presentation-link">
+			<a class="btn-link" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">
+				Plus d'informations
+			</a>
+		</div>		
+	</div>
+	</section>
+	<hr style="width:50%; 
+		   text-align:center; 
+		   margin-left:25%">
+	<div class="consultation" id="form">
+		<div class="banner"> 
+			<h1>Contactez-nous</h1>
+			<div class="infos">
+			Nous sommes disponibles pendant les heures d'ouverture suivantes
+			<ul>
+					<li>Lundi-Vendredi: 09:00-13:00|14:00-19:00</li>
+					<li>Samedi: 09:00-13:00|14:00-19:00</li>
+				</ul>
+			  avec les informations de contact suivantes
+			  <ul>
+					<li>Tel: +212662401636</li>
+					<li>Addresse: QI Sidi Ghanem 158 1°étage bureau N°25<br>Marrakech 40000</li>
+				</ul>
 			</div>
 		</div>
-	</section>
-	<section class="collaborator pg-primary my-2 py-2">
-		<div class="container grid">
-			<div class="card">
-			<p class="lead my-1">Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de 
-			LA MOME business,
-			C'est rare de trouver des personnes compétentes, honnêtes  et serviables</p>
-			<img src="./img/ztalibe.jpg" alt="" style="width: 150px;" class="m-1"></div>
-			<div class="owner">
-			<h2 class="lg">Zakaria Talib</h2>
-			<h3 class="md">webcinq</h3>
-			<a class="btn btn-dark" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">Plus d'informations</a>
-			</div>
-		</div>
-	</section>
-	<!-- find us -->
-	<section class="infos" id="route">
-		<div class="container">
-			<div class="8u  12u(narrower) important(narrower)">
-				<div id="content">
-					<h2 class="md text-center">Route</h2>
-					<div class="route">
-					</div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7030.887260592543!2d-8.049608217009029!3d31.669608211146382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafe8daaaaaaaa5%3A0x781fffafb6e3f2c6!2sLA%20MOME%20BUSINESS%20Fiduciaire%20Comptabilit%C3%A9!5e0!3m2!1sen!2sde!4v1625247580256!5m2!1sen!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					<div class="text-center email-tel">
-					<p><b>Adresse:</b> QI Sidi Ghanem 158 1°étage bureau N°25 Marrakech 40000</p>
-					<p><b>Tel:</b> +212662401636</p>
-					</div>
+		<div class="form">
+			<form name="contact" netlify>
+				<h1>Demandez de consultation</h1>
+				<div class="form-control">
+					<input type="text" name="Nom" placeholder="Société" required>
 				</div>
+				<div class="form-control" >
+					<input type="tel" name="tel" placeholder="Tel" required>
+				</div>
+				<div class="form-control" >
+					<input type="email" name="E-Mail" placeholder="E-Mail" required>
+				</div>
+				<div class="form-control-long" >
+					<textarea name="message" form="message" placeholder="Message" rows="6" cols="50"></textarea>
+				</div>
+				<input type="submit" value="Envoyer" class="button">
+			</form>
+		</div>
+	</div>
+	<hr style="width:50%; 
+		   text-align:center; 
+		   margin-left:25%">
+	<!-- find us -->
+	<section id="route">
+		<div class="route">
+			<div class="route-header">
+				<h2>Route</h2>
+			</div>
+			<div id="content">
+				</div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7030.887260592543!2d-8.049608217009029!3d31.669608211146382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafe8daaaaaaaa5%3A0x781fffafb6e3f2c6!2sLA%20MOME%20BUSINESS%20Fiduciaire%20Comptabilit%C3%A9!5e0!3m2!1sen!2sde!4v1625247580256!5m2!1sen!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</div>
 	</section>
@@ -246,8 +293,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer text-center">
-				<h1 class="sm">LA MOME Business</h1>
-				<p class="xsm">Copyright &copy 2021</p>
+				LA MOME Business, Copyright&copy 2021
 			</div>
 		</div>
 	</footer>
