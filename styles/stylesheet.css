@@ -282,6 +282,7 @@ header {
 }
 
 .form {
+	align-items: center;
 	padding: 15px;
 	background-color: rgba(255, 255, 255, .3);
 	backdrop-filter: blur(20px);
