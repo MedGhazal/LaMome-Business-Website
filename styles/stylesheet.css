@@ -276,10 +276,32 @@ header {
 
 .infos {
 	font-size: 1.3rem;
+	align-items: center;
+}
+.infos a { 
+  	font-size: 1.2rem;
+	display: inline-block;
+	padding: 10px 40px;
+	margin: 15px 5px;
+	cursor: pointer;
+	border: #fff 1px solid;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, .1);
+	transition: all .5s ease-in-out;
+}
+.infos a:hover { 
+	border-bottom: 2px #111 solid; 
+	background-color: rgba(0, 0, 0, .15);
+	border-radius: 40px 10px;
 }
 .infos ul {
+	background-color: rgba(255, 255, 255, .3);
+	backdrop-filter: blur(20px);
+	border-radius: 10px 5px;
 	align-items: center;
-	padding: 5%;
+	float: center;
+	padding: 2.5%;
+	margin: 20px;
 }
 
 .form {
@@ -310,14 +332,20 @@ header {
 	margin: .2rem;
 	font-size: 1.1rem;
 }	
-textarea {
+textarea, input {
 	font: inherit;
 }
-.form input:focus, .form textarea:focus { 
+input:focus, textarea:focus { 
 	outline: none; 
+	box-shadow: 0 0 0 3px #B7E8EB;
+}
+input:hover, textarea:hover { 
+	outline: none; 
+	box-shadow: 0 0 0 4px #B7E8EB;
 }
 .form .button { 
   	font-size: 1.2rem;
+	font-weight: 250;
 	display: inline-block;
 	padding: 10px 40px;
 	margin: 15px 5px;
@@ -334,6 +362,10 @@ textarea {
 }
 
 .route { 
+	text-align: center;
+	background-color: rgba(255, 255, 255, .3);
+	backdrop-filter: blur(20px);
+	border-radius: 10px 5px;
 	margin: 20px; 
 	padding: 20px; 
 }
