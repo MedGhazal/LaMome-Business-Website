@@ -10,7 +10,6 @@
   	<meta name="author" content="Mohamed Ghazal">
 	<meta name="robots" content="index, follow"/>
 	<link rel="stylesheet" href="./styles/stylesheet.css">
-	<link rel="stylesheet" href="./styles/utilities.css">
 	<link rel="stylesheet" 
 	      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
 	      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
@@ -257,7 +256,7 @@
 			</div>
 		</div>
 		<div class="form">
-			<form name="contact" netlify>
+			<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
 				<h1>Demandez de consultation</h1>
 				<div class="form-control">
 					<input type="text" name="Nom" placeholder="Société" required>
