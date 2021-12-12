@@ -256,7 +256,7 @@
 			</div>
 		</div>
 		<div class="form">
-			<form name="contact" netlify>
+			<form name="contact" method="post" netlify>
 				<h1>Demandez de consultation</h1>
 				<div class="form-control">
 					<input type="text" name="name" placeholder="Société" required>
@@ -268,7 +268,7 @@
 					<input type="email" name="email" placeholder="E-Mail" required>
 				</div>
 				<div class="form-control" >
-					<textarea name="message" placeholder="Message" rows="6" cols="50"></textarea>
+					<textarea name="message" id="message" placeholder="Message" rows="6" cols="50"></textarea>
 				</div>
 				<div class="form-control">
 					<div data-netlify-recaptcha="true"></div>
