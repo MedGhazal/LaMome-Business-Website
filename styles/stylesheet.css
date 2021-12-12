@@ -407,7 +407,7 @@ input:hover, textarea:hover {
 		left: 10%;
 	}
 }
-@media(max-width: 900px) {
+@media(max-width: 950px) {
 	.activities-elements {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
