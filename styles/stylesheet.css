@@ -52,10 +52,10 @@ header {
 	height: 100px;
 	width: 330px;
 }
-.navbar ul {
+.navbar .icon-bar {
 	justify-content: center;
 	text-align: center;
-	margin: 30px 15px;
+	margin: 10px 15px;
 	display: flex;
 }
 .navbar a {
@@ -411,30 +411,18 @@ input:hover, textarea:hover {
 	.activities-elements {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	.navbar {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
 }
 @media(max-width: 650px) {
 	.activities-elements {
 		grid-template-columns: 1fr 1fr;
 	}
 	.navbar {
-		flex-direction: column;
-	}
-}
-@media(max-width: 600px) {
-	.navbar ul {
-		padding: 5px;
-		margin: 1px;
+		display: flex;
 		flex-direction: column;
 		justify-content: center;
 	}
-	.navbar ul li {
-		padding: 5px;
-		margin: 7px;
+	.navbar {
+		flex-direction: column;
 	}
 }
 @media(max-width: 500px) {
