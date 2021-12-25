@@ -16,12 +16,14 @@ html, body {
 	overflow-x: hidden;
 	position: relative;
 	background-color: #B7E8EB;
+	color: #072352;
 }
 ul { list-style-type: none; }
 a {
 	text-decoration: none;
 	color: #333;
 	font-size: 1.4rem;
+	color: #072352;
 }
 h1, h2 {
 	margin: 10px, 0px;
@@ -37,8 +39,11 @@ header {
 
 .navbar {
 	display: flex;
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 	justify-content: space-between;
 	padding: 30px 15px;
@@ -55,20 +60,21 @@ header {
 .navbar .icon-bar {
 	justify-content: center;
 	text-align: center;
-	margin: 10px 15px;
+	padding: 5px;
+	margin: 5px 15px;
 	display: flex;
 }
 .navbar a {
-	color: #111;
 	padding: 15px;
   	margin: 5px;
 	border-radius: 10px 5px;
-	background-color: rgba(0, 0, 0, .1);
+	background-color: rgba(7, 35, 82, .2);
 	transition: all .5s ease-in-out;
+	color: #072352;
+	border-bottom: 2px #072352 solid; 
 }
 .navbar a:hover { 
-	border-bottom: 2px #111 solid; 
-	background-color: rgba(0, 0, 0, .15);
+	background-color: rgba(7, 35, 82, .3);
 	border-radius: 20px 10px;
 }
 
@@ -81,8 +87,11 @@ header {
 }
 .about-text {
 	text-align: center;
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 	padding: 20px;
 }
@@ -100,13 +109,13 @@ header {
 	cursor: pointer;
 	border: #fff 1px solid;
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, .1);
+	background-color: rgba(7, 35, 82, .2);
 	transition: all .5s ease-in-out;
+	border-bottom: 2px #072352 solid; 
 }
 .about-text .btn:hover { 
-	border-bottom: 2px #111 solid; 
-	background-color: rgba(0, 0, 0, .15);
-	border-radius: 40px 10px;
+	background-color: rgba(7, 35, 82, .3);
+	border-radius: 25px 10px;
 }
 .about-img img {
 	border-radius: 40px 10px;
@@ -154,8 +163,11 @@ header {
 	margin: 2% 4%;
 	text-align: center;
 	align-items: center;
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 }
 .service-element > * {
@@ -176,8 +188,11 @@ header {
 }
 .presentation {
 	text-align: center;
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 	grid-area: one;
 }
@@ -214,13 +229,13 @@ header {
 	cursor: pointer;
 	border: #fff 1px solid;
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, .1);
+	background-color: rgba(7, 35, 82, .2);
 	transition: all .5s ease-in-out;
 }
 .presentation-link a:hover { 
-	border-bottom: 2px #111 solid; 
-	background-color: rgba(0, 0, 0, .15);
-	border-radius: 40px 10px;
+	border-bottom: 2px #072352 solid; 
+	background-color: rgba(7, 35, 82, .3);
+	border-radius: 25px 10px;
 }
 
 .activities-header {
@@ -238,8 +253,11 @@ header {
 	margin: 2% 4%;
 	text-align: center;
 	align-items: center;
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 }
 .activities-element > * {
@@ -286,17 +304,20 @@ header {
 	cursor: pointer;
 	border: #fff 1px solid;
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, .1);
+	background-color: rgba(7, 35, 82, .2);
 	transition: all .5s ease-in-out;
 }
 .infos a:hover { 
-	border-bottom: 2px #111 solid; 
-	background-color: rgba(0, 0, 0, .15);
-	border-radius: 40px 10px;
+	border-bottom: 2px #072352 solid; 
+	background-color: rgba(7, 35, 82, .3);
+	border-radius: 25px 10px;
 }
 .infos ul {
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 	align-items: center;
 	float: center;
@@ -307,8 +328,11 @@ header {
 .form {
 	align-items: center;
 	padding: 15px;
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 	padding: 20px;
 }
@@ -352,19 +376,25 @@ input:hover, textarea:hover {
 	cursor: pointer;
 	border: #fff 1px solid;
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, .1);
+	background-color: rgba(7, 35, 82, .2);
 	transition: all .5s ease-in-out;
+	color: #072352;
+	border-bottom: 2px #072352 solid; 
 }
 .form .button:hover { 
-	border-bottom: 2px #111 solid; 
-	background-color: rgba(0, 0, 0, .15);
-	border-radius: 40px 10px;
+	background-color: rgba(7, 35, 82, .3);
+	border-radius: 25px 10px;
 }
-
+#route {
+	padding: 20px;
+}
 .route { 
 	text-align: center;
-	background-color: rgba(255, 255, 255, .3);
-	backdrop-filter: blur(20px);
+	box-shadow: 0 4px 32px 0 rgba( 31, 38, 135, 0.3 );
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.2 );
 	border-radius: 10px 5px;
 	margin: 20px; 
 	padding: 20px; 
