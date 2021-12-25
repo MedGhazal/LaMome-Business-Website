@@ -15,7 +15,7 @@ html, body {
 	line-height: 1.6;
 	overflow-x: hidden;
 	position: relative;
-	background-color: #B7E8EB;
+	background-color: #c3ecef;
 	color: #072352;
 }
 ul { list-style-type: none; }
@@ -32,8 +32,6 @@ p { margin: 10px, 0px; font-size: 1.1rem;}
 img { width: 100%; }
 
 header {
-	background: radial-gradient(ellipse at center, rgba(255,254,234,1) 10%, rgba(255,255,255,1) 15%, #B7E8EB 70%);
-	margin-bottom: 40px;
 	height: auto;
 }
 
@@ -81,8 +79,10 @@ header {
 .about {
 	display: grid;
 	padding: 20px;
-	max-height: 580px;
+	margin: 40px 20px;
+	max-height: 600px;
 	grid-template-columns: 1fr 1.3fr;
+	background: radial-gradient(ellipse at center, rgba(255,254,234,1) 10%, rgba(255,255,255,1) 15%, #c3ecef 70%);
 	gap: 15px;
 }
 .about-text {
