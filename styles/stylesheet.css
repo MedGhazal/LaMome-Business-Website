@@ -176,7 +176,8 @@ header {
 	border-radius: 25px 10px;
 }
 .about-img img {
-	border-radius: 40px 10px;
+	border-radius: 20px 10px;
+	opacity: 0.7;
 }
 .about-img {
 	display: flex;
@@ -207,6 +208,7 @@ header {
 }
 .box:hover > img {
 	width: 100%;
+	opacity: 0.9;
 }
 
 .services-heading {
