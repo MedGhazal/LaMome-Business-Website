@@ -31,7 +31,6 @@ html, body {
 .eng-content-block, .ar-content-block { display: none; }
 .fr-content { display: inline-block; }
 ul { list-style-type: none; }
-/* .fr-content-block { margin: auto; align-items: center; align-self: center; justify-self: center;} */
 a, button {
 	text-decoration: none;
 	color: var(--primary-color); 
