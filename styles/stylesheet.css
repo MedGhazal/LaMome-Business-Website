@@ -22,15 +22,6 @@ html, body {
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
 }
-
-/* Display french first */
-/* .ar-content, .ar-content-block { */
-/* 	display: none; */
-/* 	text-align: right; */
-/* } */
-/* .eng-content { display: none; } */
-/* .eng-content-block, .ar-content-block { display: none; } */
-/* .fr-content { display: inline-block; } */
 ul { list-style-type: none; }
 a, button {
 	text-decoration: none;
@@ -53,7 +44,7 @@ a, button {
 	height: 100vh;
 	width: 100%;
 	animation-name: push;
-  animation-duration: 1s;
+  animation-duration: .9s;
 	animation-timing-function: ease-in;
 }
 #img-container {
