@@ -244,7 +244,7 @@
        xlink:href="#linearGradient1174"
        id="linearGradient10952-73"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.36243074,0,0,0.36243074,247.58755,90.353492)"
+       gradientTransform="matrix(0.36243074,0,0,0.36243074,-306.17826,-115.76518)"
        x1="78.498161"
        y1="38.145027"
        x2="93.774315"
@@ -282,9 +282,10 @@
     <circle
        style="fill:url(#linearGradient10952-73);fill-opacity:1;stroke-width:0.396876"
        id="path964-7-5"
-       cx="276.8829"
-       cy="103.05933"
-       r="8.7742214" />
+       cx="-276.8829"
+       cy="-103.05933"
+       r="8.7742214"
+       transform="scale(-1)" />
     <circle
        style="fill:url(#linearGradient1176);fill-opacity:1;stroke-width:0.396875"
        id="path964"

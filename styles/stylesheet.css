@@ -227,9 +227,6 @@ aside img {
 	border-radius: 5px 5px;
 	user-select: none;
 }
-.prev:hover, .next:hover {
-	background-color: #072352;
-}
 .dots {
 	background-color: var(--light-color);
 	border-radius: 10px;
@@ -455,9 +452,13 @@ aside img {
 	transition: 0.6s ease;
 	border-radius: 5px 5px;
 	user-select: none;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
 }
 .prev:hover, .next:hover {
-	background-color: #072352;
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+	border-color: var(--secondary-color);
 }
 .fade {
 	-webkit-animation-name: fade;
@@ -752,6 +753,5 @@ input:focus, textarea:focus, input:hover, textarea:hover {
 		background-color: var(--a-background-color);
 		margin: 0;
 		border: 0;
-
 	}
 }
