@@ -22,228 +22,234 @@
 	<title>LA MOME Business</title>
 	<link rel="shortcut icon" href="./img/logo.png" />
 </head>
-<body>
-	<header>
-		<img src="./img/lamome.svg" alt="complete-logo" class="complete-logo">
-		<img src="./img/hambuger.svg" alt="Menu" class="hamburger-menu">
-		<div class="side-nav-panel">
-			<a role="button" href="./index.html" title="Page principale">
-				<span class="eng-content">
-					<i class="fa fa-home"></i>
-					Home
-				</span>
-				<span class="fr-content">
-					<i class="fa fa-home"></i>
-					Page Principale
-				</span>
-				<span class="ar-content">
-					الصفحة الرئيسية 
-					<i class="fa fa-home"></i>
-				</span>
-			</a>
-			<a href="#form" title="Consultation">
-				<span class="eng-content">
-					<i class="fas fa-id-card"></i>
-					Consultation
-				</span>
-				<span class="fr-content">
-					<i class="fas fa-id-card"></i>
-					Consultation
-				</span>
-				<span class="ar-content">
-					إستشارة
-					<i class="fas fa-id-card"></i>
-				</span>
-			</a>
-			<a href="./about.html" title="Services">
-				<span class="eng-content">
-					<i class="fab fa-buffer"></i>
-					Services
-				</span>
-				<span class="fr-content">
-					<i class="fab fa-buffer"></i>
-					Services
-				</span>
-				<span class="ar-content">
-					الخدمات 
-					<i class="fab fa-buffer"></i>
-				</span>
-			</a>
-			<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
-				<span class="eng-content">
-					<i class="fas fa-map-marked-alt"></i>
-					Localisation
-				</span>
-				<span class="fr-content">
-					<i class="fas fa-map-marked-alt"></i>
-					Localisation
-				</span>
-				<span class="ar-content">
-					الموقع 
-					<i class="fas fa-map-marked-alt"></i>
-				</span>
-			</a>
-			<div class="social-nav">
-				<a href="#" class="social"><i class="fab fa-linkedin"></i></a>
-				<a href="mailto:lamome.business@gmail.com" class="social"><i class="far fa-envelope"></i></a>
-				<a class="language-link-small active" href="#fr-content" title="Français">
-					<img src="./img/france.svg" alt="fr" class="language-img">
-				</a>
-				<a class="language-link-small" href="#eng-content" title="English">
-					<img src="./img/united-kingdom.svg" alt="en" class="language-img">
-				</a>
-				<a class="language-link-small" href="#ar-content" title="عربية">
-					<img src="./img/morocco.svg" alt="ar" class="language-img">
-				</a>
-			</div>
+<body onload="myFunction()" style="margin:0;">
+	<div id="loader-container">
+		<div id="img-container">
+			<img src="./img/lamome-small.svg" alt="" height="200">
 		</div>
-		<div class="extensive-nav">
-			<a href="./index.html" title="Page principale">
-				<span class="eng-content">
-					Home
-					<i class="fa fa-home"></i>
-				</span>
-				<span class="fr-content">
-					Page Principale
-					<i class="fa fa-home"></i>
-				</span>
-				<span class="ar-content">
-					<i class="fa fa-home"></i>
-					الصفحة الرئيسية 
-				</span>
-			</a>
-			<div class="languages-menu">
-				<button class="submenu-button-languages">
-				<span class="eng-content">
-					Translation
-				</span>
-				<span class="fr-content">
-					Traduction
-				</span>
-				<span class="ar-content">
-					ترجمة
-				</span>
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="submenu-content-languages fade">
-					<button class="language-link active" href="#fr-content" title="Français">
-						Français
+	</div>
+	<div id="content" style="display: none" class="show-after-load">
+		<header>
+			<img src="./img/lamome.svg" alt="complete-logo" class="complete-logo">
+			<img src="./img/hambuger.svg" alt="Menu" class="hamburger-menu">
+			<div class="side-nav-panel">
+				<a role="button" href="./index.html" title="Page principale" class="add-language-suffix">
+					<span class="eng-content">
+						<i class="fa fa-home"></i>
+						Home
+					</span>
+					<span class="fr-content">
+						<i class="fa fa-home"></i>
+						Page Principale
+					</span>
+					<span class="ar-content">
+						الصفحة الرئيسية 
+						<i class="fa fa-home"></i>
+					</span>
+				</a>
+				<a href="#form" title="Consultation" class="add-language-suffix">
+					<span class="eng-content">
+						<i class="fas fa-id-card"></i>
+						Consultation
+					</span>
+					<span class="fr-content">
+						<i class="fas fa-id-card"></i>
+						Consultation
+					</span>
+					<span class="ar-content">
+						إستشارة
+						<i class="fas fa-id-card"></i>
+					</span>
+				</a>
+				<a href="./about.html" title="Services" class="add-language-suffix">
+					<span class="eng-content">
+						<i class="fab fa-buffer"></i>
+						Services
+					</span>
+					<span class="fr-content">
+						<i class="fab fa-buffer"></i>
+						Services
+					</span>
+					<span class="ar-content">
+						الخدمات 
+						<i class="fab fa-buffer"></i>
+					</span>
+				</a>
+				<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
+					<span class="eng-content">
+						<i class="fas fa-map-marked-alt"></i>
+						Localisation
+					</span>
+					<span class="fr-content">
+						<i class="fas fa-map-marked-alt"></i>
+						Localisation
+					</span>
+					<span class="ar-content">
+						الموقع 
+						<i class="fas fa-map-marked-alt"></i>
+					</span>
+				</a>
+				<div class="social-nav">
+					<a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+					<a href="mailto:lamome.business@gmail.com" class="social"><i class="far fa-envelope"></i></a>
+					<a class="language-link-small active" href="#fr-content" title="Français">
+						<img src="./img/france.svg" alt="fr" class="language-img">
+					</a>
+					<a class="language-link-small" href="#eng-content" title="English">
+						<img src="./img/united-kingdom.svg" alt="en" class="language-img">
+					</a>
+					<a class="language-link-small" href="#ar-content" title="عربية">
+						<img src="./img/morocco.svg" alt="ar" class="language-img">
+					</a>
+				</div>
+			</div>
+			<div class="extensive-nav">
+				<a href="./index.html" title="Page principale" class="add-language-suffix">
+					<span class="eng-content">
+						Home
+						<i class="fa fa-home"></i>
+					</span>
+					<span class="fr-content">
+						Page Principale
+						<i class="fa fa-home"></i>
+					</span>
+					<span class="ar-content">
+						<i class="fa fa-home"></i>
+						الصفحة الرئيسية 
+					</span>
+				</a>
+				<div class="languages-menu">
+					<button class="submenu-button-languages">
+					<span class="eng-content">
+						Translation
+					</span>
+					<span class="fr-content">
+						Traduction
+					</span>
+					<span class="ar-content">
+						ترجمة
+					</span>
+						<i class="fa fa-caret-down"></i>
 					</button>
-					<button class="language-link" href="#eng-content" title="English">
-						English
-					</button>
-					<button class="language-link" href="#ar-content" title="عربية">
-						عربى
-					</button>
-				</div>
-			</div>
-			<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
-				<span class="eng-content">
-					Localisation
-					<i class="fas fa-map-marked-alt"></i>
-				</span>
-				<span class="fr-content">
-					Localisation
-					<i class="fas fa-map-marked-alt"></i>
-				</span>
-				<span class="ar-content">
-					الموقع 
-					<i class="fas fa-map-marked-alt"></i>
-				</span>
-			</a>
-			<a href="#form" title="Consultation">
-				<span class="eng-content">
-					Consultation
-					<i class="fas fa-id-card"></i>
-				</span>
-				<span class="fr-content">
-					Consultation
-					<i class="fas fa-id-card"></i>
-				</span>
-				<span class="ar-content">
-					إستشارة
-					<i class="fas fa-id-card"></i>
-				</span>
-			</a>
-			<a href="./about.html" title="Services">
-				<span class="eng-content">
-					Services
-					<i class="fab fa-buffer"></i>
-				</span>
-				<span class="fr-content">
-					Services
-					<i class="fab fa-buffer"></i>
-				</span>
-				<span class="ar-content">
-					الخدمات 
-					<i class="fab fa-buffer"></i>
-				</span>
-			</a>
-			</div>
-		</div>
-	</header>
-	<main>
-		<section class="showcase">
-			<div class="showcase-text">
-				<h1 class="fr-content-block">Nos valeurs</h1>
-				<h1 class="ar-content-block">قيمنا</h1>
-				<h1 class="eng-content-block">Our Values</h1>
-				<ul>
-					<li class="fr-content-block">Respect de la confidentialité</li>
-					<li class="fr-content-block">Engagement</li>
-					<li class="fr-content-block">Confidentialité</li>
-					<li class="ar-content-block">السرية</li>
-					<li class="ar-content-block">احترام الخصوصية</li>
-					<li class="ar-content-block">التزام</li>
-					<li class="eng-content-block">Respect of privacy</li>
-					<li class="eng-content-block">Confidentiality</li>
-					<li class="eng-content-block">Commitment</li>
-				</ul>
-			</div>
-			<div class="showcase-text">
-				<h1 class="fr-content-block">Nos standards</h1>
-				<h1 class="ar-content-block">معاييرنا</h1>
-				<h1 class="eng-content-block">Our standards </h1>
-				<ul>
-					<li class="fr-content-block">Excellence</li>
-					<li class="fr-content-block">Efficacité</li>
-					<li class="fr-content-block">Ponctualité</li>
-					<li class="ar-content-block">التميز</li>
-					<li class="ar-content-block">كفاءة</li>
-					<li class="ar-content-block">التميز</li>
-					<li class="eng-content-block">Excellency</li>
-					<li class="eng-content-block">Efficiency</li>
-					<li class="eng-content-block">Punctuality</li>
-				</ul>
-			</div>
-			<div class="showcase-text">
-				<h1 class="fr-content-block">Vos attentes</h1>
-				<h1 class="ar-content-block">توقعاتك</h1>
-				<h1 class="eng-content-block">Your expectations</h1>
-				<div class="eng-content-block"> 
-					Fondation<br>Follow-up<br>Support
-				</div>
-				<div class="fr-content-block">
-					Création<br>Suivi<br>Soutien
-				</div>
-				<div class="ar-content-block">
-					تأسيس<br>التتبع<br>الدعم
-				</div>
-			</div>
-				<div class="controls">
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					<div class="submenu-content-languages fade">
+						<button class="language-link active" href="#fr-content" title="Français">
+							Français
+						</button>
+						<button class="language-link" href="#eng-content" title="English">
+							English
+						</button>
+						<button class="language-link" href="#ar-content" title="عربية">
+							عربى
+						</button>
 					</div>
-				<div class="dots">
-					  <span class="dot active" onclick="currentSlide(1)"></span>
-					  <span class="dot" onclick="currentSlide(2)"></span>
-					  <span class="dot" onclick="currentSlide(3)"></span>
 				</div>
-			<div class="showcase-background">
-				<img src="./img/showcase.svg" alt="showcase">	
+				<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
+					<span class="eng-content">
+						Localisation
+						<i class="fas fa-map-marked-alt"></i>
+					</span>
+					<span class="fr-content">
+						Localisation
+						<i class="fas fa-map-marked-alt"></i>
+					</span>
+					<span class="ar-content">
+						الموقع 
+						<i class="fas fa-map-marked-alt"></i>
+					</span>
+				</a>
+				<a href="#form" title="Consultation" class="add-language-suffix">
+					<span class="eng-content">
+						Consultation
+						<i class="fas fa-id-card"></i>
+					</span>
+					<span class="fr-content">
+						Consultation
+						<i class="fas fa-id-card"></i>
+					</span>
+					<span class="ar-content">
+						إستشارة
+						<i class="fas fa-id-card"></i>
+					</span>
+				</a>
+				<a href="./about.html" title="Services" class="add-language-suffix">
+					<span class="eng-content">
+						Services
+						<i class="fab fa-buffer"></i>
+					</span>
+					<span class="fr-content">
+						Services
+						<i class="fab fa-buffer"></i>
+					</span>
+					<span class="ar-content">
+						الخدمات 
+						<i class="fab fa-buffer"></i>
+					</span>
+				</a>
+				<!-- </div> -->
 			</div>
-		</section>
-		<section id="activities" class="activities">
+		</header>
+		<main>
+			<section class="showcase">
+				<div class="showcase-text">
+					<h1 class="fr-content-block">Nos valeurs</h1>
+					<h1 class="ar-content-block">قيمنا</h1>
+					<h1 class="eng-content-block">Our Values</h1>
+					<ul>
+						<li class="fr-content-block">Respect de la confidentialité</li>
+						<li class="fr-content-block">Engagement</li>
+						<li class="fr-content-block">Confidentialité</li>
+						<li class="ar-content-block">السرية</li>
+						<li class="ar-content-block">احترام الخصوصية</li>
+						<li class="ar-content-block">التزام</li>
+						<li class="eng-content-block">Respect of privacy</li>
+						<li class="eng-content-block">Confidentiality</li>
+						<li class="eng-content-block">Commitment</li>
+					</ul>
+				</div>
+				<div class="showcase-text">
+					<h1 class="fr-content-block">Nos standards</h1>
+					<h1 class="ar-content-block">معاييرنا</h1>
+					<h1 class="eng-content-block">Our standards </h1>
+					<ul>
+						<li class="fr-content-block">Excellence</li>
+						<li class="fr-content-block">Efficacité</li>
+						<li class="fr-content-block">Ponctualité</li>
+						<li class="ar-content-block">التميز</li>
+						<li class="ar-content-block">كفاءة</li>
+						<li class="ar-content-block">التميز</li>
+						<li class="eng-content-block">Excellency</li>
+						<li class="eng-content-block">Efficiency</li>
+						<li class="eng-content-block">Punctuality</li>
+					</ul>
+				</div>
+				<div class="showcase-text">
+					<h1 class="fr-content-block">Vos attentes</h1>
+					<h1 class="ar-content-block">توقعاتك</h1>
+					<h1 class="eng-content-block">Your expectations</h1>
+					<div class="eng-content-block"> 
+						Fondation<br>Follow-up<br>Support
+					</div>
+					<div class="fr-content-block">
+						Création<br>Suivi<br>Soutien
+					</div>
+					<div class="ar-content-block">
+						تأسيس<br>التتبع<br>الدعم
+					</div>
+				</div>
+					<div class="controls">
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+					<div class="dots">
+							<span class="dot active" onclick="currentSlide(1)"></span>
+							<span class="dot" onclick="currentSlide(2)"></span>
+							<span class="dot" onclick="currentSlide(3)"></span>
+					</div>
+				<div class="showcase-background">
+					<img src="./img/showcase.svg" alt="showcase">	
+				</div>
+			</section>
+			<section id="activities" class="activities">
 				<div class="activities-header">
 					<h1 class="fr-content">Services</h1>
 					<h1 class="eng-content">Services</h1>
@@ -309,141 +315,141 @@
 						<h3 class="eng-content">Other services and information</h3>
 						<h3 class="fr-content">Autre service et renseignement</h3>
 						<h3 class="ar-content">خدمات ومعلومات أخرى</h3><br>
-						<a class="ar-content" href="./about.html">
+						<a class="ar-content" href="./about.html" class="add-language-suffix">
 							 للمزيد من المعلومات 
 						</a>
-						<a class="eng-content" href="./about.html">
+						<a class="eng-content" href="./about.html" class="add-language-suffix">
 							More Information
 						</a>
-						<a class="fr-content" href="./about.html">
+						<a class="fr-content" href="./about.html" class="add-language-suffix">
 							Plus d'informations
 						</a>
 					</div>
-			</div>
-		</section>
-		<section id="collaborators">
-			<div class="collaborators">
-				<div class="collaborators-header">
-					<h1 class="fr-content">Collaborateurs</h1>
-					<h1 class="eng-content">Collaborateurs</h1>
-					<h1 class="ar-content">إفادات</h1>
 				</div>
-				<div class="collaborator">
-					<div class="presentation">
-						<h2>Philippe Brunet</h2>
-						<img src="./img/p_brunet.webp" alt="" style="width: 150px;">
-						<h3>Filovent</h3>
-						<h4 class="fr-content">Gérant</h4>
-						<h4 class="eng-content">Managing Director</h4>
-						<h4 class="ar-content">المدير العام</h4><br>
+			</section>
+			<section id="collaborators">
+				<div class="collaborators">
+					<div class="collaborators-header">
+						<h1 class="fr-content">Collaborateurs</h1>
+						<h1 class="eng-content">Collaborateurs</h1>
+						<h1 class="ar-content">إفادات</h1>
 					</div>
-					<div class="presentation-text">
-						<p>Je collabore avec Latifa depuis 15 années et j’ai toujours été satisfait de son travail. 
-						Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
-					</div>		
-					<div class="presentation-link">
-						<a class="btn-link ar-content" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">
-							 للمزيد من المعلومات 
-						</a>
-						<a class="btn-link eng-content" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">
-							More Information
-						</a>
-						<a class="btn-link fr-content" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">
-							Plus d'informations
-						</a>
-					</div>		
+					<div class="collaborator">
+						<div class="presentation">
+							<h2>Philippe Brunet</h2>
+							<img src="./img/p_brunet.webp" alt="" style="width: 150px;">
+							<h3>Filovent</h3>
+							<h4 class="fr-content">Gérant</h4>
+							<h4 class="eng-content">Managing Director</h4>
+							<h4 class="ar-content">المدير العام</h4><br>
+						</div>
+						<div class="presentation-text">
+							<p>Je collabore avec Latifa depuis 15 années et j’ai toujours été satisfait de son travail. 
+							Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
+						</div>		
+						<div class="presentation-link">
+							<a class="btn-link ar-content" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">
+								 للمزيد من المعلومات 
+							</a>
+							<a class="btn-link eng-content" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">
+								More Information
+							</a>
+							<a class="btn-link fr-content" href="https://www.linkedin.com/in/philippe-brunet-bb54998/">
+								Plus d'informations
+							</a>
+						</div>		
+					</div>
+					<div class="collaborator">
+						<div class="presentation">
+							<h2>Zakaria Talib</h2>
+							<img src="./img/ztalibe.webp" alt="" style="width: 150px;">
+							<h3>webcinq</h3>
+							<h4 class="fr-content">Web developer</h4>
+							<h4 class="eng-content">Développeur web</h4>
+							<h4 class="ar-content">مطور ويب</h4><br>
+						</div>
+						<div class="presentation-text">
+							<p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
+						</div>		
+						<div class="presentation-link">
+							<a class="btn-link ar-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
+								للمزيد من المعلومات 
+							</a>
+							<a class="btn-link eng-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
+								More Information
+							</a>
+							<a class="btn-link fr-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
+								Plus d'informations
+							</a>
+						</div>		
+					</div>
+					<div class="collaborator">
+						<div class="presentation">
+							<h2>Mohamed Ghazal</h2>
+							<img src="./img/mohamed_ghazal.webp" alt="" style="width: 150px;">
+							<h3>TU Kaiserslautern</h3>
+							<h4 class="fr-content">Software engineer</h4>
+							<h4 class="eng-content">Software engineer</h4>
+							<h4 class="ar-content">مهندس برمجيات</h4><br>
+						</div>
+						<div class="presentation-text">
+							<p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinaty with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circustances.</p>
+						</div>		
+						<div class="presentation-link">
+							<a class="btn-link ar-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
+								للمزيد من المعلومات 
+							</a>
+							<a class="btn-link eng-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
+								More Information
+							</a>
+							<a class="btn-link fr-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
+								Plus d'informations
+							</a>
+						</div>		
+					</div>
+					<div class="controls">
+							<a class="prev" onclick="plusSlidesCollaborators(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlidesCollaborators(1)">&#10095;</a>
+					</div>
 				</div>
-				<div class="collaborator">
-					<div class="presentation">
-						<h2>Zakaria Talib</h2>
-						<img src="./img/ztalibe.webp" alt="" style="width: 150px;">
-						<h3>webcinq</h3>
-						<h4 class="fr-content">Web developer</h4>
-						<h4 class="eng-content">Développeur web</h4>
-						<h4 class="ar-content">مطور ويب</h4><br>
-					</div>
-					<div class="presentation-text">
-						<p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
-					</div>		
-					<div class="presentation-link">
-						<a class="btn-link ar-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
-							للمزيد من المعلومات 
-						</a>
-						<a class="btn-link eng-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
-							More Information
-						</a>
-						<a class="btn-link fr-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
-							Plus d'informations
-						</a>
-					</div>		
+			</section>
+		</main>
+		<footer>
+				<div class="consultation" id="form">
+						<h2 class="fr-content">Contact</h2>
+						<h2 class="eng-content">Contact</h2>
+						<h2 class="ar-content">للتواصل</h2>
+						<div class="infos eng-content">
+							We are available during the following business hours
+							<ul>
+									<li> <b>Monday-Friday</b> </li>
+									<li> 09:00-13:00 | 14:00-19:00 </li>
+									<li> <b>Saturday</b> </li>
+									<li> 09:00-13:00 </li>
+							</ul>
+							<a href="tel:+212662401636">Call us</a>
+						</div>
+						<div class="infos fr-content">
+							Nous sommes disponibles pendant les heures d'ouverture suivantes
+							<ul>
+									<li> <b>Lundi-Vendredi</b> </li>
+									<li> 09:00-13:00 | 14:00-19:00 </li>
+									<li> <b>Samedi</b> </li>
+									<li> 09:00-13:00 </li>
+							</ul>
+							<a href="tel:+212662401636">Appelez-nous</a>
+						</div>
+						<div class="infos ar-content">
+							نحن متواجدون خلال ساعات العمل التالية
+							<ul>
+									<li> <b>من الإثنين إلى الثلاثاء</b> </li>
+									<li> 09:00-13:00 | 14:00-19:00 </li>
+									<li> <b>السبت</b> </li>
+									<li> 09:00-13:00 </li>
+							</ul>
+							<a href="tel:+212662401636">اتصل بنا</a>
+						</div>
 				</div>
-				<div class="collaborator">
-					<div class="presentation">
-						<h2>Mohamed Ghazal</h2>
-						<img src="./img/mohamed_ghazal.webp" alt="" style="width: 150px;">
-						<h3>TU Kaiserslautern</h3>
-						<h4 class="fr-content">Software engineer</h4>
-						<h4 class="eng-content">Software engineer</h4>
-						<h4 class="ar-content">مهندس برمجيات</h4><br>
-					</div>
-					<div class="presentation-text">
-						<p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinaty with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circustances.</p>
-					</div>		
-					<div class="presentation-link">
-						<a class="btn-link ar-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
-							للمزيد من المعلومات 
-						</a>
-						<a class="btn-link eng-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
-							More Information
-						</a>
-						<a class="btn-link fr-content" href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma">
-							Plus d'informations
-						</a>
-					</div>		
-				</div>
-				<div class="controls">
-						<a class="prev" onclick="plusSlidesCollaborators(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlidesCollaborators(1)">&#10095;</a>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer>
-			<div class="consultation" id="form">
-					<h2 class="fr-content">Contact</h2>
-					<h2 class="eng-content">Contact</h2>
-					<h2 class="ar-content">للتواصل</h2>
-					<div class="infos eng-content">
-						We are available during the following business hours
-						<ul>
-								<li> <b>Monday-Friday</b> </li>
-								<li> 09:00-13:00 | 14:00-19:00 </li>
-								<li> <b>Saturday</b> </li>
-								<li> 09:00-13:00 </li>
-						</ul>
-						<a href="tel:+212662401636">Call us</a>
-					</div>
-					<div class="infos fr-content">
-						Nous sommes disponibles pendant les heures d'ouverture suivantes
-						<ul>
-								<li> <b>Lundi-Vendredi</b> </li>
-								<li> 09:00-13:00 | 14:00-19:00 </li>
-								<li> <b>Samedi</b> </li>
-								<li> 09:00-13:00 </li>
-						</ul>
-						<a href="tel:+212662401636">Appelez-nous</a>
-					</div>
-					<div class="infos ar-content">
-						نحن متواجدون خلال ساعات العمل التالية
-						<ul>
-								<li> <b>من الإثنين إلى الثلاثاء</b> </li>
-								<li> 09:00-13:00 | 14:00-19:00 </li>
-								<li> <b>السبت</b> </li>
-								<li> 09:00-13:00 </li>
-						</ul>
-						<a href="tel:+212662401636">اتصل بنا</a>
-					</div>
-			</div>
 				<div class="form">
 					<h2 class="eng-content">Ask for a consultation</h2>
 					<h2 class="fr-content">Demandez une consultation</h2>
@@ -454,8 +460,6 @@
 						<input type="email" name="email" placeholder="E-Mail" required>
 						<textarea name="message" id="message" placeholder="Message" ></textarea>
 						<input name="bot-field" style="display:none"/>
-						<!-- <div class="recaptcha" data-netlify-recaptcha="true"></div> -->
-						<!-- <style> .recaptcha{ margin: auto; float: center; } </style> -->
 						<button type="submit" class="btn-link">
 							<span class="eng-content">Submit</span>
 							<span class="fr-content">Envoyer</span>
@@ -463,17 +467,17 @@
 						</button>
 					</form>
 				</div>
-			</div>
-			<div class="copyright">
-				<div class="f-social" style="text-align: center">
-				<a href="mailto:lamome.business@gmail.com" class="footer-social"><i class="far fa-envelope"></i></a>
-				<a href="#" class="footer-social"><i class="fab fa-linkedin"></i></a>
-				<a href="#" class="footer-social"><i class="fab fa-facebook"></i></a>
-				<a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
-				<a href="#" class="footer-social"><i class="fab fa-twitter"></i></a><br>
+				<div class="copyright">
+					<div class="f-social" style="text-align: center">
+					<a href="mailto:lamome.business@gmail.com" class="footer-social"><i class="far fa-envelope"></i></a>
+					<a href="#" class="footer-social"><i class="fab fa-linkedin"></i></a>
+					<a href="#" class="footer-social"><i class="fab fa-facebook"></i></a>
+					<a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+					<a href="#" class="footer-social"><i class="fab fa-twitter"></i></a><br>
+					</div>
+					LA MOME Business&copy; 2022
 				</div>
-				LA MOME Business&copy 2022
-			</div>
-	</footer>
-	<script type="text/javascript" src="js/app.js"></script>
+		</footer>
+	</div>
+	<script type="text/javascript" src="./js/app.js"></script>
 </body>
