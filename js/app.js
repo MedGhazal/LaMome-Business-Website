@@ -32,20 +32,42 @@ function getContent(language_tag){
 	);
 	if (`${language_tag}` === 'fr-content') {
 		document.querySelector('header').style.width = 'min(calc(98% - 20px), 1105px)';
+		document.querySelectorAll(
+			'input, textarea, .showcase-text, presentation-text'
+		).forEach(
+			el => el.style.textAlign = 'left'
+		)
+		document.querySelectorAll('.showcase-text').forEach(
+			el => el.style.transform = 'translateX(-20%)'
+		)
 		name.placeholder = data['french']['name'];
 		tel.placeholder = data['french']['tel'];
 		email.placeholder = data['french']['email'];
 		message.placeholder = data['french']['message'];
-	}
-	else if (`${language_tag}`=== 'ar-content') {
+	} else if (`${language_tag}`=== 'ar-content') {
 		document.querySelector('header').style.width = 'min(calc(98% - 20px), 870px)';
+		document.querySelectorAll(
+			'input, textarea, .showcase-text, .presentation-text'
+		).forEach(
+			el => el.style.textAlign = 'right'
+		)
+		document.querySelectorAll('.showcase-text').forEach(
+			el => el.style.transform = 'translateX(35%)'
+		)
 		name.placeholder = data['arabic']['name'];
 		tel.placeholder = data['arabic']['tel'];
 		email.placeholder = data['arabic']['email'];
 		message.placeholder = data['arabic']['message'];
-	}
-	else if (`${language_tag}` === 'eng-content') {
+	} else if (`${language_tag}` === 'eng-content') {
 		document.querySelector('header').style.width = 'min(clac(98% - 20px), 1020px)';
+		document.querySelectorAll(
+			'input, textarea, .showcase-text, presentation-text'
+		).forEach(
+			el => el.style.textAlign = 'left'
+		)
+		document.querySelectorAll('.showcase-text').forEach(
+			el => el.style.transform = 'translateX(-10%)'
+		)
 		name.placeholder = data['english']['name'];
 		tel.placeholder = data['english']['tel'];
 		email.placeholder = data['english']['email'];

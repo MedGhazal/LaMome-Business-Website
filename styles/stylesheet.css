@@ -22,6 +22,7 @@ html, body {
 	position: relative;
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
+	background-color: var(--secondary-color);
 }
 ul { list-style-type: none; }
 a, button {
@@ -101,6 +102,8 @@ header {
 	align-items: center;
 	gap: 10px 5%;
 	width: 98%;
+	z-index: 1;
+	position: relative;
 }
 .complete-logo {
 	width: min(300px, 100%);
@@ -178,39 +181,40 @@ aside img {
 
 /* Showcase */
 .showcase {
-	position: relative;
-	width: 100%;
+	display: block;
+	width: min(1000px, 100%);
 	border-radius: 40px;
 	margin: auto;
 	z-index: 1;
+	position: relative;
 }
-.showcase-background {
-	z-index: -1;
+.background {
+	position: absolute;
+	top: 20vh;
+	width: max(400px, 100%);
 }
-.showcase img {
-	width: max(100%, 500px);
+.background img {
+	width: 100%;
 }
 .showcase-text h1 {
-	font-size: clamp(1.2rem, -0.875rem + 6vw, 4rem); 
+	font-size: clamp(1.2rem, -0.875rem + 6vw, 3rem); 
 }
 .showcase-text {
-	font-size: clamp(1rem, -0.875rem + 6vw, 3rem); 
+	font-size: clamp(1rem, -0.875rem + 6vw, 2rem); 
 	background-color: var(--light-color);
 	width: max-content;
 	padding: 5%;
 	border-radius: 20%;
-	position: absolute;
-	top: 12.5%;
-	left: 15%;
-	z-index: 1;
+	margin: 40px auto;
 }
 .controls {
-	width: min(1400px, 100%);
 	font-size: clamp(1.2rem, -0.875rem + 6vw, 3rem); 
-	top: 45%;
+	width: min(1400px, 100%);
 	position: absolute;
+	top: 20%;
 	display: flex;
 	justify-content: space-between;
+	margin: auto;
 }
 .prev, .next {
 	font-size: clamp(1.2rem, -0.875rem + 6vw, 3rem); 
@@ -229,12 +233,9 @@ aside img {
 	background-color: var(--light-color);
 	border-radius: 10px;
 	padding: 10px;
-	position: absolute;
 	display: flex;
 	width: fit-content;
-	left: min(50%, 700px);
-	transform: translateX(50%);
-	top: min(100%, 900px);
+	margin: auto;
 }
 .dot {
 	cursor: pointer;
@@ -255,10 +256,17 @@ aside img {
 	position: relative;
 }
 .login-form {
-	width: fit-content;
+	width: max(600px, 90%);
 	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
+	border-radius: 10px;
+}
+.login-background img{
+	width: max(100%, 500px);	
 }
 
 /* About-section */
@@ -300,11 +308,19 @@ aside img {
 }
 
 /* Activities */
+.activities {
+	margin: 20px auto;
+	position: relative;
+}
 .activities-header {
 	text-align: center;
-	margin-top: 40px;
-	padding: 2rem;
+	padding: 1rem;
 	font-size: clamp(1rem, -0.875rem + 6vw, 2rem); 
+}
+.activities-header h1 {
+	background-color: var(--secondary-color);
+	padding: 20px;
+	border-radius: 20px;
 }
 .activities-elements {
 	display: grid;
@@ -546,7 +562,7 @@ footer {
 	padding: min(2%, 10px); 
 	margin: min(1%, 10px); 
 }
-.form input[type=text], .form input[type=email], .form input[type=tel] {
+.form input[type=text], .form input[type=email], .form input[type=tel], .form input[type=password] {
 	color: var(--primary-color);
 	background-color: var(--secondary-color);
   border: 0;
