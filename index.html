@@ -443,12 +443,12 @@
 					<h2 class="eng-content">Ask for a consultation</h2>
 					<h2 class="fr-content">Demandez une consultation</h2>
 					<h2 class="ar-content">طلب استشارة</h2>
-					<form class="contact" name="contact" method="post" netlify-honeypot="bot-field" netlify>
+					<form class="contact" name="contact" method="POST" netlify-honeypot="bot-field" netlify data-netlify="true">
+						<input name="bot-field" style="display:none"/>
 						<input type="text" name="name" placeholder="Name" required>
 						<input type="tel" name="tel" placeholder="Tel" required>
 						<input type="email" name="email" placeholder="E-Mail" required>
 						<textarea name="message" id="message" placeholder="Message" required></textarea>
-						<input name="bot-field" style="display:none"/>
 						<button type="submit" class="btn-link">
 							<span class="eng-content">Submit</span>
 							<span class="fr-content">Envoyer</span>
