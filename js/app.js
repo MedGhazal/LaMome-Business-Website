@@ -31,47 +31,23 @@ function getContent(language_tag){
 			el => el.style.display = 'block'
 	);
 	if (`${language_tag}` === 'fr-content') {
-		document.querySelector('header').style.width = 'min(calc(98% - 20px), 1105px)';
-		document.querySelectorAll(
-			'input, textarea, .showcase-text, presentation-text'
-		).forEach(
-			el => el.style.textAlign = 'left'
-		)
-		document.querySelectorAll('.showcase-text').forEach(
-			el => el.style.transform = 'translateX(-20%)'
-		)
 		name.placeholder = data['french']['name'];
 		tel.placeholder = data['french']['tel'];
 		email.placeholder = data['french']['email'];
 		message.placeholder = data['french']['message'];
+		document.getElementById('content').setAttribute('dir', 'ltr');
 	} else if (`${language_tag}`=== 'ar-content') {
-		document.querySelector('header').style.width = 'min(calc(98% - 20px), 870px)';
-		document.querySelectorAll(
-			'input, textarea, .showcase-text, .presentation-text'
-		).forEach(
-			el => el.style.textAlign = 'right'
-		)
-		document.querySelectorAll('.showcase-text').forEach(
-			el => el.style.transform = 'translateX(35%)'
-		)
 		name.placeholder = data['arabic']['name'];
 		tel.placeholder = data['arabic']['tel'];
 		email.placeholder = data['arabic']['email'];
 		message.placeholder = data['arabic']['message'];
+		document.getElementById('content').setAttribute('dir', 'rtl');
 	} else if (`${language_tag}` === 'eng-content') {
-		document.querySelector('header').style.width = 'min(clac(98% - 20px), 1020px)';
-		document.querySelectorAll(
-			'input, textarea, .showcase-text, presentation-text'
-		).forEach(
-			el => el.style.textAlign = 'left'
-		)
-		document.querySelectorAll('.showcase-text').forEach(
-			el => el.style.transform = 'translateX(-10%)'
-		)
 		name.placeholder = data['english']['name'];
 		tel.placeholder = data['english']['tel'];
 		email.placeholder = data['english']['email'];
 		message.placeholder = data['english']['message'];
+		document.getElementById('content').setAttribute('dir', 'ltr');
 	}
 	document.querySelectorAll(".add-language-suffix").forEach(
 		el => el.href = el.href.split('#')[0] + "#" + language_tag
@@ -155,20 +131,33 @@ function showSlidesCollaborators(n) {
 		slides[slideIndexCollaborators-1].style.display = "grid";
 	}
 }
-const menuItems = document.querySelectorAll('.side-nav-panel');
+
 function toggelMenu() {
-	hamburgerMenu = document.querySelector('.hamburger-menu')
 
+	var hamburgerMenu = document.getElementById('hamburger');
 	hamburgerMenu.addEventListener("click", function(event) {
-
-		if (document.querySelector(".side-nav-panel").style.display === 'grid') {
-			document.querySelector(".side-nav-panel").style.display = 'none';
+		var logo = document.getElementById("lamome-business-logo") ;
+		if (logo.style.display == 'block') {
+			logo.style.display = 'none';
 		} else {
-			document.querySelector(".side-nav-panel").style.display = 'grid';
+			logo.style.display = 'block';
+		}
+		
+		var sideNavPanel = document.getElementById("side-nav-panel");
+		if (sideNavPanel.style.display === 'flex') {
+			sideNavPanel.style.display = 'none';
+		} else {
+			sideNavPanel.style.display = 'flex';
 		}
 
-
+		var sideLanguageNav = document.getElementById("side-language-nav");
+		if (sideLanguageNav.style.display === 'flex') {
+			sideLanguageNav.style.display = 'none';
+		} else {
+			sideLanguageNav.style.display = 'flex';
+		}
 	});
+
 }
 var timeout;
 function myFunction() {

@@ -1,459 +1,501 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-923955360">
-	</script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'AW-923955360');
-	</script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<meta name="description" content="Website of an entreprise et Comptabilité France er Maroc">
-  	<meta name="keywords" content="Comptabilté, création, entreprise, administrative, AIT ALI OUBIHI Latifa, 
-				       Création de société, Changement des statuts, Dissolution et Liquidation, Comptabilité Maroc, 
-				       Comptabilité France, Fudiciére Marrakech, La Mome Business, La Mome business Marrakech, 
-				       Business Marrakech, Fudiciere marrakech, Comptabilité Marrakech, Comptabilité Marocaine, 
-				       Comptabilité Maroc, Comptabilité Française, Managment, Conseil des sociétés marocaines, 
-				       Conseil des société française, administratif, comptabilité, création sociéte, Fisc Marocain, 
-				       Fisc français, Fiscalité, Conseil de fisc, bookkeeping">
-  	<meta name="author" content="Mohamed Ghazal">
-	<meta name="robots" content="index, follow"/>
-	<link rel="stylesheet" href="./styles/stylesheet.css">
-	<link rel="stylesheet" 
-	      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-	      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
-	      crossorigin="anonymous" 
-	      referrerpolicy="no-referrer" />
-	<title>LA MOME Business</title>
-	<link rel="shortcut icon" href="./img/logo.png" />
-</head>
-<body onload="myFunction()" style="margin:0;">
-	<div id="loader-container">
-		<div id="img-container">
-			<img src="./img/lamome-small.svg" alt="" height="200">
-		</div>
-	</div>
-	<div id="content" style="display: none" class="show-after-load">
-		<div class="background">
-			<img src="./img/showcase.svg" alt="showcase">	
-		</div>
-		<header>
-			<img src="./img/lamome.svg" alt="complete-logo" class="complete-logo">
-			<img src="./img/hambuger.svg" alt="Menu" class="hamburger-menu">
-			<div class="side-nav-panel">
-				<a role="button" href="./index.html" title="Page principale" class="add-language-suffix">
-					<span class="eng-content">
-						<i class="fa fa-home"></i>
-						Home
-					</span>
-					<span class="fr-content">
-						<i class="fa fa-home"></i>
-						Page Principale
-					</span>
-					<span class="ar-content">
-						الصفحة الرئيسية 
-						<i class="fa fa-home"></i>
-					</span>
-				</a>
-				<a href="#form" title="Consultation">
-					<span class="eng-content">
-						<i class="fas fa-id-card"></i>
-						Consultation
-					</span>
-					<span class="fr-content">
-						<i class="fas fa-id-card"></i>
-						Consultation
-					</span>
-					<span class="ar-content">
-						إستشارة
-						<i class="fas fa-id-card"></i>
-					</span>
-				</a>
-				<a href="./about.html" title="Services" class="add-language-suffix">
-					<span class="eng-content">
-						<i class="fab fa-buffer"></i>
-						Services
-					</span>
-					<span class="fr-content">
-						<i class="fab fa-buffer"></i>
-						Services
-					</span>
-					<span class="ar-content">
-						الخدمات 
-						<i class="fab fa-buffer"></i>
-					</span>
-				</a>
-				<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
-					<span class="eng-content">
-						<i class="fas fa-map-marked-alt"></i>
-						Localisation
-					</span>
-					<span class="fr-content">
-						<i class="fas fa-map-marked-alt"></i>
-						Localisation
-					</span>
-					<span class="ar-content">
-						الموقع 
-						<i class="fas fa-map-marked-alt"></i>
-					</span>
-				</a>
-				<div class="social-nav">
-					<a href="#" class="social"><i class="fab fa-linkedin"></i></a>
-					<a href="mailto:infos@lamome.business" class="social"><i class="far fa-envelope"></i></a>
-					<a class="language-link-small active" href="#fr-content" title="Français">
-						<img src="./img/france.svg" alt="fr" class="language-img">
-					</a>
-					<a class="language-link-small" href="#eng-content" title="English">
-						<img src="./img/united-kingdom.svg" alt="en" class="language-img">
-					</a>
-					<a class="language-link-small" href="#ar-content" title="عربية">
-						<img src="./img/morocco.svg" alt="ar" class="language-img">
-					</a>
-				</div>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-923955360">
+		</script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'AW-923955360');
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Website of an entreprise et Comptabilité France er Maroc">
+		<meta name="keywords" content="Comptabilté, création, entreprise, administrative, AIT ALI OUBIHI Latifa, 
+			Création de société, Changement des statuts, Dissolution et Liquidation, Comptabilité Maroc, 
+			Comptabilité France, Fudiciére Marrakech, La Mome Business, La Mome business Marrakech, 
+			Business Marrakech, Fudiciere marrakech, Comptabilité Marrakech, Comptabilité Marocaine, 
+			Comptabilité Maroc, Comptabilité Française, Managment, Conseil des sociétés marocaines, 
+			Conseil des société française, administratif, comptabilité, création sociéte, Fisc Marocain, 
+			Fisc français, Fiscalité, Conseil de fisc, bookkeeping">
+		<meta name="author" content="Mohamed Ghazal">
+		<meta name="robots" content="index, follow"/>
+		<link rel="stylesheet" href="./styles/stylesheet.css">
+		<link rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+			crossorigin="anonymous" 
+			referrerpolicy="no-referrer" />
+		<title>LA MOME Business</title>
+		<link rel="shortcut icon" href="./img/logo.png" />
+	</head>
+	<body onload="myFunction()" style="margin:0;">
+		<div id="loader-container">
+			<div id="img-container">
+				<img src="./img/lamome-small.svg" alt="" height="200">
 			</div>
-			<div class="extensive-nav">
-				<a href="./index.html" title="Page principale" class="add-language-suffix">
-					<span class="eng-content">
-						Home
-						<i class="fa fa-home"></i>
-					</span>
-					<span class="fr-content">
-						Page Principale
-						<i class="fa fa-home"></i>
-					</span>
-					<span class="ar-content">
-						الصفحة الرئيسية 
-						<i class="fa fa-home"></i>
-					</span>
-				</a>
-				<div class="languages-menu">
-					<button class="submenu-button-languages">
-					<span class="eng-content">
-						Translation
-					</span>
-					<span class="fr-content">
-						Traduction
-					</span>
-					<span class="ar-content">
-						ترجمة
-					</span>
-						<i class="fa fa-caret-down"></i>
-					</button>
-					<div class="submenu-content-languages fade">
-						<button class="language-link active" href="#fr-content" title="Français">
-							Français
-						</button>
-						<button class="language-link" href="#eng-content" title="English">
-							English
-						</button>
-						<button class="language-link" href="#ar-content" title="عربية">
-							عربى
-						</button>
+		</div>
+		<div id="content" class="background" style="display: none" class="show-after-load">
+			<header>
+				<img src="./img/lamome-small.svg" alt="" style="display: block" id="lamome-business-logo">
+				<div id="side-nav-panel">
+					<a role="button" href="./index.html" title="Page principale" class="add-language-suffix">
+						<span class="eng-content"> <i class="fa fa-home"></i> Home </span>
+						<span class="fr-content"> <i class="fa fa-home"></i> Page Principale </span> 
+						<span class="ar-content"> الصفحة الرئيسية <i class="fa fa-home"></i> </span>
+					</a>
+					<a href="#form" title="Consultation">
+						<span class="eng-content"> <i class="fas fa-id-card"></i> Consultation </span>
+						<span class="fr-content"> <i class="fas fa-id-card"></i> Consultation </span>
+						<span class="ar-content"> إستشارة <i class="fas fa-id-card"></i> </span>
+					</a>
+					<a href="./about.html" title="Services" class="add-language-suffix">
+						<span class="eng-content"> <i class="fab fa-buffer"></i> Services </span>
+						<span class="fr-content"> <i class="fab fa-buffer"></i> Services </span>
+						<span class="ar-content"> الخدمات <i class="fab fa-buffer"></i> </span>
+					</a>
+					<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
+						<span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+						<span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+						<span class="ar-content"> الموقع <i class="fas fa-map-marked-alt"></i> </span>
+					</a>
+					<div id="side-language-nav">
+						<a class="language-link-small active" href="#fr-content" title="Français">
+							<img src="./img/france.svg" alt="fr" class="language-img">
+						</a>
+						<a class="language-link-small" href="#eng-content" title="English">
+							<img src="./img/united-kingdom.svg" alt="en" class="language-img">
+						</a>
+						<a class="language-link-small" href="#ar-content" title="عربية">
+							<img src="./img/morocco.svg" alt="ar" class="language-img">
+						</a>
 					</div>
 				</div>
-				<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
-					<span class="eng-content">
-						Localisation
-						<i class="fas fa-map-marked-alt"></i>
-					</span>
-					<span class="fr-content">
-						Localisation
-						<i class="fas fa-map-marked-alt"></i>
-					</span>
-					<span class="ar-content">
-						الموقع 
-						<i class="fas fa-map-marked-alt"></i>
-					</span>
-				</a>
-				<a href="#form" title="Consultation">
-					<span class="eng-content">
-						Consultation
-						<i class="fas fa-id-card"></i>
-					</span>
-					<span class="fr-content">
-						Consultation
-						<i class="fas fa-id-card"></i>
-					</span>
-					<span class="ar-content">
-						إستشارة
-						<i class="fas fa-id-card"></i>
-					</span>
-				</a>
-				<a href="./about.html" title="Services" class="add-language-suffix">
-					<span class="eng-content">
-						Services
-						<i class="fab fa-buffer"></i>
-					</span>
-					<span class="fr-content">
-						Services
-						<i class="fab fa-buffer"></i>
-					</span>
-					<span class="ar-content">
-						الخدمات 
-						<i class="fab fa-buffer"></i>
-					</span>
-				</a>
-				<!-- </div> -->
-			</div>
-		</header>
-		<main>
-			<section class="showcase">
-				<div class="showcase-text">
-					<h1 class="fr-content-block">Nos valeurs</h1>
-					<h1 class="ar-content-block">قيمنا</h1>
-					<h1 class="eng-content-block">Our Values</h1>
-					<ul>
-						<li class="fr-content-block">Confidentialité</li>
-						<li class="fr-content-block">Engagement</li>
-						<li class="fr-content-block">Détermination</li>
-						<li class="ar-content-block">السرية</li>
-						<li class="ar-content-block">احترام الخصوصية</li>
-						<li class="ar-content-block">التزام</li>
-						<li class="eng-content-block">Respect of privacy</li>
-						<li class="eng-content-block">Confidentiality</li>
-						<li class="eng-content-block">Commitment</li>
-					</ul>
-				</div>
-				<div class="showcase-text">
-					<h1 class="fr-content-block">Nos standards</h1>
-					<h1 class="ar-content-block">معاييرنا</h1>
-					<h1 class="eng-content-block">Our standards </h1>
-					<ul>
-						<li class="fr-content-block">Excellence</li>
-						<li class="fr-content-block">Efficacité</li>
-						<li class="fr-content-block">Ponctualité</li>
-						<li class="ar-content-block">التميز</li>
-						<li class="ar-content-block">كفاءة</li>
-						<li class="ar-content-block">التميز</li>
-						<li class="eng-content-block">Excellency</li>
-						<li class="eng-content-block">Efficiency</li>
-						<li class="eng-content-block">Punctuality</li>
-					</ul>
-				</div>
-				<div class="showcase-text">
-					<h1 class="fr-content-block">Vos attentes</h1>
-					<h1 class="ar-content-block">توقعاتك</h1>
-					<h1 class="eng-content-block">Your expectations</h1>
-					<div class="eng-content-block"> 
-						Fondation<br>Follow-up<br>Support
-					</div>
-					<div class="fr-content-block">
-						Création<br>Suivi<br>Soutien
-					</div>
-					<div class="ar-content-block">
-						تأسيس<br>التتبع<br>الدعم
+				<div class="extensive-nav">
+					<a href="./index.html" title="Page principale" class="add-language-suffix">
+						<span class="eng-content"> Home <i class="fa fa-home"></i> </span>
+						<span class="fr-content"> Page Principale <i class="fa fa-home"></i> </span>
+						<span class="ar-content"> الصفحة الرئيسية <i class="fa fa-home"></i> </span>
+					</a>
+					<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
+						<span class="eng-content"> Localisation <i class="fas fa-map-marked-alt"></i> </span>
+						<span class="fr-content"> Localisation <i class="fas fa-map-marked-alt"></i> </span>
+						<span class="ar-content"> الموقع <i class="fas fa-map-marked-alt"></i> </span>
+					</a>
+					<a href="#form" title="Consultation">
+						<span class="eng-content"> Consultation <i class="fas fa-id-card"></i> </span>
+						<span class="fr-content"> Consultation <i class="fas fa-id-card"></i> </span>
+						<span class="ar-content"> إستشارة <i class="fas fa-id-card"></i> </span>
+					</a>
+					<a href="./about.html" title="Services" class="add-language-suffix">
+						<span class="eng-content"> Services <i class="fab fa-buffer"></i> </span>
+						<span class="fr-content"> Services <i class="fab fa-buffer"></i> </span>
+						<span class="ar-content"> الخدمات <i class="fab fa-buffer"></i> </span>
+					</a>
+					<div id="submenu-content-languages" class="fade">
+						<a class="language-link-small active" href="#fr-content" title="Français">
+							<img src="./img/france.svg" alt="fr" class="language-img">
+						</a>
+						<a class="language-link-small" href="#eng-content" title="English">
+							<img src="./img/united-kingdom.svg" alt="en" class="language-img">
+						</a>
+						<a class="language-link-small" href="#ar-content" title="عربية">
+							<img src="./img/morocco.svg" alt="ar" class="language-img">
+						</a>
 					</div>
 				</div>
-				<div class="controls">
+				<svg 
+					id="hamburger" 
+					xmlns="http://www.w3.org/2000/svg" 
+					viewBox="0 0 10 10" 
+					stroke="var(--primary-color)" 
+					stroke-width=".6" 
+					fill="rgba(0,0,0,0)" 
+					stroke-linecap="round">
+					<path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+						<animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+						<animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+					</path>
+					<rect width="10" height="10" stroke="none">
+						<animate dur="2s" id="reverse" attributeName="width" begin="click" />
+					</rect>
+					<rect width="10" height="10" stroke="none">
+						<animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+						<animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+					</rect>
+				</svg>
+			</header>
+			<main>
+				<section class="showcase">
+					<div class="slogan">
+						<h1 class="fr-content-block">Précision dans les chiffres, clarté dans les affaires</h1>
+						<h1 class="eng-content-block">Precision in numbers, clarity in business</h1>
+						<h1 class="ar-content-block">الدقة في الأرقام، والوضوح في الأعمال</h1>
+					</div>
+					<div class="showcase-text">
+						<div class="showcase-text-main">
+							<div class="fr-content-block">
+								<h2>Nos valeurs</h2>
+								<h3>Confidentialité </h3>
+								<h3>Engagement</h3>
+								<h3>Détermination</h3>
+							</div>
+							<div class="ar-content-block">
+								<h2>قيمنا</h2>
+								<h3>احترام الخصوصية</h3>
+								<h3>الإلتزام</h3>
+								<h3>الإصرار</h3>
+							</div>
+							<div class="eng-content-block">
+								<h2>Our Values</h2>
+								<h3>Respect of privacy</h3>
+								<h3>Confidentiality</h3>
+								<h3>Commitment</h3>
+							</div>
+						</div>
+						<div class="showcase-text-more">
+							<div class="fr-content-block">Chez LA MOME Business, nous mettons vos besoins au cœur de nos priorités. Avec une confidentialité absolue, nous protégeons vos données sensibles dans un climat de confiance. Engagés et déterminés, nous vous accompagnons avec rigueur et ténacité pour relever chaque défi et atteindre vos objectifs.</div>
+							<div class="ar-content-block">في LA MOME Business، نضع احتياجاتكم في صميم أولوياتنا. بفضل السرية التامة، نحمي بياناتكم الحساسة في جو من الثقة. ملتزمون ومصممون، نرافقكم بدقة وإصرار لتجاوز كل التحديات وتحقيق أهدافكم.</div>
+							<div class="eng-content-block">At LA MOME Business, we place your needs at the heart of our priorities. With absolute confidentiality, we protect your sensitive data in a climate of trust. Committed and determined, we support you with rigor and tenacity to overcome every challenge and achieve your goals.</div>
+						</div>
+					</div>
+					<div class="showcase-text">
+						<div class="showcase-text-main">
+							<div class="fr-content-block">
+								<h2>Nos standards</h2>
+								<h3>Excellence</h3>
+								<h3>Efficacité</h3>
+								<h3>Ponctualité</h3>
+							</div>
+							<div class="ar-content-block">
+								<h2>معاييرنا</h2>
+								<h3>التميز</h3>
+								<h3>كفاءة</h3>
+								<h3>التميز</h3>
+							</div>
+							<div class="eng-content-block">
+								<h2>Our standards </h2>
+								<h3>Excellency</h3>
+								<h3>Efficiency</h3>
+								<h3>Punctuality</h3>
+							</div>
+						</div>
+						<div class="showcase-text-more">
+							<div class="fr-content-block">Chez LA MOME Business, nous nous engageons à offrir un service d’excellence, où chaque détail compte pour garantir des solutions impeccables. Grâce à notre efficacité, nous optimisons chaque processus pour vous faire gagner en temps et en performance. Enfin, la ponctualité est une valeur clé : nous respectons les délais avec rigueur, parce que votre temps est précieux.</div>
+							<div class="ar-content-block">في LA MOME Business، نلتزم بتقديم خدمة تتميز بـ التميز، حيث نولي كل التفاصيل أهمية لضمان حلول مثالية. من خلال الكفاءة، نقوم بتحسين كل عملية لتوفير الوقت وتعزيز الأداء. وأخيرًا، الالتزام بالمواعيد هو قيمة أساسية: نحن نحترم المواعيد بدقة لأن وقتكم ثمين</div>
+							<div class="eng-content-block">At LA MOME Business, we are committed to delivering a service of excellence, where every detail matters to ensure flawless solutions. Through our efficiency, we optimize every process to save you time and enhance performance. Finally, punctuality is a core value: we respect deadlines with precision because your time is valuable.</div>
+						</div>
+					</div>
+					<div class="showcase-text">
+						<div class="showcase-text-main">
+							<div class="fr-content-block">
+								<h2>Vos attentes</h2>
+								<h3>Disponibilité</h3>
+								<h3>Conformité</h3>
+								<h3>Transparance</h3>
+							</div>
+							<div class="ar-content-block">
+								<h2>توقعاتك</h2>
+								<h3>الشفافية</h3><h3>التقيد </h3><h3>الإستجابة</h3>
+							</div>
+							<div class="eng-content-block">
+								<h2>Your aims</h2>
+								<h3>Availability</h3><h3>Compliance</h3><h3>Transparency</h3>
+							</div>
+						</div>
+						<div class="showcase-text-more">
+							<div class="fr-content-block">Chez La MOME Business, nous vous proposons avant tout une disponibilité totale, pour répondre à vos besoins à chaque étape de votre parcours comptable, que ce soit pour des conseils urgents ou un suivi continu. Nous nous engageons également à garantir une conformité absolue avec les réglementations fiscales et comptables, tant en France qu’au Maroc, afin de vous assurer tranquillité d’esprit. Enfin, la transparence est essentielle pour nous : nous vous fournissons des rapports clairs et détaillés, avec une communication ouverte à chaque étape de notre collaboration.</div>
+							<div class="eng-content-block">At La MOME Business, we offer you, first and foremost, total availability to meet your needs at every stage of your accounting journey, whether for urgent advice or continuous follow-up. We are also committed to ensuring absolute compliance with both Moroccan and French tax and accounting regulations to guarantee your peace of mind. Finally, transparency is key for us: we provide clear and detailed reports, with open communication at every step of our collaboration.</div>
+							<div class="ar-content-block">في LA MOME Business، نقدم لكم أولاً توفرًا تامًا لتلبية احتياجاتكم في كل مرحلة من مراحل مساركم المحاسبي، سواء كان ذلك للحصول على نصائح عاجلة أو متابعة مستمرة. كما نلتزم بضمان الامتثال التام مع اللوائح الضريبية والمحاسبية في كل من فرنسا والمغرب لضمان راحتكم النفسية. وأخيرًا، فإن الشفافية أساسية بالنسبة لنا: نحن نقدم تقارير واضحة ومفصلة، مع اتصال مفتوح في كل مرحلة من مراحل تعاوننا</div>
+						</div>
+					</div>
+					<div class="controls">
 						<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
 						<button class="next" onclick="plusSlides(1)">&#10095;</button>
-				</div>
-				<div class="dots">
+					</div>
+					<div class="dots">
 						<span class="dot active" onclick="currentSlide(1)"></span>
 						<span class="dot" onclick="currentSlide(2)"></span>
 						<span class="dot" onclick="currentSlide(3)"></span>
-				</div>
-			</section>
-			<section id="activities" class="activities">
-				<div class="activities-header">
-					<h1 class="fr-content">Services</h1>
-					<h1 class="eng-content">Services</h1>
-					<h1 class="ar-content">الخدمات</h1>
-				</div>
-				<div class="activities-elements">
-					<div class="activities-element">
-						<h3 class="fr-content">Comptabilité</h3>
-						<h3 class="eng-content">Accounting</h3>
-						<h3 class="ar-content">الحسابات</h3><br>
-						<i class="fas fa-book fa-3x"></i>
 					</div>
-					<div class="activities-element">
-						<h3 class="fr-content">Gestion RH</h3>
-						<h3 class="eng-content">RH Management</h3>
-						<h3 class="ar-content">إدارة الموارد البشرية</h3><br>
-						<i class="fas fa-male fa-3x"></i>
+				</section>
+				<section id="activities" class="activities">
+					<div class="activities-header">
+						<h1 class="fr-content">Services</h1>
+						<h1 class="eng-content">Services</h1>
+						<h1 class="ar-content">الخدمات</h1>
 					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Company Creation</h3>
-						<h3 class="fr-content">Création de société</h3>
-						<h3 class="ar-content">إنشاء شركة</h3><br>
-						<i class="fas fa-plus-square fa-3x"></i>
+					<div class="activities-elements" id="activities-elements-first-row">
+						<div class="activities-element ar-content left">
+							<i class="fas fa-book fa-3x"></i><br>
+							<h3>الحسابات</h3><br>
+							<p>ندير حساباتكم بدقة لضمان الامتثال الضريبي والمالي على أكمل وجه</p>
+						</div>
+						<div class="activities-element fr-content left">
+							<i class="fas fa-book fa-3x"></i><br>
+							<h3>Comptabilité</h3>
+							<p>Nous gérons vos comptes avec précision pour garantir une conformité fiscale et financière irréprochable.</p>
+						</div>
+						<div class="activities-element eng-content left">
+							<i class="fas fa-book fa-3x"></i><br>
+							<h3>Accounting</h3>
+							<p>We manage your accounts with precision to ensure impeccable fiscal and financial compliance.</p>
+						</div>
+						<div class="activities-element ar-content center">
+							<i class="fas fa-male fa-3x"></i><br>
+							<h3>إدارة الموارد البشرية</h3><br>
+							<p>نوفر لكم حلولًا مبسطة لإدارة عمليات التوظيف والرواتب والمتابعة الإدارية</p>
+						</div>
+						<div class="activities-element fr-content center">
+							<i class="fas fa-male fa-3x"></i><br>
+							<h3>Gestion Ressurces Humaines</h3>
+							<p>Simplifiez vos processus RH avec notre expertise en recrutement, paie et suivi administratif.</p>
+						</div>
+						<div class="activities-element eng-content center">
+							<i class="fas fa-male fa-3x"></i><br>
+							<h3>Human Ressources Management</h3>
+							<p>Simplify your HR processes with our expertise in recruitment, payroll, and administrative follow-up.</p>
+						</div>
+						<div class="activities-element ar-content right">
+							<i class="fas fa-plus-square fa-3x"></i><br>
+							<h3>إنشاء شركة</h3><br>
+							<p>ابدأوا أعمالكم بسهولة مع حلولنا الشاملة لتأسيس الشركات</p>
+						</div>
+						<div class="activities-element fr-content right">
+							<i class="fas fa-plus-square fa-3x"></i><br>
+							<h3>Création de société</h3>
+							<p>Lancez votre entreprise facilement grâce à nos solutions complètes pour sa constitution.</p>
+						</div>
+						<div class="activities-element eng-content right">
+							<i class="fas fa-plus-square fa-3x"></i><br>
+							<h3>Company Setup</h3>
+							<p>Start your business easily with our comprehensive solutions for company setup.</p>
+						</div>
 					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Entreprise Management</h3>
-						<h3 class="fr-content">Gestion d'entreprise</h3>
-						<h3  class="ar-content">إدارة الشركة</h3><br>
-						<i class="fas fa-tasks fa-3x"></i>
+					<div class="activities-elements" id="activities-elements-second-row">
+						<div class="activities-element eng-content left">
+							<i class="fas fa-exchange-alt fa-3x"></i>
+							<h3>Changing articles of association</h3>
+							<p>We assist you in modifying your company’s statutes quickly and efficiently.</p>
+						</div>
+						<div class="activities-element fr-content left">
+							<i class="fas fa-exchange-alt fa-3x"></i>
+							<h3>Changement des statuts</h3>
+							<p>Nous vous accompagnons dans la modification des statuts de votre société, rapidement et efficacement.</p>
+						</div>
+						<div class="activities-element ar-content left">
+							<i class="fas fa-exchange-alt fa-3x"></i>
+							<h3>تغيير نظام أو نشاط الشركة</h3><br>
+							<p>نقدم لكم المساعدة في تعديل النظام الأساسي لشركتكم بسرعة وكفاءة</p>
+						</div>
+						<div class="activities-element eng-content center">
+							<i class="fas fa-comment-medical fa-3x"></i>
+							<h3>Advice and assistance</h3>
+							<p>Benefit from our expertise with personalized advice and tailored support.</p>
+						</div>
+						<div class="activities-element fr-content center">
+							<i class="fas fa-comment-medical fa-3x"></i>
+							<h3>Conseils et assistance</h3>
+							<p>Bénéficiez de notre expertise pour des conseils personnalisés et un soutien sur-mesure.</p>
+						</div>
+						<div class="activities-element ar-content center">
+							<i class="fas fa-comment-medical fa-3x"></i>
+							<h3>استشارة و متابعة</h3><br>
+							<p>استفيدوا من خبراتنا للحصول على نصائح مخصصة ودعم يلبي احتياجاتكم</p>
+						</div>
+						<div class="activities-element eng-content right">
+							<i class="fas fa-power-off fa-3x"></i>
+							<h3>Dissolution and Liquidation</h3>
+							<p>Manage the closure of your business smoothly with our assistance.</p>
+						</div>
+						<div class="activities-element fr-content right">
+							<i class="fas fa-power-off fa-3x"></i>
+							<h3>Dissolution et Liquidation</h3>
+							<p>Gérez la fin d’activité de votre société en toute sérénité avec notre accompagnement.</p>
+						</div>
+						<div class="activities-element ar-content right">
+							<i class="fas fa-power-off fa-3x"></i>
+							<h3> فسخ و تصفية الشركة</h3><br>
+							<p>ندير عملية إنهاء نشاط شركتكم بسلاسة مع توجيهنا ودعمنا الكامل</p>
+						</div>
 					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Changing articles of association</h3>
-						<h3 class="fr-content">Changement des statuts</h3>
-						<h3 class="ar-content">تغيير نظام أو نشاط الشركة</h3><br>
-						<i class="fas fa-exchange-alt fa-3x"></i>
+					<div class="activities-elements" id="activities-elements-third-row">
+						<div class="activities-element eng-content left">
+							<i class="fas fa-globe fa-3x"></i>
+							<h3>Website Development</h3>
+							<p>Build your online presence with modern and customized websites that meet your needs.</p>
+						</div>
+						<div class="activities-element fr-content left">
+							<i class="fas fa-globe fa-3x"></i>
+							<h3>Création de site web</h3>
+							<p>Développez votre présence en ligne grâce à des sites web modernes et adaptés à vos besoins.</p>
+						</div>
+						<div class="activities-element ar-content left">
+							<i class="fas fa-globe fa-3x"></i>
+							<h3>إنشاء موقع على الويب</h3><br>
+							<p>عززوا وجودكم الرقمي مع مواقع ويب حديثة ومصممة خصيصًا لتلبية احتياجاتكم</p>
+						</div>
+						<div class="activities-element eng-content center">
+							<i class="fas fa-skiing-nordic fa-3x"></i>
+							<h3>Advice and support</h3>
+							<p>Receive strategic support for the development and management of your business.</p>
+						</div>
+						<div class="activities-element fr-content center">
+							<i class="fas fa-skiing-nordic fa-3x"></i>
+							<h3>Conseil et accompagnement</h3>
+							<p>Obtenez un accompagnement stratégique pour le développement et la gestion de votre entreprise.</p>
+						</div>
+						<div class="activities-element ar-content center">
+							<i class="fas fa-skiing-nordic fa-3x"></i>
+							<h3>استشارة و مرافقة حسابية و قانونية</h3><br>
+							<p>احصلوا على دعم استراتيجي لتطوير وإدارة أعمالكم</p>
+						</div>
+						<div class="activities-element eng-content right">
+							<i class="fab fa-uncharted fa-3x"></i>
+							<h3>Software Assistance</h3>
+							<p>We provide dedicated support for using our exclusive software, designed for efficient inventory creation and management, and invoicing.</p>
+						</div>
+						<div class="activities-element fr-content right">
+							<i class="fab fa-uncharted fa-3x"></i>
+							<h3>Assistance Software</h3>
+							<p>Nous vous offrons une assistance dédiée pour l’utilisation de notre logiciel exclusif, conçu pour la création et la gestion efficace de vos inventaires et factures.</p>
+						</div>
+						<div class="activities-element ar-content right">
+							<i class="fab fa-uncharted fa-3x"></i>
+							<h3>الدعم البرمجي</h3><br>
+							<p>نقدم لكم الدعم اللازم لاستخدام برنامجنا الحصري المصمم خصيصًا لإنشاء وإدارة المخزون بكفاءة و الفوترة </p>
+						</div>
 					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Advice and assistance</h3>
-						<h3 class="fr-content">Conseils et assistance</h3>
-						<h3 class="ar-content">استشارة و متابعة</h3><br>
-						<i class="fas fa-comment-medical fa-3x"></i>
-					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Dissolution and Liquidation</h3>
-						<h3 class="fr-content">Dissolution et Liquidation</h3>
-						<h3 class="ar-content"> فسخ و تصفية الشركة</h3><br>
-						<i class="fas fa-power-off fa-3x"></i>
-					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Website creation</h3>
-						<h3 class="fr-content">Création de site web</h3>
-						<h3 class="ar-content"3>إنشاء موقع على الويب</h3><br>
-						<i class="fas fa-globe fa-3x"></i>
-					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Advice and support</h3>
-						<h3 class="fr-content">Conseil et accompagnement</h3>
-						<h3 class="ar-content">استشارة و مرافقة حسابية و قانونية</h3><br>
-						<i class="fas fa-skiing-nordic fa-3x"></i>
-					</div>
-					<div class="activities-element">
-						<h3 class="eng-content">Other services and information</h3>
-						<h3 class="fr-content">Autre service et renseignement</h3>
-						<h3 class="ar-content">خدمات ومعلومات أخرى</h3><br>
+					<div class="activities-call-to-action">
 						<a href="./about.html" class="add-language-suffix">
 							<span class="ar-content">للمزيد من المعلومات </span>
 							<span class="eng-content">More Information</span>
 							<span class="fr-content">Plus d'informations</span>
 						</a>
 					</div>
-				</div>
-			</section>
-			<section id="collaborators">
-				<div class="collaborators">
-					<div class="collaborators-header">
-						<h1 class="fr-content">Collaborateurs</h1>
-						<h1 class="eng-content">Collaborateurs</h1>
-						<h1 class="ar-content">إفادات</h1>
-					</div>
-					<div class="collaborator">
-						<div class="presentation">
-							<h2>Philippe Brunet</h2>
-							<img src="./img/p_brunet.webp" alt="" style="width: 150px;">
-							<h3>Filovent</h3>
-							<h4 class="fr-content">Gérant</h4>
-							<h4 class="eng-content">Managing Director</h4>
-							<h4 class="ar-content">المدير العام</h4><br>
+				</section>
+				<section id="collaborators">
+					<div class="collaborators">
+						<div class="collaborators-header">
+							<h1 class="fr-content">Collaborateurs</h1>
+							<h1 class="eng-content">Collaborateurs</h1>
+							<h1 class="ar-content">إفادات</h1>
 						</div>
-						<div class="presentation-text">
-							<p>Je collabore avec Latifa depuis 15 années et j’ai toujours été satisfait de son travail. 
-							Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
-						</div>		
-						<div class="presentation-link">
-							<a class="btn-link ar-content" 
-								 href="https://www.linkedin.com/in/philippe-brunet-bb54998/"
-								 title="linkedin-brunet">
-								<span class="ar-content">للمزيد من المعلومات </span>
-								<span class="eng-content">More Information</span>
-								<span class="fr-content">Plus d'informations</span>
-							</a>
-						</div>		
-					</div>
-					<div class="collaborator">
-						<div class="presentation">
-							<h2>Zakaria Talib</h2>
-							<img src="./img/ztalibe.webp" alt="" style="width: 150px;">
-							<h3>webcinq</h3>
-							<h4 class="fr-content">Web developer</h4>
-							<h4 class="eng-content">Développeur web</h4>
-							<h4 class="ar-content">مطور ويب</h4><br>
+						<div class="collaborator">
+							<div class="presentation">
+								<h2>Philippe Brunet</h2>
+								<img src="./img/p_brunet.webp" alt="" style="width: 150px;">
+								<h3>Filovent</h3>
+								<h4 class="fr-content">Gérant</h4>
+								<h4 class="eng-content">Managing Director</h4>
+								<h4 class="ar-content">المدير العام</h4><br>
+							</div>
+							<div class="presentation-text">
+								<p>Je collabore avec Latifa depuis 15 années et j’ai toujours été satisfait de son travail. 
+									Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
+							</div>		
+							<div class="presentation-link">
+								<a class="btn-link ar-content" 
+									href="https://www.linkedin.com/in/philippe-brunet-bb54998/"
+									title="linkedin-brunet">
+									<span class="ar-content">للمزيد من المعلومات </span>
+									<span class="eng-content">More Information</span>
+									<span class="fr-content">Plus d'informations</span>
+								</a>
+							</div>		
 						</div>
-						<div class="presentation-text">
-							<p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
-						</div>		
-						<div class="presentation-link">
-							<a class="btn-link ar-content"
-							   href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma"
-								 title="linkedin-talib">
-								<span class="ar-content">للمزيد من المعلومات </span>
-								<span class="eng-content">More Information</span>
-								<span class="fr-content">Plus d'informations</span>
-							</a>
-						</div>		
-					</div>
-					<div class="collaborator">
-						<div class="presentation">
-							<h2>Mohamed Ghazal</h2>
-							<img src="./img/mohamed_ghazal.webp" alt="" style="width: 150px;">
-							<h3>TU Kaiserslautern</h3>
-							<h4 class="fr-content">Software engineer</h4>
-							<h4 class="eng-content">Software engineer</h4>
-							<h4 class="ar-content">مهندس برمجيات</h4><br>
+						<div class="collaborator">
+							<div class="presentation">
+								<h2>Zakaria Talib</h2>
+								<img src="./img/ztalibe.webp" alt="" style="width: 150px;">
+								<h3>webcinq</h3>
+								<h4 class="fr-content">Web developer</h4>
+								<h4 class="eng-content">Développeur web</h4>
+								<h4 class="ar-content">مطور ويب</h4><br>
+							</div>
+							<div class="presentation-text">
+								<p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
+							</div>		
+							<div class="presentation-link">
+								<a class="btn-link ar-content"
+									href="https://www.linkedin.com/in/zakariatal/?originalSubdomain=ma"
+									title="linkedin-talib">
+									<span class="ar-content">للمزيد من المعلومات </span>
+									<span class="eng-content">More Information</span>
+									<span class="fr-content">Plus d'informations</span>
+								</a>
+							</div>		
 						</div>
-						<div class="presentation-text">
-							<p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinaty with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circustances.</p>
-						</div>		
-						<div class="presentation-link">
-							<a class="btn-link ar-content" 
-								 href="https://www.linkedin.com/in/mohamed-ghazal-a22532102/"
-								 title="linkedin-ghazal">
-								<span class="ar-content">للمزيد من المعلومات </span>
-								<span class="eng-content">More Information</span>
-								<span class="fr-content">Plus d'informations</span>
-							</a>
-						</div>		
-					</div>
-					<div class="controls">
+						<div class="collaborator">
+							<div class="presentation">
+								<h2>Mohamed Ghazal</h2>
+								<img src="./img/mohamed_ghazal.webp" alt="" style="width: 150px;">
+								<h3>TU Kaiserslautern</h3>
+								<h4 class="fr-content">Software engineer</h4>
+								<h4 class="eng-content">Software engineer</h4>
+								<h4 class="ar-content">مهندس برمجيات</h4><br>
+							</div>
+							<div class="presentation-text">
+								<p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinaty with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circustances.</p>
+							</div>		
+							<div class="presentation-link">
+								<a class="btn-link ar-content" 
+									href="https://www.linkedin.com/in/mohamed-ghazal-a22532102/"
+									title="linkedin-ghazal">
+									<span class="ar-content">للمزيد من المعلومات </span>
+									<span class="eng-content">More Information</span>
+									<span class="fr-content">Plus d'informations</span>
+								</a>
+							</div>		
+						</div>
+						<div class="controls">
 							<button class="prev" onclick="plusSlidesCollaborators(-1)">&#10094;</button>
 							<button class="next" onclick="plusSlidesCollaborators(1)">&#10095;</button>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="consultation" id="form">
+					<h2 class="fr-content">Contact</h2>
+					<h2 class="eng-content">Contact</h2>
+					<h2 class="ar-content">للتواصل</h2>
+					<div class="infos eng-content">
+						We are available during the following business hours
+						<ul>
+							<li> <b>Monday-Friday</b> </li>
+							<li> 09:00-13:00 | 14:00-19:00 </li>
+							<li> <b>Saturday</b> </li>
+							<li> 09:00-13:00 </li>
+						</ul>
+						<a href="tel:+212662401636">Call us</a>
+					</div>
+					<div class="infos fr-content">
+						Nous sommes disponibles pendant les heures d'ouverture suivantes
+						<ul>
+							<li> <b>Lundi-Vendredi</b> </li>
+							<li> 09:00-13:00 | 14:00-19:00 </li>
+							<li> <b>Samedi</b> </li>
+							<li> 09:00-13:00 </li>
+						</ul>
+						<a href="tel:+212662401636">Appelez-nous</a>
+					</div>
+					<div class="infos ar-content">
+						نحن متواجدون خلال ساعات العمل التالية
+						<ul>
+							<li> <b>من الإثنين إلى الثلاثاء</b> </li>
+							<li> 09:00-13:00 | 14:00-19:00 </li>
+							<li> <b>السبت</b> </li>
+							<li> 09:00-13:00 </li>
+						</ul>
+						<a href="tel:+212662401636">اتصل بنا</a>
 					</div>
 				</div>
-			</section>
-		</main>
-		<footer>
-				<div class="consultation" id="form">
-						<h2 class="fr-content">Contact</h2>
-						<h2 class="eng-content">Contact</h2>
-						<h2 class="ar-content">للتواصل</h2>
-						<div class="infos eng-content">
-							We are available during the following business hours
-							<ul>
-									<li> <b>Monday-Friday</b> </li>
-									<li> 09:00-13:00 | 14:00-19:00 </li>
-									<li> <b>Saturday</b> </li>
-									<li> 09:00-13:00 </li>
-							</ul>
-							Egyptian time from 6 pm to 11 pm all days of the week except Friday.
-							<a href="tel:+212662401636">Call us</a>
-						</div>
-						<div class="infos fr-content">
-							Nous sommes disponibles pendant les heures d'ouverture suivantes
-							<ul>
-									<li> <b>Lundi-Vendredi</b> </li>
-									<li> 09:00-13:00 | 14:00-19:00 </li>
-									<li> <b>Samedi</b> </li>
-									<li> 09:00-13:00 </li>
-							</ul>
-							Heure d'Egypte de 18h à 23h tous les jours de la semaine sauf le vendredi.
-							<a href="tel:+212662401636">Appelez-nous</a>
-						</div>
-						<div class="infos ar-content">
-							نحن متواجدون خلال ساعات العمل التالية
-							<ul>
-									<li> <b>من الإثنين إلى الثلاثاء</b> </li>
-									<li> 09:00-13:00 | 14:00-19:00 </li>
-									<li> <b>السبت</b> </li>
-									<li> 09:00-13:00 </li>
-							</ul>
-							التوقيت المصري من الساعة السادسة الى 11 مساءا جميع ايام الاسبوع ما عدا يوم الجمعة.
-							<a href="tel:+212662401636">اتصل بنا</a>
-						</div>
-				</div>
 				<div class="form">
-					<h2 class="eng-content">Ask for a consultation</h2>
-					<h2 class="fr-content">Demandez une consultation</h2>
-					<h2 class="ar-content">طلب استشارة</h2>
+					<h2 class="fr-content">Formulaire de contact</h2>
+					<h2 class="eng-content">Contact Form</h2>
+					<h2 class="ar-content">استمارة الاتصال</h2>
 					<form class="contact" name="contact" method="POST" netlify-honeypot="bot-field" netlify data-netlify="true">
 						<input name="bot-field" style="display:none"/>
 						<input type="text" name="name" placeholder="Name" required>
@@ -469,17 +511,18 @@
 				</div>
 				<div class="copyright">
 					<div class="f-social" style="text-align: center">
-					<a href="mailto:infos@lamome.business" class="footer-social"><i class="far fa-envelope"></i></a>
-					<a href="https://www.linkedin.com/in/la-mome-business-372595122/" class="footer-social"><i class="fab fa-linkedin"></i></a>
-					<a href="#" class="footer-social"><i class="fab fa-facebook"></i></a>
-					<a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
-					<a href="#" class="footer-social"><i class="fab fa-twitter"></i></a><br>
+						<a href="mailto:infos@lamome.business" class="footer-social"><i class="far fa-envelope"></i></a>
+						<a href="https://www.linkedin.com/in/la-mome-business-372595122/" class="footer-social"><i class="fab fa-linkedin"></i></a>
+						<a href="#" class="footer-social"><i class="fab fa-facebook"></i></a>
+						<a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+						<a href="#" class="footer-social"><i class="fab fa-twitter"></i></a><br>
 					</div>
 					LA MOME Business&copy; 
 					<a href="./privacyPolicy.html" class="privacyPolicy fr-content">Politique de Confidentialité</a>
 					, 2024
 				</div>
-		</footer>
-	</div>
-	<script type="text/javascript" src="./js/app.js"></script>
-</body>
+			</footer>
+		</div>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>
