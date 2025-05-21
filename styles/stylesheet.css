@@ -400,6 +400,35 @@ header {
 	float: left;
 }
 
+#actualities {
+	width: min(1000px, 90%);
+	margin: auto;
+	padding: 2.5%;
+}
+.actualities-header {
+	background-color: var(--light-color);
+	text-align: center;
+	padding: 20px 0;
+	width: fit-content;
+	margin: auto;
+	background-color: transparent;
+}
+.actualities-header h1 {
+	padding: 20px;
+	border-radius: 20px;
+	font-size: clamp(1rem, -0.875rem + 6vw, 2rem); 
+	background-color: var(--secondary-color);
+}
+.actuality {
+	background-color: var(--light-color);
+	border-radius: 5px;
+	padding: 2.5%;
+	margin: 1%;
+}
+.actuality ul {
+	list-style: square inside;
+}
+
 /* Collaborateurs */
 .collaborators {
 	justify-content: center;
