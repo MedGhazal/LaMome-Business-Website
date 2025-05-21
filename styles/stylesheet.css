@@ -281,6 +281,7 @@ header {
 }
 .about-text p {
 	padding: 15px;
+	text-align: justify;
 }
 .about-text .btn {
 	border-bottom: 2px var(--primary-color) solid; 
