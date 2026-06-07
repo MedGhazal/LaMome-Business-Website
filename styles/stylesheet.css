@@ -30,8 +30,8 @@ h1 {
     font-size: clamp(1.6rem, 1.2rem + 3vw, 2.2rem); 
     line-height: 1.2;
     font-weight: 800;
-    margin-top: 2.5rem;    /* Generates an elegant drop distance from your white header */
-    margin-bottom: 3rem;  /* Pushes the slider card down to give the entire layout room to breathe */
+    /* margin-top: 2.5rem;    /1* Generates an elegant drop distance from your white header *1/ */
+    /* margin-bottom: 3rem;  /1* Pushes the slider card down to give the entire layout room to breathe *1/ */
     padding: 1.5rem;       
     word-wrap: break-word;
 }
@@ -339,6 +339,7 @@ header {
 .activities {
 	margin: 20px auto;
 	position: relative;
+    max-width: 1200px;
 }
 .activities-content-notice {
 	color: var(--light-color);
@@ -391,6 +392,7 @@ header {
 	margin: auto;
 	padding: 5px;
 	border-radius: 10px;
+    margin-top: auto;
 }
 
 /* Services */
@@ -491,8 +493,9 @@ header {
 }
 
 /* Collaborateurs */
-.collaborators {
-	width: max(100%, 650px);
+#collaborators {
+	width: 100%;
+    max-width: 650px;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -512,7 +515,6 @@ header {
 }
 .collaborator .presentation {
 	width: fit-content;
-    min-height: 450px;
     min-width: 250px;
 	padding: 10px;
 	margin: 10px auto;
@@ -692,6 +694,36 @@ input:focus, textarea:focus, input:hover, textarea:hover {
 }
 
 @media(min-width: 800px) {
+	#collaborators {
+        width: 95%;
+		max-width: 750px;
+		margin: 1.2rem auto;
+	}
+	.collaborator {
+		padding: 1.2rem;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: 1fr min-content;
+		grid-template-areas: "one two" "one three";
+	}
+	.collaborator .presentation {
+		grid-area: one;
+		text-align: center;
+		align-items: center;
+		padding: 1.2rem;
+        min-height: 450px;
+	}
+	.collaborator .presentation-text {
+		grid-area: two;
+        margin: 2.5rem;
+        padding: 1.5rem;
+	}
+	.collaborator .presentation-link  {
+		grid-area: three;
+		align-items: left;
+		margin-left: auto;
+	}
     .glass {
         border-radius: 10px;
     }
@@ -734,37 +766,6 @@ input:focus, textarea:focus, input:hover, textarea:hover {
         visibility: visible;
         transition: visibility 0s 0.4s, opacity 0.3s 0.4s;
     }
-	.collaborators {
-		width: 750px;
-		margin: auto;
-	}
-	.collaborator {
-		padding: 20px 10%;
-		margin: auto;
-		display: grid;
-		grid-template-columns: 4fr 6fr;
-		grid-template-rows: 1fr min-content;
-		grid-template-areas: "one two" "one three";
-		margin-bottom: 50px;
-	}
-	.collaborator .presentation {
-		grid-area: one;
-		text-align: center;
-		align-items: center;
-		border-radius: 10px 5px;
-		padding: 20px;
-	}
-	.collaborator .presentation-text {
-		grid-area: two;
-	}
-	.collaborator .presentation-link  {
-		grid-area: three;
-		align-items: left;
-		margin-left: auto;
-	}
-	.collaborators {
-		margin: auto;
-	}
 	.activities-elements p {
 		display: none;
 	}
@@ -773,11 +774,13 @@ input:focus, textarea:focus, input:hover, textarea:hover {
 	}
 	.activities-elements {
 		grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 280px;
 	}
 	.activities-element:hover {
 		background-color: var(--secondary-color);
 		color: var(--primary-color);
 		margin: 0;
+        overflow: hidden;
 	}
 	:where(.left, .center, .right) {
 		transition: all 1s cubic-bezier(0.58, 0.57, 0.37, 1.07);
@@ -900,14 +903,26 @@ input:focus, textarea:focus, input:hover, textarea:hover {
 }
 
 @media(min-width: 1150px) {
+    .activities {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        position: relative;
+        min-height: 1300px;
+        padding: 1.2rem;
+        /* background-image: url('https://img1.wsimg.com/isteam/getty/1316930732'); */
+        border-radius: 10px;
+        background-blend-mode: multiply;
+        box-shadow: inset 0 0 40px rgba(7, 35, 82, 0.4);
+        background-size: cover;          /* Forces image to scale proportionally and fill the box */
+        background-position: center;     /* Keeps the center of the photo perfectly focused */
+        background-repeat: no-repeat;
+    }
     .showcase {
         border-radius: 15px;
     }
     .showcase-text {
         min-height: 500px;
-    }
-    .activities {
-        width: 1150px;
     }
 }
 

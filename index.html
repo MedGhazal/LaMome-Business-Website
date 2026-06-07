@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Site web de LA MOME Business représente les services offerts LA MOME Business. Principalement des services de comptabilité au Maroc et offshore en France pour les petites et moyennes Sociétés.">
-		<meta name="author" content="Mohamed Ghazal">
-		<link rel="canonical" href="https://www.lamome-business.com/index.html">
-		<link rel="stylesheet" href="./styles/stylesheet.min.css">
-		<link rel="stylesheet" href="./styles/all.min.css">
-		<link rel="shortcut icon" href="./img/logo.png">
-		<title>LA MOME Business | Fuduciare comptable à Marrakech, Maroc</title>
-		<meta name="keywords" content="Comptabilté, création, entreprise, fiscalité, Création de société, Changement des statuts, Dissolution et Liquidation, Comptabilité, Offshore, Fudiciére, Business, Fudiciere, Managment, Conseil des sociétés, Conseil des société, Fisc, Fiscalité, Conseil de fisc, bookkeeping, accounting, Suivie, Marrahech, Guiliz, Menara, Maroc, France">
-	</head>
-	<body onload="myFunction()" style="margin:0;">
-		<div id="loader-container">
-			<div id="img-container">
-				<img src="./img/lamome-small.svg" alt="" height="200" alt="LOGOLoader">
-			</div>
-		</div>
-		<div id="content" class="background" style="display: none" class="show-after-load">
-			<header>
-				<img src="./img/lamome-small.svg" alt="" style="display: block" id="lamome-business-logo" alt="LOGOHeader">
-				<div id="side-nav-panel">
-					<a href="https://maps.app.goo.gl/cPdxwwWdckx31nYL9" title="Localisation">
-						<span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-						<span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-						<span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
-					</a>
-					<a href="#form" title="Consultation">
-						<span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
-						<span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
-						<span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
-					</a>
-					<a href="./about.html" title="Services" class="add-language-suffix">
-						<span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
-						<span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
-						<span class="ar-content"><i class="fab fa-buffer"></i> المزيد من المعلومات  </span>
-					</a>
-					<a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
-						<span> <i class="fa fa-file-invoice"></i>lamome.app</span>
-					</a>
-					<div id="side-language-nav">
-						<a class="language-link-small active" href="#fr-content" title="Français">
-							<img src="./img/france.svg" alt="fr" class="language-img" alt="TranslationFR">
-						</a>
-						<a class="language-link-small" href="#eng-content" title="English">
-							<img src="./img/united-kingdom.svg" alt="en" class="language-img" alt="TranslationEN">
-						</a>
-						<a class="language-link-small" href="#ar-content" title="عربية">
-							<img src="./img/morocco.svg" alt="ar" class="language-img" alt="TranslationAR">
-						</a>
-					</div>
-				</div>
-				<div class="extensive-nav">
-					<a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
-						<span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-						<span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-						<span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
-					</a>
-					<a href="#form" title="Consultation">
-						<span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
-						<span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
-						<span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
-					</a>
-					<a href="./about.html" title="Services" class="add-language-suffix">
-						<span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
-						<span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
-						<span class="ar-content"> الخدمات <i class="fab fa-buffer"></i> </span>
-					</a>
-					<a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
-						<span> <i class="fa fa-file-invoice"></i> LAMOME.app</span>
-					</a>
-					<div id="submenu-content-languages" class="fade">
-						<a class="language-link-small active" href="#fr-content" title="Français">
-							<img src="./img/france.svg" alt="fr" class="language-img" alt="EXTTranslationFR">
-						</a>
-						<a class="language-link-small" href="#eng-content" title="English">
-							<img src="./img/united-kingdom.svg" alt="en" class="language-img" alt="EXTTranslationEN">
-						</a>
-						<a class="language-link-small" href="#ar-content" title="عربية">
-							<img src="./img/morocco.svg" alt="ar" class="language-img" alt="EXTTranslationAR">
-						</a>
-					</div>
-				</div>
-				<svg 
-					id="hamburger" 
-					xmlns="http://www.w3.org/2000/svg" 
-					viewBox="0 0 10 10" 
-					stroke="var(--primary-color)" 
-					stroke-width=".6" 
-					fill="rgba(0,0,0,0)" 
-					stroke-linecap="round">
-					<path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-						<animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
-						<animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
-					</path>
-					<rect width="10" height="10" stroke="none">
-						<animate dur="2s" id="reverse" attributeName="width" begin="click" />
-					</rect>
-					<rect width="10" height="10" stroke="none">
-						<animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
-						<animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
-					</rect>
-				</svg>
-			</header>
-			<main>
-				<section class="showcase glass">
-					<div class="slogan">
-						<h1 class="fr-content-block">Précision dans les chiffres, clarté dans les affaires</h1>
-						<h1 class="eng-content-block">Precision in numbers, clarity in business</h1>
-						<h1 class="ar-content-block">الدقة في الأرقام، والوضوح في الأعمال</h1>
-					</div>
-					<div class="showcase-text glass" style="background-image: url('./img/showcase-image-1.webp');">
-						<div class="showcase-text-main">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site web de LA MOME Business représente les services offerts LA MOME Business. Principalement des services de comptabilité au Maroc et offshore en France pour les petites et moyennes Sociétés.">
+        <meta name="author" content="Mohamed Ghazal">
+        <link rel="canonical" href="https://www.lamome-business.com/index.html">
+        <link rel="stylesheet" href="./styles/stylesheet.min.css">
+        <link rel="stylesheet" href="./styles/all.min.css">
+        <link rel="shortcut icon" href="./img/logo.png">
+        <title>LA MOME Business | Fuduciare comptable à Marrakech, Maroc</title>
+        <meta name="keywords" content="Comptabilté, création, entreprise, fiscalité, Création de société, Changement des statuts, Dissolution et Liquidation, Comptabilité, Offshore, Fudiciére, Business, Fudiciere, Managment, Conseil des sociétés, Conseil des société, Fisc, Fiscalité, Conseil de fisc, bookkeeping, accounting, Suivie, Marrahech, Guiliz, Menara, Maroc, France">
+    </head>
+    <body onload="myFunction()" style="margin:0;">
+        <div id="loader-container">
+            <div id="img-container">
+                <img src="./img/lamome-small.svg" alt="" height="200" alt="LOGOLoader">
+            </div>
+        </div>
+        <div id="content" class="background" style="display: none" class="show-after-load">
+            <header>
+                <img src="./img/lamome-small.svg" alt="" style="display: block" id="lamome-business-logo" alt="LOGOHeader">
+                <div id="side-nav-panel">
+                    <a href="https://maps.app.goo.gl/cPdxwwWdckx31nYL9" title="Localisation">
+                        <span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                        <span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                        <span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
+                    </a>
+                    <a href="#form" title="Consultation">
+                        <span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
+                        <span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
+                        <span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
+                    </a>
+                    <a href="./about.html" title="Services" class="add-language-suffix">
+                        <span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
+                        <span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
+                        <span class="ar-content"><i class="fab fa-buffer"></i> المزيد من المعلومات  </span>
+                    </a>
+                    <a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
+                        <span> <i class="fa fa-file-invoice"></i>lamome.app</span>
+                    </a>
+                    <div id="side-language-nav">
+                        <a class="language-link-small active" href="#fr-content" title="Français">
+                            <img src="./img/france.svg" alt="fr" class="language-img" alt="TranslationFR">
+                        </a>
+                        <a class="language-link-small" href="#eng-content" title="English">
+                            <img src="./img/united-kingdom.svg" alt="en" class="language-img" alt="TranslationEN">
+                        </a>
+                        <a class="language-link-small" href="#ar-content" title="عربية">
+                            <img src="./img/morocco.svg" alt="ar" class="language-img" alt="TranslationAR">
+                        </a>
+                    </div>
+                </div>
+                <div class="extensive-nav">
+                    <a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
+                        <span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                        <span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                        <span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
+                    </a>
+                    <a href="#form" title="Consultation">
+                        <span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
+                        <span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
+                        <span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
+                    </a>
+                    <a href="./about.html" title="Services" class="add-language-suffix">
+                        <span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
+                        <span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
+                        <span class="ar-content"> الخدمات <i class="fab fa-buffer"></i> </span>
+                    </a>
+                    <a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
+                        <span> <i class="fa fa-file-invoice"></i> LAMOME.app</span>
+                    </a>
+                    <div id="submenu-content-languages" class="fade">
+                        <a class="language-link-small active" href="#fr-content" title="Français">
+                            <img src="./img/france.svg" alt="fr" class="language-img" alt="EXTTranslationFR">
+                        </a>
+                        <a class="language-link-small" href="#eng-content" title="English">
+                            <img src="./img/united-kingdom.svg" alt="en" class="language-img" alt="EXTTranslationEN">
+                        </a>
+                        <a class="language-link-small" href="#ar-content" title="عربية">
+                            <img src="./img/morocco.svg" alt="ar" class="language-img" alt="EXTTranslationAR">
+                        </a>
+                    </div>
+                </div>
+                <svg 
+                                                                                       id="hamburger" 
+                                                                                       xmlns="http://www.w3.org/2000/svg" 
+                                                                                       viewBox="0 0 10 10" 
+                                                                                       stroke="var(--primary-color)" 
+                                                                                       stroke-width=".6" 
+                                                                                       fill="rgba(0,0,0,0)" 
+                                                                                       stroke-linecap="round">
+                    <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                    <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+                    <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+                    </path>
+                    <rect width="10" height="10" stroke="none">
+                    <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                    </rect>
+                    <rect width="10" height="10" stroke="none">
+                    <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                    <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                    </rect>
+                </svg>
+            </header>
+            <main>
+                <section class="showcase glass">
+                    <div class="slogan">
+                        <h1 class="fr-content-block">Précision dans les chiffres, clarté dans les affaires</h1>
+                        <h1 class="eng-content-block">Precision in numbers, clarity in business</h1>
+                        <h1 class="ar-content-block">الدقة في الأرقام، والوضوح في الأعمال</h1>
+                    </div>
+                    <div class="showcase-text glass" style="background-image: url('./img/showcase-image-1.webp');">
+                        <div class="showcase-text-main">
                             <div class="showcase-icon-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="showcase-icon">
                                     <path stroke-width="1" stroke="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="currentColor"/>
@@ -472,56 +472,54 @@
                     </div>
                 </section>
                 <section id="collaborators">
-                    <div class="collaborators">
-                        <div class="collaborators-header glass">
-                            <h2 class="fr-content">Collaborateurs</h2>
-                            <h2 class="eng-content">Collaborateurs</h2>
-                            <h2 class="ar-content">إفادات</h2>
+                    <div class="collaborators-header glass">
+                        <h2 class="fr-content">Collaborateurs</h2>
+                        <h2 class="eng-content">Collaborateurs</h2>
+                        <h2 class="ar-content">إفادات</h2>
+                    </div>
+                    <div class="collaborator glass">
+                        <div class="presentation">
+                            <h3>Mohamed Ghazal</h3>
+                            <img src="./img/mohamed_ghazal.webp" alt="" style="width: 150px;" alt="Mohamed Ghazal">
+                            <h4>TU Kaiserslautern</h4>
+                            <h5 class="fr-content">Software engineer</h5>
+                            <h5 class="eng-content">Software engineer</h5>
+                            <h5 class="ar-content">مهندس برمجيات</h5><br>
                         </div>
-                        <div class="collaborator glass">
-                            <div class="presentation glass">
-                                <h3>Mohamed Ghazal</h3>
-                                <img src="./img/mohamed_ghazal.webp" alt="" style="width: 150px;" alt="Mohamed Ghazal">
-                                <h4>TU Kaiserslautern</h4>
-                                <h5 class="fr-content">Software engineer</h5>
-                                <h5 class="eng-content">Software engineer</h5>
-                                <h5 class="ar-content">مهندس برمجيات</h5><br>
-                            </div>
-                            <div class="presentation-text">
-                                <p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinaty with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circustances.</p>
-                            </div>		
+                        <div class="presentation-text glass">
+                            <p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinaty with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circustances.</p>
+                        </div>		
+                    </div>
+                    <div class="collaborator glass">
+                        <div class="presentation">
+                            <h3>Philippe Brunet</h3>
+                            <img src="./img/p_brunet.webp" alt="" style="width: 150px;" alt="Philippe Brunet">
+                            <h4>Filovent</h4>
+                            <h5 class="fr-content">Gérant</h5>
+                            <h5 class="eng-content">Managing Director</h5>
+                            <h5 class="ar-content">المدير العام</h5><br>
                         </div>
-                        <div class="collaborator glass">
-                            <div class="presentation glass">
-                                <h3>Philippe Brunet</h3>
-                                <img src="./img/p_brunet.webp" alt="" style="width: 150px;" alt="Philippe Brunet">
-                                <h4>Filovent</h4>
-                                <h5 class="fr-content">Gérant</h5>
-                                <h5 class="eng-content">Managing Director</h5>
-                                <h5 class="ar-content">المدير العام</h5><br>
-                            </div>
-                            <div class="presentation-text">
-                                <p>Je collabore avec Latifa depuis 2007 et j’ai toujours été satisfait de son travail. 
-                                Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
-                            </div>		
+                        <div class="presentation-text glass">
+                            <p>Je collabore avec Latifa depuis 2007 et j’ai toujours été satisfait de son travail. 
+                            Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
+                        </div>		
+                    </div>
+                    <div class="collaborator glass">
+                        <div class="presentation">
+                            <h3>Zakaria Talib</h3>
+                            <img src="./img/ztalibe.webp" alt="" style="width: 150px;" alt="Zakaria Talib">
+                            <h4>webcinq</h4>
+                            <h5 class="fr-content">Web developer</h5>
+                            <h5 class="eng-content">Développeur web</h5>
+                            <h5 class="ar-content">مطور ويب</h5><br>
                         </div>
-                        <div class="collaborator glass">
-                            <div class="presentation glass">
-                                <h3>Zakaria Talib</h3>
-                                <img src="./img/ztalibe.webp" alt="" style="width: 150px;" alt="Zakaria Talib">
-                                <h4>webcinq</h4>
-                                <h5 class="fr-content">Web developer</h5>
-                                <h5 class="eng-content">Développeur web</h5>
-                                <h5 class="ar-content">مطور ويب</h5><br>
-                            </div>
-                            <div class="presentation-text">
-                                <p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
-                            </div>		
-                        </div>
-                        <div class="controls">
-                            <button class="prev" onclick="plusSlidesCollaborators(-1)">&#10094;</button>
-                            <button class="next" onclick="plusSlidesCollaborators(1)">&#10095;</button>
-                        </div>
+                        <div class="presentation-text glass">
+                            <p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
+                        </div>		
+                    </div>
+                    <div class="controls">
+                        <button class="prev" onclick="plusSlidesCollaborators(-1)">&#10094;</button>
+                        <button class="next" onclick="plusSlidesCollaborators(1)">&#10095;</button>
                     </div>
                 </section>
             </main>
