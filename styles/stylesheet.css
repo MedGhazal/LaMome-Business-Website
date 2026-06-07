@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('../fonts/AvenirNext-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Avenir Next Fallback';
+    src: local('Arial');
+    size-adjust: 96%;        
+    ascent-override: 95%;
+    descent-override: 22%;
+    line-gap-override: 0%;
+}
+
 :root {
 	--primary-color: #072352;
 	--muted-primary-color: rgba(7, 35, 82, 0.8);
@@ -18,7 +34,7 @@
 }
 html, body {
 	overflow-x: hidden;
-	font-family: "Avenir Next", sans-serif;
+    font-family: "Avenir Next", "Avenir Next Fallback", Arial, sans-serif;
 	font-display: swap; 
 	line-height: 1.6;
     font-weight: 400;
