@@ -99,6 +99,8 @@ a, button {
 .timestamp {
 	color: var(--muted-secondary-color);
 }
+.fr-content { display: inline-block; }
+.eng-content, .ar-content { display: none; }
 
 .show-after-load {
 	position: relative;
