@@ -133,7 +133,6 @@ function showSlidesCollaborators(n) {
 }
 
 function toggelMenu() {
-
 	var hamburgerMenu = document.getElementById('hamburger');
 	hamburgerMenu.addEventListener("click", function(event) {
 		var logo = document.getElementById("lamome-business-logo") ;
@@ -157,22 +156,9 @@ function toggelMenu() {
 			sideLanguageNav.style.display = 'flex';
 		}
 	});
-
 }
 var timeout;
-function myFunction() {
-	loader_container = document.getElementById("loader-container");
-	if ( loader_container != null ) { 
-		timeout = setTimeout(showPage, 1000);
-	} else {
-		timeout = setTimeout(showPage, 0);
-	}
-}
 function showPage() {
 	loader_container = document.getElementById("loader-container");
-	if ( loader_container != null ) { 
-		loader_container.style.display = "none";
-		document.getElementById("content").style.display = "block";
-	}
 	initializePage();
 }

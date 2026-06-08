@@ -23,17 +23,17 @@
         <link rel="stylesheet" href="./styles/all.min.css" media="print" onload="this.media='all'">
         <link rel="stylesheet" href="./styles/stylesheet.min.css" media="print" onload="this.media='all'">
         <noscript><link rel="stylesheet" href="./styles/stylesheet.min.css"></noscript>
-        
+
         <meta property="og:title" content="LA MOME Business | Fiduciaire comptable à Marrakech, Maroc" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.lamome-business.com/index.html" />
         <meta property="og:image" content="https://www.lamome-business.com/img/logo.png" />
         <meta property="og:description" content="Services de comptabilité au Maroc et offshore en France pour PME. Création de société, fiscalité, et gestion d'entreprise." />
         <meta property="og:locale" content="fr_FR" />
-        
+
         <meta name="keywords" content="Comptabilité, création entreprise, fiscalité, Création de société, Changement des statuts, Dissolution et Liquidation, Comptabilité Offshore, Fiduciaire, Business, Fiduciaire Marrakech, Management, Conseil des sociétés, Fisc, Fiscalité, bookkeeping, accounting, Suivi, Marrakech, Gueliz, Menara, Maroc, France">
         <script type="application/ld+json">
-{
+            {
   "@context": "https://schema.org",
   "@type": "AccountingService",
   "name": "LA MOME Business",
@@ -77,596 +77,589 @@
 }
         </script>
     </head>
-    <body onload="myFunction()" style="margin:0;">
-        <div id="loader-container">
-            <div id="img-container">
-                <img src="./img/lamome-small.svg" height="200" alt="LA MOME Business LOGO">
+    <body onload="showPage()" class="background show-after-load">
+        <header>
+            <img src="./img/lamome-small.svg" style="display: block" id="lamome-business-logo" alt="LA MOME Business LOGO">
+            <div id="side-nav-panel">
+                <a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
+                    <span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                    <span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                    <span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
+                </a>
+                <a href="#form" title="Consultation">
+                    <span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
+                    <span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
+                    <span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
+                </a>
+                <a href="./about.html" title="Services" class="add-language-suffix">
+                    <span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
+                    <span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
+                    <span class="ar-content"><i class="fab fa-buffer"></i> المزيد من المعلومات  </span>
+                </a>
+                <a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
+                    <span> <i class="fa fa-file-invoice"></i>lamome.app</span>
+                </a>
+                <div id="side-language-nav">
+                    <a class="language-link-small active" href="#fr-content" title="Français">
+                        <img src="./img/france.svg" class="language-img" alt="TranslationFR">
+                    </a>
+                    <a class="language-link-small" href="#eng-content" title="English">
+                        <img src="./img/united-kingdom.svg" class="language-img" alt="TranslationEN">
+                    </a>
+                    <a class="language-link-small" href="#ar-content" title="عربية">
+                        <img src="./img/morocco.svg" class="language-img" alt="TranslationAR">
+                    </a>
+                </div>
             </div>
-        </div>
-        <div id="content" style="display: none" class="background show-after-load">
-            <header>
-                <img src="./img/lamome-small.svg" style="display: block" id="lamome-business-logo" alt="LA MOME Business LOGO">
-                <div id="side-nav-panel">
-                    <a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
-                        <span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-                        <span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-                        <span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
+            <div class="extensive-nav">
+                <a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
+                    <span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                    <span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
+                    <span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
+                </a>
+                <a href="#form" title="Consultation">
+                    <span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
+                    <span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
+                    <span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
+                </a>
+                <a href="./about.html" title="Services" class="add-language-suffix">
+                    <span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
+                    <span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
+                    <span class="ar-content"> الخدمات <i class="fab fa-buffer"></i> </span>
+                </a>
+                <a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
+                    <span> <i class="fa fa-file-invoice"></i> LAMOME.app</span>
+                </a>
+                <div id="submenu-content-languages" class="fade">
+                    <a class="language-link-small active" href="#fr-content" title="Français">
+                        <img src="./img/france.svg" class="language-img" alt="EXTTranslationFR">
                     </a>
-                    <a href="#form" title="Consultation">
-                        <span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
-                        <span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
-                        <span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
+                    <a class="language-link-small" href="#eng-content" title="English">
+                        <img src="./img/united-kingdom.svg" class="language-img" alt="EXTTranslationEN">
                     </a>
-                    <a href="./about.html" title="Services" class="add-language-suffix">
-                        <span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
-                        <span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
-                        <span class="ar-content"><i class="fab fa-buffer"></i> المزيد من المعلومات  </span>
+                    <a class="language-link-small" href="#ar-content" title="عربية">
+                        <img src="./img/morocco.svg" class="language-img" alt="EXTTranslationAR">
                     </a>
-                    <a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
-                        <span> <i class="fa fa-file-invoice"></i>lamome.app</span>
-                    </a>
-                    <div id="side-language-nav">
-                        <a class="language-link-small active" href="#fr-content" title="Français">
-                            <img src="./img/france.svg" class="language-img" alt="TranslationFR">
-                        </a>
-                        <a class="language-link-small" href="#eng-content" title="English">
-                            <img src="./img/united-kingdom.svg" class="language-img" alt="TranslationEN">
-                        </a>
-                        <a class="language-link-small" href="#ar-content" title="عربية">
-                            <img src="./img/morocco.svg" class="language-img" alt="TranslationAR">
-                        </a>
-                    </div>
                 </div>
-                <div class="extensive-nav">
-                    <a href="https://goo.gl/maps/i8dLcPkLAFuS98Vn6" title="Localisation">
-                        <span class="eng-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-                        <span class="fr-content"> <i class="fas fa-map-marked-alt"></i> Localisation </span>
-                        <span class="ar-content"> <i class="fas fa-map-marked-alt"></i> الموقع </span>
-                    </a>
-                    <a href="#form" title="Consultation">
-                        <span class="eng-content"> <i class="fas fa-id-card"></i> Contact </span>
-                        <span class="fr-content"> <i class="fas fa-id-card"></i> Contact </span>
-                        <span class="ar-content"> <i class="fas fa-id-card"></i> إستشارة </span>
-                    </a>
-                    <a href="./about.html" title="Services" class="add-language-suffix">
-                        <span class="fr-content"> <i class="fab fa-buffer"></i> Plus d'informations </span>
-                        <span class="eng-content"> <i class="fab fa-buffer"></i> More Information </span>
-                        <span class="ar-content"> الخدمات <i class="fab fa-buffer"></i> </span>
-                    </a>
-                    <a href="https://lamome.app/" title="Business Application" class="add-language-suffix">
-                        <span> <i class="fa fa-file-invoice"></i> LAMOME.app</span>
-                    </a>
-                    <div id="submenu-content-languages" class="fade">
-                        <a class="language-link-small active" href="#fr-content" title="Français">
-                            <img src="./img/france.svg" class="language-img" alt="EXTTranslationFR">
-                        </a>
-                        <a class="language-link-small" href="#eng-content" title="English">
-                            <img src="./img/united-kingdom.svg" class="language-img" alt="EXTTranslationEN">
-                        </a>
-                        <a class="language-link-small" href="#ar-content" title="عربية">
-                            <img src="./img/morocco.svg" class="language-img" alt="EXTTranslationAR">
-                        </a>
-                    </div>
+            </div>
+            <svg 
+                                                                          id="hamburger" 
+                                                                          xmlns="http://www.w3.org/2000/svg" 
+                                                                          viewBox="0 0 10 10" 
+                                                                          stroke="var(--primary-color)" 
+                                                                          stroke-width=".6" 
+                                                                          fill="rgba(0,0,0,0)" 
+                                                                          stroke-linecap="round">
+                <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+                <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+                </path>
+                <rect width="10" height="10" stroke="none">
+                <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                </rect>
+                <rect width="10" height="10" stroke="none">
+                <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                </rect>
+            </svg>
+        </header>
+        <main>
+            <section class="showcase glass">
+                <div class="slogan">
+                    <h1 class="fr-content-block">Précision dans les chiffres, clarté dans les affaires</h1>
+                    <h2 class="eng-content-block">Precision in numbers, clarity in business</h2>
+                    <h2 class="ar-content-block">الدقة في الأرقام، والوضوح في الأعمال</h2>
                 </div>
-                <svg 
-                                                                                       id="hamburger" 
-                                                                                       xmlns="http://www.w3.org/2000/svg" 
-                                                                                       viewBox="0 0 10 10" 
-                                                                                       stroke="var(--primary-color)" 
-                                                                                       stroke-width=".6" 
-                                                                                       fill="rgba(0,0,0,0)" 
-                                                                                       stroke-linecap="round">
-                    <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
-                    <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
-                    <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
-                    </path>
-                    <rect width="10" height="10" stroke="none">
-                    <animate dur="2s" id="reverse" attributeName="width" begin="click" />
-                    </rect>
-                    <rect width="10" height="10" stroke="none">
-                    <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
-                    <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
-                    </rect>
-                </svg>
-            </header>
-            <main>
-                <section class="showcase glass">
-                    <div class="slogan">
-                        <h1 class="fr-content-block">Précision dans les chiffres, clarté dans les affaires</h1>
-                        <h2 class="eng-content-block">Precision in numbers, clarity in business</h2>
-                        <h2 class="ar-content-block">الدقة في الأرقام، والوضوح في الأعمال</h2>
-                    </div>
-                    <div class="showcase-text glass" style="background-image: url('./img/showcase-image-1.webp');">
-                        <div class="showcase-text-main">
-                            <div class="showcase-icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="showcase-icon">
-                                    <path stroke-width="1" stroke="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <div class="fr-content-block">
-                                <h2>Nos valeurs</h2>
-                                <h3>Confidentialité </h3>
-                                <h3>Engagement</h3>
-                                <h3>Détermination</h3>
-                            </div>
-                            <div class="ar-content-block">
-                                <h2>قيمنا</h2>
-                                <h3>احترام الخصوصية</h3>
-                                <h3>الإلتزام</h3>
-                                <h3>الإصرار</h3>
-                            </div>
-                            <div class="eng-content-block">
-                                <h2>Our Values</h2>
-                                <h3>Respect of privacy</h3>
-                                <h3>Confidentiality</h3>
-                                <h3>Commitment</h3>
-                            </div>
+                <div class="showcase-text glass" style="background-image: url('./img/showcase-image-1.webp');">
+                    <div class="showcase-text-main">
+                        <div class="showcase-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="showcase-icon">
+                                <path stroke-width="1" stroke="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="currentColor"/>
+                            </svg>
                         </div>
-                        <div class="showcase-text-more glass">
-                            <div class="fr-content-block">Chez LA MOME Business, nous mettons vos besoins au cœur de nos priorités. Avec une confidentialité absolue, nous protégeons vos données sensibles dans un climat de confiance. Engagés et déterminés, nous vous accompagnons avec rigueur et ténacité pour relever chaque défi et atteindre vos objectifs.</div>
-                            <div class="ar-content-block">في LA MOME Business، نضع احتياجاتكم في صميم أولوياتنا. بفضل السرية التامة، نحمي بياناتكم الحساسة في جو من الثقة. ملتزمون ومصممون، نرافقكم بدقة وإصرار لتجاوز كل التحديات وتحقيق أهدافكم.</div>
-                            <div class="eng-content-block">At LA MOME Business, we place your needs at the heart of our priorities. With absolute confidentiality, we protect your sensitive data in a climate of trust. Committed and determined, we support you with rigor and tenacity to overcome every challenge and achieve your goals.</div>
-                        </div>
-                    </div>
-                    <div class="showcase-text" style="background-image: url('./img/showcase-image-2.webp');">
-                        <div class="showcase-text-main">
-                            <div class="showcase-icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="showcase-icon">
-                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                                    <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                                    <circle cx="12" cy="12" r="2" fill="currentColor"/>
-                                    <path d="M12 1v2M12 21v2M1 12h2M21 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                            </div>
-                            <div class="fr-content-block">
-                                <h2>Nos standards</h2>
-                                <h3>Excellence</h3>
-                                <h3>Efficacité</h3>
-                                <h3>Ponctualité</h3>
-                            </div>
-                            <div class="ar-content-block">
-                                <h2>معاييرنا</h2>
-                                <h3>التميز</h3>
-                                <h3>كفاءة</h3>
-                                <h3>دقة المواعيد</h3>
-                            </div>
-                            <div class="eng-content-block">
-                                <h2>Our standards </h2>
-                                <h3>Excellency</h3>
-                                <h3>Efficiency</h3>
-                                <h3>Punctuality</h3>
-                            </div>
-                        </div>
-                        <div class="showcase-text-more glass">
-                            <div class="fr-content-block">Chez LA MOME Business, nous nous engageons à offrir un service d’excellence, où chaque détail compte pour garantir des solutions impeccables. Grâce à notre efficacité, nous optimisons chaque processus pour vous faire gagner en temps et en performance. Enfin, la ponctualité est une valeur clé : nous respectons les délais avec rigueur, parce que votre temps est précieux.</div>
-                            <div class="ar-content-block">في LA MOME Business، نلتزم بتقديم خدمة تتميز بـ التميز، حيث نولي كل التفاصيل أهمية لضمان حلول مثالية. من خلال الكفاءة، نقوم بتحسين كل عملية لتوفير الوقت وتعزيز الأداء. وأخيرًا، الالتزام بالمواعيد هو قيمة أساسية: نحن نحترم المواعيد بدقة لأن وقتكم ثمين</div>
-                            <div class="eng-content-block">At LA MOME Business, we are committed to delivering a service of excellence, where every detail matters to ensure flawless solutions. Through our efficiency, we optimize every process to save you time and enhance performance. Finally, punctuality is a core value: we respect deadlines with precision because your time is valuable.</div>
-                        </div>
-                    </div>
-                    <div class="showcase-text glass" style="background-image: url('./img/showcase-image-3.webp');">
-                        <div class="showcase-text-main">
-                            <div class="showcase-icon-wrapper">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="showcase-icon">
-                                    <circle cx="12" cy="5" r="3" stroke="currentColor"></circle>
-                                    <line x1="12" y1="22" x2="12" y2="8" stroke="currentColor"></line>
-                                    <path d="M5 12H2a10 10 0 0 0 20 0h-3" stroke="currentColor" fill="none"></path>
-                                </svg>
-                            </div>
-                            <div class="fr-content-block">
-                                <h2>Vos attentes</h2>
-                                <h3>Disponibilité</h3>
-                                <h3>Conformité</h3>
-                                <h3>Transparance</h3>
-                            </div>
-                            <div class="ar-content-block">
-                                <h2>توقعاتك</h2>
-                                <h3>الشفافية</h3><h3>التقيد </h3><h3>الإستجابة</h3>
-                            </div>
-                            <div class="eng-content-block">
-                                <h2>Your aims</h2>
-                                <h3>Availability</h3><h3>Compliance</h3><h3>Transparency</h3>
-                            </div>
-                        </div>
-                        <div class="showcase-text-more glass">
-                            <div class="fr-content-block">Chez La MOME Business, nous vous proposons avant tout une disponibilité totale, pour répondre à vos besoins à chaque étape de votre parcours comptable, que ce soit pour des conseils urgents ou un suivi continu. Nous nous engageons également à garantir une conformité absolue avec les réglementations fiscales et comptables, tant en France qu’au Maroc, afin de vous assurer tranquillité d’esprit. Enfin, la transparence est essentielle pour nous : nous vous fournissons des rapports clairs et détaillés, avec une communication ouverte à chaque étape de notre collaboration.</div>
-                            <div class="eng-content-block">At La MOME Business, we offer you, first and foremost, total availability to meet your needs at every stage of your accounting journey, whether for urgent advice or continuous follow-up. We are also committed to ensuring absolute compliance with both Moroccan and French tax and accounting regulations to guarantee your peace of mind. Finally, transparency is key for us: we provide clear and detailed reports, with open communication at every step of our collaboration.</div>
-                            <div class="ar-content-block">في LA MOME Business، نقدم لكم أولاً توفرًا تامًا لتلبية احتياجاتكم في كل مرحلة من مراحل مساركم المحاسبي، سواء كان ذلك للحصول على نصائح عاجلة أو متابعة مستمرة. كما نلتزم بضمان الامتثال التام مع اللوائح الضريبية والمحاسبية في كل من فرنسا والمغرب لضمان راحتكم النفسية. وأخيرًا، فإن الشفافية أساسية بالنسبة لنا: نحن نقدم تقارير واضحة ومفصلة، مع اتصال مفتوح في كل مرحلة من مراحل تعاوننا</div>
-                        </div>
-                    </div>
-                    <div class="controls">
-                        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-                        <button class="next" onclick="plusSlides(1)">&#10095;</button>
-                    </div>
-                    <div class="dots">
-                        <span class="dot active" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                </section>
-                <section id="activities" class="activities">
-                    <div class="activities-header glass">
-                        <h2 class="fr-content">Services</h2>
-                        <h2 class="eng-content">Services</h2>
-                        <h2 class="ar-content">الخدمات</h2>
-                    </div>
-                    <div class="activities-content-notice">
-                        <span class="eng-content">*Place the cursor on the item to show more.</span>
-                        <span class="fr-content">*Placez le curseur sur l'élément pour en savoir plus.</span>
-                        <span class="ar-content">* ضع سهم المؤشر على العنصر لإظهار المزيد.</span>
-                    </div>
-                    <div class="activities-elements" id="activities-elements-first-row">
-                        <div class="activities-element glass ar-content left">
-                            <i class="fas fa-book fa-3x"></i><br>
-                            <h3>الحسابات</h3>
-                            <p>ندير حساباتكم بدقة لضمان الامتثال الضريبي والمالي على أكمل وجه</p>
-                        </div>
-                        <div class="activities-element glass fr-content left">
-                            <i class="fas fa-book fa-3x"></i><br>
-                            <h3>Comptabilité</h3>
-                            <p>Nous gérons vos comptes avec précision pour garantir une conformité fiscale et financière irréprochable.</p>
-                        </div>
-                        <div class="activities-element glass eng-content left">
-                            <i class="fas fa-book fa-3x"></i><br>
-                            <h3>Accounting</h3>
-                            <p>We manage your accounts with precision to ensure impeccable fiscal and financial compliance.</p>
-                        </div>
-                        <div class="activities-element glass ar-content center">
-                            <i class="fas fa-male fa-3x"></i><br>
-                            <h3>إدارة الموارد البشرية</h3>
-                            <p>نوفر لكم حلولًا مبسطة لإدارة عمليات التوظيف والرواتب والمتابعة الإدارية</p>
-                        </div>
-                        <div class="activities-element glass fr-content center">
-                            <i class="fas fa-male fa-3x"></i><br>
-                            <h3>Gestion des Ressources Humaines</h3>
-                            <p>Simplifiez vos processus RH avec notre expertise en recrutement, paie et suivi administratif.</p>
-                        </div>
-                        <div class="activities-element glass eng-content center">
-                            <i class="fas fa-male fa-3x"></i><br>
-                            <h3>Human Resources Management</h3>
-                            <p>Simplify your HR processes with our expertise in recruitment, payroll, and administrative follow-up.</p>
-                        </div>
-                        <div class="activities-element glass ar-content right">
-                            <i class="fas fa-plus-square fa-3x"></i><br>
-                            <h3>إنشاء شركة</h3>
-                            <p>ابدأوا أعمالكم بسهولة مع حلولنا الشاملة لتأسيس الشركات</p>
-                        </div>
-                        <div class="activities-element glass fr-content right">
-                            <i class="fas fa-plus-square fa-3x"></i><br>
-                            <h3>Création de société</h3>
-                            <p>Lancez votre entreprise facilement grâce à nos solutions complètes pour sa constitution.</p>
-                        </div>
-                        <div class="activities-element glass eng-content right">
-                            <i class="fas fa-plus-square fa-3x"></i><br>
-                            <h3>Company Setup</h3>
-                            <p>Start your business easily with our comprehensive solutions for company setup.</p>
-                        </div>
-                    </div>
-                    <div class="activities-elements" id="activities-elements-second-row">
-                        <div class="activities-element glass eng-content left">
-                            <i class="fas fa-exchange-alt fa-3x"></i>
-                            <h3>Changing articles of association</h3>
-                            <p>We assist you in modifying your company’s statutes quickly and efficiently.</p>
-                        </div>
-                        <div class="activities-element glass fr-content left">
-                            <i class="fas fa-exchange-alt fa-3x"></i>
-                            <h3>Changement des statuts</h3>
-                            <p>Nous vous accompagnons dans la modification des statuts de votre société, rapidement et efficacement.</p>
-                        </div>
-                        <div class="activities-element glass ar-content left">
-                            <i class="fas fa-exchange-alt fa-3x"></i>
-                            <h3>تغيير نظام أو نشاط الشركة</h3>
-                            <p>نقدم لكم المساعدة في تعديل النظام الأساسي لشركتكم بسرعة وكفاءة</p>
-                        </div>
-                        <div class="activities-element glass eng-content center">
-                            <i class="fas fa-comment-medical fa-3x"></i>
-                            <h3>Advice and assistance</h3>
-                            <p>Benefit from our expertise with personalized advice and tailored support.</p>
-                        </div>
-                        <div class="activities-element glass fr-content center">
-                            <i class="fas fa-comment-medical fa-3x"></i>
-                            <h3>Conseils et assistance</h3>
-                            <p>Bénéficiez de notre expertise pour des conseils personnalisés et un soutien sur-mesure.</p>
-                        </div>
-                        <div class="activities-element glass ar-content center">
-                            <i class="fas fa-comment-medical fa-3x"></i>
-                            <h3>استشارة و متابعة</h3>
-                            <p>استفيدوا من خبراتنا للحصول على نصائح مخصصة ودعم يلبي احتياجاتكم</p>
-                        </div>
-                        <div class="activities-element glass eng-content right">
-                            <i class="fas fa-power-off fa-3x"></i>
-                            <h3>Dissolution and Liquidation</h3>
-                            <p>Manage the closure of your business smoothly with our assistance.</p>
-                        </div>
-                        <div class="activities-element glass fr-content right">
-                            <i class="fas fa-power-off fa-3x"></i>
-                            <h3>Dissolution et Liquidation</h3>
-                            <p>Gérez la fin d’activité de votre société en toute sérénité avec notre accompagnement.</p>
-                        </div>
-                        <div class="activities-element glass ar-content right">
-                            <i class="fas fa-power-off fa-3x"></i>
-                            <h3> فسخ و تصفية الشركة</h3>
-                            <p>ندير عملية إنهاء نشاط شركتكم بسلاسة مع توجيهنا ودعمنا الكامل</p>
-                        </div>
-                    </div>
-                    <div class="activities-elements" id="activities-elements-third-row">
-                        <div class="activities-element glass eng-content left">
-                            <i class="fas fa-globe fa-3x"></i>
-                            <h3>Website Development</h3>
-                            <p>Build your online presence with modern and customized websites that meet your needs.</p>
-                        </div>
-                        <div class="activities-element glass fr-content left">
-                            <i class="fas fa-globe fa-3x"></i>
-                            <h3>Création de site web</h3>
-                            <p>Développez votre présence en ligne grâce à des sites web modernes et adaptés à vos besoins.</p>
-                        </div>
-                        <div class="activities-element glass ar-content left">
-                            <i class="fas fa-globe fa-3x"></i>
-                            <h3>إنشاء موقع على الويب</h3>
-                            <p>عززوا وجودكم الرقمي مع مواقع ويب حديثة ومصممة خصيصًا لتلبية احتياجاتكم</p>
-                        </div>
-                        <div class="activities-element glass eng-content center">
-                            <i class="fas fa-skiing-nordic fa-3x"></i>
-                            <h3>Advice and support</h3>
-                            <p>Receive strategic support for the development and management of your business.</p>
-                        </div>
-                        <div class="activities-element glass fr-content center">
-                            <i class="fas fa-skiing-nordic fa-3x"></i>
-                            <h3>Conseil et accompagnement</h3>
-                            <p>Obtenez un accompagnement stratégique pour le développement et la gestion de votre entreprise.</p>
-                        </div>
-                        <div class="activities-element glass ar-content center">
-                            <i class="fas fa-skiing-nordic fa-3x"></i>
-                            <h3>استشارة و مرافقة حسابية و قانونية</h3>
-                            <p>احصلوا على دعم استراتيجي لتطوير وإدارة أعمالكم</p>
-                        </div>
-                        <div class="activities-element glass eng-content right">
-                            <i class="fab fa-uncharted fa-3x"></i>
-                            <h3>Software Assistance</h3>
-                            <p>We offer you dedicated assistance for the use and integration of the LAMOME.APP application, designed for the creation and efficient management of your inventories and invoices.</p>
-                        </div>
-                        <div class="activities-element glass fr-content right">
-                            <i class="fab fa-uncharted fa-3x"></i>
-                            <h3>Assistance Software</h3>
-                            <p>Nous vous offrons une assistance dédiée pour l’utilisation et l'integration de l'application LAMOME.APP, conçu pour la création et la gestion efficace de vos inventaires et factures.</p>
-                        </div>
-                        <div class="activities-element glass ar-content right">
-                            <i class="fab fa-uncharted fa-3x"></i>
-                            <h3>الدعم البرمجي</h3>
-                            <p>نحن نقدم لك مساعدة مخصصة لاستخدام تطبيق LAMOME.APP ودمجه، المصمم لإنشاء قوائم الجرد والفواتير وإدارتها بكفاءة.</p>
-                        </div>
-                    </div>
-                    <div class="activities-call-to-action glass">
-                        <a href="./about.html" class="add-language-suffix">
-                            <span class="ar-content">للمزيد من المعلومات </span>
-                            <span class="eng-content">More Information</span>
-                            <span class="fr-content">Plus d'informations</span>
-                        </a>
-                    </div>
-                </section>
-                <section id="actualities">
-                    <div class="actualities-header glass">
-                        <h2 class="fr-content-block">Actualités</h2>
-                        <h2 class="eng-content-block">News</h2>
-                        <h2 class="ar-content-block">آخر الأنباء</h2>
-                    </div>
-                    <div class="actuality glass">
                         <div class="fr-content-block">
-                            <h3>Nous avons déménagé !</h3>
-                            <span class="timestamp">6 juin 2026 à 15h30</span>
-                            <p>Afin de mieux servir nos clients, LAMOME Business a déménagé dans de nouveaux bureaux. Veuillez noter que notre adresse ainsi que notre numéro de téléphone fixe ont changé. 
-                            Notre nouvelle adresse est désormais 2e étage 17, ARSAT BATA 36, Boulevard du Prince Moulay Abdellah, Marrakesh 40000, Maroc
-                            et notre nouveau numéro est le +212 524 43 71 61.
-                            Nos adresses e-mail et notre engagement envers votre réussite financière restent inchangés.</p>
-                            <a href="https://www.linkedin.com/posts/nous-avons-le-plaisir-dinformer-nos-partenaires-share-7469004092766380034-2L0I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" aria-label="LinkedId Post" class="add-language-suffix">Plus d'informations</a>
-                        </div>
-
-                        <div class="eng-content-block">
-                            <h3>We Have Moved! Update Your Records</h3>
-                            <span class="timestamp">6 June 2026 at 15:30</span>
-                            <p>To better serve our clients, LAMOME Business has relocated to a new office space.
-                            Please note that both our physical address and our landline number have changed.
-                            Effective immediately, our new address is 2nd floor 17, ARSAT BATA 36, Boulevard Prince Moulay Abdellah, Marrakesh 40000, Morocco and our new phone number is +212 524 43 71 61.
-                            Our email addresses and commitment to your financial success remain exactly the same.</p>
-                            <a href="https://www.linkedin.com/posts/nous-avons-le-plaisir-dinformer-nos-partenaires-share-7469004092766380034-2L0I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" aria-label="LinkedId Post" class="add-language-suffix">More Information</a>
-                        </div>
-
-                        <div class="ar-content-block" dir="rtl">
-                            <h3>لقد انتقلنا إلى مقرنا الجديد! يرجى تحديث بياناتنا لديكم</h3>
-                            <span class="timestamp">6 يونيو 2026 في الساعة 15:30</span>
-                            <p>حرصاً منا على تقديم أفضل LAMOME Business قد انتقلت إلى مقر جديد.
-                            يرجى العلم بأن عنواننارقم الهاتف الأرضي قد تغيرا؛ عنواننا الجديد الحالي هو الطابق الثاني، رقم 17، عرصة باطا 36، شارع الأمير مولاي عبد الله، مراكش 40000، المغرب ورقم الهاتف الجديد هو 212 524 43 71 6
-                            نود أن نؤكد لكم أن بريدنا الإلكتروني والتزامنا الراسخ بنجاحكم المالي لم يتغيرا.</p>
-                            <a href="https://www.linkedin.com/posts/nous-avons-le-plaisir-dinformer-nos-partenaires-share-7469004092766380034-2L0I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" aria-label="LinkedId Post" class="add-language-suffix">للمزيد من المعلومات</a>
-                            <a href="tel:+212524437161">اتصل بنا</a>
-                        </div>
-                    </div>
-                    <div class="actuality glass">
-                        <div class="fr-content-block">
-                            <h3>LAMOME.APP Deployment</h3>
-                            <span class="timestamp">1er mai 2025 à 12h30</span>
-                            <p>La famille LA MOME compte un nouveau membre, qui aidera nos clients à assurer un processus de facturation rigoureux et fiable. Pour les commerciaux, le suivi de l'inventaire et des produits accompagne la facturation afin d'assurer une comptabilité analytique et bénéficiaire précise. Nous sommes le premier cabinet comptable à utiliser LAMOME.app pour réduire le coût de la comptabilité et aider nos clients à assurer le plus haut niveau de conformité fiscale en ce qui concerne la facturation et à réduire les pertes par le processus de suivi de leurs inventaires.</p>
-                            <a href="https://lamome.app"aria-label="LAMOME.APP Business Application"  class="add-language-suffix">Plus d'informations</a>
-                        </div>
-                        <div class="eng-content-block">
-                            <h3>Déploiement d'application web LAMOME.app</h3>
-                            <span class="timestamp">1 May 2025 at 12:30</span>
-                            <p>LA MOME family has a new member, that will help our clients ensure a thorough and rigorous facturation process. As for for the commercials the follow-up of the inventory and the products is coupled with the facturation to ensure precise cost and profit accounting. We are the first accounting firm using LAMOME.app to reduce the cost of accounting and help our clients by ensuring the highest level of fiscal-compliance with regards to invoicing and reduce the losses by process tracking of their inventories.</p>
-                            <a href="https://lamome.app" aria-label="LAMOME.APP Business Application" class="add-language-suffix">More Information</a>
+                            <h2>Nos valeurs</h2>
+                            <h3>Confidentialité </h3>
+                            <h3>Engagement</h3>
+                            <h3>Détermination</h3>
                         </div>
                         <div class="ar-content-block">
-                            <h3>طرح تطبيق الويب LAMOME.app</h3>
-                            <span class="timestamp">1 مايو 2025 في الساعة 12:30</span>
-                            <p>تضم عائلة LA MOME عضوًا جديدًا سيساعد عملاءنا على ضمان عملية تحاليل دقيقة ومنتظمة. أما بالنسبة للتجاريين، فإن متابعة المخزون والمنتجات تقترن بعملية التحصيل لضمان دقة محاسبة التكاليف والأرباح. نحن شركة خدمات المحاسبة الأولى التي تستخدم تطبيق LAMOME.app لتقليل تكلفة المحاسبة ومساعدة عملائنا من خلال ضمان أعلى مستوى من الامتثال المالي فيما يتعلق بالفواتير وتقليل الخسارة من خلال عملية تتبع المخزون.</p>
-                            <a href="https://lamome.app" aria-label="LAMOME.APP Business Application" class="add-language-suffix">للمزيد من المعلومات</a>
-                        </div>
-                    </div>
-                    <div class="actuality glass">
-                        <div class="fr-content-block">
-                            <h3>Partenariat Franco-Marocain</h3>
-                            <span class="timestamp">1er janvier 2025 à 12h00</span>
-                            <p>LA MOME BUSINESS a le plaisir d'annoncer son partenariat stratégique avec AXELIUM 52-55, spécialisé dans les activités de soutien aux entreprises en France.</br> Grâce à cette collaboration, nous offrons aux entreprises marocaines et françaises un accompagnement comptable, fiscal et de gestion, expert et coordonné des deux côtés de la Méditerranée.</br>Ce partenariat renforce notre mission :</p>
-                            <ul>
-                                <li>Vous accompagner avec rigueur,</li>
-                                <li>Vous proposer des solutions adaptées aux deux contextes juridiques,</li>
-                                <li>Et vous offrir une expertise binationale fiable et sur mesure.</li>
-                            </ul>
-                            <a aria-label="linkedID-Post" href="https://www.linkedin.com/posts/la-mome-business_partenariatfrancomarocain-expertisebinationale-activity-7330922863765377025-G3q0?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" class="add-language-suffix"> <span style="display: inline-block;">Plus d'informations</span> </a>
+                            <h2>قيمنا</h2>
+                            <h3>احترام الخصوصية</h3>
+                            <h3>الإلتزام</h3>
+                            <h3>الإصرار</h3>
                         </div>
                         <div class="eng-content-block">
-                            <h3>Franco-Moroccan partnership</h3>
-                            <span class="timestamp">1 January 2025 at 12:00</span>
-                            <p>LA MOME BUSINESS is pleased to announce its strategic partnership with AXELIUM 52-55, which specialises in business support activities in France.</br> Thanks to this collaboration, we are able to offer Moroccan and French companies expert and coordinated accounting, tax and management support on both sides of the Mediterranean.</br>This partnership strengthens our mission:</p>
-                            <ul>
-                                <li>Accompanying you with rigour,</li>
-                                <li>To offer you solutions tailored to both legal contexts,</li>
-                                <li>And offer you reliable, tailor-made bi-national expertise.</li>
-                            </ul>
-                            <a aria-label="linkedID-Post" href="https://www.linkedin.com/posts/la-mome-business_partenariatfrancomarocain-expertisebinationale-activity-7330922863765377025-G3q0?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" class="add-language-suffix"> <span style="display: inline-block;">More Information</span> </a>
+                            <h2>Our Values</h2>
+                            <h3>Respect of privacy</h3>
+                            <h3>Confidentiality</h3>
+                            <h3>Commitment</h3>
+                        </div>
+                    </div>
+                    <div class="showcase-text-more glass">
+                        <div class="fr-content-block">Chez LA MOME Business, nous mettons vos besoins au cœur de nos priorités. Avec une confidentialité absolue, nous protégeons vos données sensibles dans un climat de confiance. Engagés et déterminés, nous vous accompagnons avec rigueur et ténacité pour relever chaque défi et atteindre vos objectifs.</div>
+                        <div class="ar-content-block">في LA MOME Business، نضع احتياجاتكم في صميم أولوياتنا. بفضل السرية التامة، نحمي بياناتكم الحساسة في جو من الثقة. ملتزمون ومصممون، نرافقكم بدقة وإصرار لتجاوز كل التحديات وتحقيق أهدافكم.</div>
+                        <div class="eng-content-block">At LA MOME Business, we place your needs at the heart of our priorities. With absolute confidentiality, we protect your sensitive data in a climate of trust. Committed and determined, we support you with rigor and tenacity to overcome every challenge and achieve your goals.</div>
+                    </div>
+                </div>
+                <div class="showcase-text" style="background-image: url('./img/showcase-image-2.webp');">
+                    <div class="showcase-text-main">
+                        <div class="showcase-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="showcase-icon">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                                <path d="M12 1v2M12 21v2M1 12h2M21 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="fr-content-block">
+                            <h2>Nos standards</h2>
+                            <h3>Excellence</h3>
+                            <h3>Efficacité</h3>
+                            <h3>Ponctualité</h3>
                         </div>
                         <div class="ar-content-block">
-                            <h3>شراكة فرنسية مغربية</h3>
-                            <span class="timestamp">1 يناير 2025 الساعة 12:00</span>
-                            <p>يسرّ شركة LA MOME BUSINESS أن تعلن عن شراكتها الاستراتيجية مع شركة AXELIUM 52-55 المتخصصة في أنشطة دعم الأعمال في فرنسا.</br> بفضل هذا التعاون، يمكننا أن نقدم للشركات المغربية والفرنسية دعماً محاسبياً وضريبياً وإدارياً متخصصاً ومنسقاً على جانبي البحر الأبيض المتوسط.</br> هذه الشراكة تعزز مهمتنا:</p>
-                            <ul>
-                                <li>مرافقتك بحزم</li>
-                                <li>نقدم لك حلولًا مصممة خصيصًا لكلا السياقين القانونيين</li>
-                                <li>ونقدم لك خبرات موثوقة ومصممة خصيصاً لك على أساس ثنائي.</li>
-                            </ul>
-                            <a aria-label="linkedID-Post" href="https://www.linkedin.com/posts/la-mome-business_partenariatfrancomarocain-expertisebinationale-activity-7330922863765377025-G3q0?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" class="add-language-suffix"> <span style="display: inline-block;">للمزيد من المعلومات </span> </a>
+                            <h2>معاييرنا</h2>
+                            <h3>التميز</h3>
+                            <h3>كفاءة</h3>
+                            <h3>دقة المواعيد</h3>
+                        </div>
+                        <div class="eng-content-block">
+                            <h2>Our standards </h2>
+                            <h3>Excellency</h3>
+                            <h3>Efficiency</h3>
+                            <h3>Punctuality</h3>
                         </div>
                     </div>
-                </section>
-                <section id="collaborators">
-                    <div class="collaborators-header glass">
-                        <h2 class="fr-content">Collaborateurs</h2>
-                        <h2 class="eng-content">Collaborateurs</h2>
-                        <h2 class="ar-content">إفادات</h2>
-                    </div>
-                    <div class="collaborator glass">
-                        <div class="presentation">
-                            <h3>Mohamed Ghazal</h3>
-                            <img src="./img/mohamed_ghazal.webp" style="width: 150px;" alt="Mohamed Ghazal">
-                            <h4>TU Kaiserslautern</h4>
-                            <h5 class="fr-content">Software engineer</h5>
-                            <h5 class="eng-content">Software engineer</h5>
-                            <h5 class="ar-content">مهندس برمجيات</h5><br>
-                        </div>
-                        <div class="presentation-text glass">
-                            <p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinity with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circumstances.</p>
-                        </div>		
-                    </div>
-                    <div class="collaborator glass">
-                        <div class="presentation">
-                            <h3>Philippe Brunet</h3>
-                            <img src="./img/p_brunet.webp" style="width: 150px;" alt="Philippe Brunet">
-                            <h4>Filovent</h4>
-                            <h5 class="fr-content">Gérant</h5>
-                            <h5 class="eng-content">Managing Director</h5>
-                            <h5 class="ar-content">المدير العام</h5><br>
-                        </div>
-                        <div class="presentation-text glass">
-                            <p>Je collabore avec Latifa depuis 2007 et j’ai toujours été satisfait de son travail. 
-                            Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
-                        </div>		
-                    </div>
-                    <div class="collaborator glass">
-                        <div class="presentation">
-                            <h3>Zakaria Talib</h3>
-                            <img src="./img/ztalibe.webp" style="width: 150px;" alt="Zakaria Talib">
-                            <h4>webcinq</h4>
-                            <h5 class="fr-content">Web developer</h5>
-                            <h5 class="eng-content">Développeur web</h5>
-                            <h5 class="ar-content">مطور ويب</h5><br>
-                        </div>
-                        <div class="presentation-text glass">
-                            <p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
-                        </div>		
-                    </div>
-                    <div class="controls">
-                        <button class="prev" onclick="plusSlidesCollaborators(-1)">&#10094;</button>
-                        <button class="next" onclick="plusSlidesCollaborators(1)">&#10095;</button>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <div class="consultation" id="form">
-                    <h2 class="fr-content">Contact</h2>
-                    <h2 class="eng-content">Contact</h2>
-                    <h2 class="ar-content" dir="rtl">للتواصل</h2>
-                    <div class="infos eng-content">
-                        We are available during the following business hours:
-                        <ul>
-                            <li> <b>Monday - Friday</b> </li>
-                            <li> 09:00 - 13:00 | 14:00 - 19:00 </li>
-                            <li> <b>Saturday</b> </li>
-                            <li> 09:00 - 13:00 </li>
-                        </ul>
-                        <a href="tel:+212662401636">Mobile / Whatsapp</a>
-                        <a href="tel:+212524437161">Landline</a>
-                    </div>
-                    <div class="infos fr-content">
-                        Nous sommes disponibles pendant les heures d'ouverture suivantes :
-                        <ul>
-                            <li> <b>Lundi - Vendredi</b> </li>
-                            <li> 09:00 - 13:00 | 14:00 - 19:00 </li>
-                            <li> <b>Samedi</b> </li>
-                            <li> 09:00 - 13:00 </li>
-                        </ul>
-                        <a href="tel:+212662401636">Mobile / Whatsapp</a>
-                        <a href="tel:+212524437161">Fixe</a>
-                    </div>
-                    <div class="infos ar-content" dir="rtl">
-                        نحن متواجدون خلال ساعات العمل التالية:
-                        <ul>
-                            <li> <b>من الإثنين إلى الجمعة</b> </li>
-                            <li> 09:00 - 13:00 | 14:00 - 19:00 </li>
-                            <li> <b>السبت</b> </li>
-                            <li> 09:00 - 13:00 </li>
-                        </ul>
-                        <a href="tel:+212662401636">الاتصال بالمحمول / واتساب</a>
-                        <a href="tel:+212524437161">الاتصال بالهاتف الثابت</a>
-                    </div>
-                    <div class="address fr-content">
-                        <strong>2e étage 17, ARSAT BATA 36, Boulevard du Prince Moulay Abdellah, Marrakesh 40000, Maroc</strong>
-                    </div>
-                    <div class="address eng-content">
-                        <strong>2nd floor 17, ARSAT BATA 36, Boulevard Prince Moulay Abdellah, Marrakesh 40000, Morocco</strong>
-                    </div>
-                    <div class="address ar-content" dir="rtl">
-                        <strong>الطابق الثاني، رقم 17، عرصة باطا 36، شارع الأمير مولاي عبد الله، مراكش 40000، المغرب</strong>
+                    <div class="showcase-text-more glass">
+                        <div class="fr-content-block">Chez LA MOME Business, nous nous engageons à offrir un service d’excellence, où chaque détail compte pour garantir des solutions impeccables. Grâce à notre efficacité, nous optimisons chaque processus pour vous faire gagner en temps et en performance. Enfin, la ponctualité est une valeur clé : nous respectons les délais avec rigueur, parce que votre temps est précieux.</div>
+                        <div class="ar-content-block">في LA MOME Business، نلتزم بتقديم خدمة تتميز بـ التميز، حيث نولي كل التفاصيل أهمية لضمان حلول مثالية. من خلال الكفاءة، نقوم بتحسين كل عملية لتوفير الوقت وتعزيز الأداء. وأخيرًا، الالتزام بالمواعيد هو قيمة أساسية: نحن نحترم المواعيد بدقة لأن وقتكم ثمين</div>
+                        <div class="eng-content-block">At LA MOME Business, we are committed to delivering a service of excellence, where every detail matters to ensure flawless solutions. Through our efficiency, we optimize every process to save you time and enhance performance. Finally, punctuality is a core value: we respect deadlines with precision because your time is valuable.</div>
                     </div>
                 </div>
-                <div class="form">
-                    <h2 class="fr-content">Formulaire de contact</h2>
-                    <h2 class="eng-content">Contact Form</h2>
-                    <h2 class="ar-content">استمارة الاتصال</h2>
-                    <form class="contact" name="contact" method="POST" netlify-honeypot="bot-field" netlify data-netlify="true">
-                        <input name="bot-field" style="display:none"/>
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="tel" name="tel" placeholder="Tel" required>
-                        <input type="email" name="email" placeholder="E-Mail" required>
-                        <textarea name="message" id="message" placeholder="Message" required></textarea>
-                        <button type="submit" class="btn-link">
-                            <span class="eng-content">Submit</span>
-                            <span class="fr-content">Envoyer</span>
-                            <span class="ar-content">إرسال</span>
-                        </button>
-                    </form>
-                </div>
-                <div class="copyright">
-                    <div class="f-social" style="text-align: center">
-                        <a aria-label="Email" href="mailto:infos@lamome.business" class="footer-social"><i class="far fa-envelope"></i></a>
-                        <a aria-label="LinkedIn" href="https://www.linkedin.com/company/la-mome-business/" class="footer-social"><i class="fab fa-linkedin"></i></a>
-                        <a aria-label="Facebook" href="https://web.facebook.com/lamomebusiness" class="footer-social"><i class="fab fa-facebook"></i></a>
+                <div class="showcase-text glass" style="background-image: url('./img/showcase-image-3.webp');">
+                    <div class="showcase-text-main">
+                        <div class="showcase-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="showcase-icon">
+                                <circle cx="12" cy="5" r="3" stroke="currentColor"></circle>
+                                <line x1="12" y1="22" x2="12" y2="8" stroke="currentColor"></line>
+                                <path d="M5 12H2a10 10 0 0 0 20 0h-3" stroke="currentColor" fill="none"></path>
+                            </svg>
+                        </div>
+                        <div class="fr-content-block">
+                            <h2>Vos attentes</h2>
+                            <h3>Disponibilité</h3>
+                            <h3>Conformité</h3>
+                            <h3>Transparance</h3>
+                        </div>
+                        <div class="ar-content-block">
+                            <h2>توقعاتك</h2>
+                            <h3>الشفافية</h3><h3>التقيد </h3><h3>الإستجابة</h3>
+                        </div>
+                        <div class="eng-content-block">
+                            <h2>Your aims</h2>
+                            <h3>Availability</h3><h3>Compliance</h3><h3>Transparency</h3>
+                        </div>
                     </div>
-                    LA MOME Business&copy; 
-                    <a href="./privacyPolicy.html" class="privacyPolicy fr-content">Politique de Confidentialité</a>
-                    <a href="./privacyPolicy.html" class="privacyPolicy eng-content">Privacy Policy</a>
-                    <a href="./privacyPolicy.html" class="privacyPolicy ar-content">سياسة الحفاظ على الخصوصية</a>
-                    , 2026
+                    <div class="showcase-text-more glass">
+                        <div class="fr-content-block">Chez La MOME Business, nous vous proposons avant tout une disponibilité totale, pour répondre à vos besoins à chaque étape de votre parcours comptable, que ce soit pour des conseils urgents ou un suivi continu. Nous nous engageons également à garantir une conformité absolue avec les réglementations fiscales et comptables, tant en France qu’au Maroc, afin de vous assurer tranquillité d’esprit. Enfin, la transparence est essentielle pour nous : nous vous fournissons des rapports clairs et détaillés, avec une communication ouverte à chaque étape de notre collaboration.</div>
+                        <div class="eng-content-block">At La MOME Business, we offer you, first and foremost, total availability to meet your needs at every stage of your accounting journey, whether for urgent advice or continuous follow-up. We are also committed to ensuring absolute compliance with both Moroccan and French tax and accounting regulations to guarantee your peace of mind. Finally, transparency is key for us: we provide clear and detailed reports, with open communication at every step of our collaboration.</div>
+                        <div class="ar-content-block">في LA MOME Business، نقدم لكم أولاً توفرًا تامًا لتلبية احتياجاتكم في كل مرحلة من مراحل مساركم المحاسبي، سواء كان ذلك للحصول على نصائح عاجلة أو متابعة مستمرة. كما نلتزم بضمان الامتثال التام مع اللوائح الضريبية والمحاسبية في كل من فرنسا والمغرب لضمان راحتكم النفسية. وأخيرًا، فإن الشفافية أساسية بالنسبة لنا: نحن نقدم تقارير واضحة ومفصلة، مع اتصال مفتوح في كل مرحلة من مراحل تعاوننا</div>
+                    </div>
                 </div>
-            </footer>
-        </div>
+                <div class="controls">
+                    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                </div>
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+            <section id="activities" class="activities">
+                <div class="activities-header glass">
+                    <h2 class="fr-content">Services</h2>
+                    <h2 class="eng-content">Services</h2>
+                    <h2 class="ar-content">الخدمات</h2>
+                </div>
+                <div class="activities-content-notice">
+                    <span class="eng-content">*Place the cursor on the item to show more.</span>
+                    <span class="fr-content">*Placez le curseur sur l'élément pour en savoir plus.</span>
+                    <span class="ar-content">* ضع سهم المؤشر على العنصر لإظهار المزيد.</span>
+                </div>
+                <div class="activities-elements" id="activities-elements-first-row">
+                    <div class="activities-element glass ar-content left">
+                        <i class="fas fa-book fa-3x"></i><br>
+                        <h3>الحسابات</h3>
+                        <p>ندير حساباتكم بدقة لضمان الامتثال الضريبي والمالي على أكمل وجه</p>
+                    </div>
+                    <div class="activities-element glass fr-content left">
+                        <i class="fas fa-book fa-3x"></i><br>
+                        <h3>Comptabilité</h3>
+                        <p>Nous gérons vos comptes avec précision pour garantir une conformité fiscale et financière irréprochable.</p>
+                    </div>
+                    <div class="activities-element glass eng-content left">
+                        <i class="fas fa-book fa-3x"></i><br>
+                        <h3>Accounting</h3>
+                        <p>We manage your accounts with precision to ensure impeccable fiscal and financial compliance.</p>
+                    </div>
+                    <div class="activities-element glass ar-content center">
+                        <i class="fas fa-male fa-3x"></i><br>
+                        <h3>إدارة الموارد البشرية</h3>
+                        <p>نوفر لكم حلولًا مبسطة لإدارة عمليات التوظيف والرواتب والمتابعة الإدارية</p>
+                    </div>
+                    <div class="activities-element glass fr-content center">
+                        <i class="fas fa-male fa-3x"></i><br>
+                        <h3>Gestion des Ressources Humaines</h3>
+                        <p>Simplifiez vos processus RH avec notre expertise en recrutement, paie et suivi administratif.</p>
+                    </div>
+                    <div class="activities-element glass eng-content center">
+                        <i class="fas fa-male fa-3x"></i><br>
+                        <h3>Human Resources Management</h3>
+                        <p>Simplify your HR processes with our expertise in recruitment, payroll, and administrative follow-up.</p>
+                    </div>
+                    <div class="activities-element glass ar-content right">
+                        <i class="fas fa-plus-square fa-3x"></i><br>
+                        <h3>إنشاء شركة</h3>
+                        <p>ابدأوا أعمالكم بسهولة مع حلولنا الشاملة لتأسيس الشركات</p>
+                    </div>
+                    <div class="activities-element glass fr-content right">
+                        <i class="fas fa-plus-square fa-3x"></i><br>
+                        <h3>Création de société</h3>
+                        <p>Lancez votre entreprise facilement grâce à nos solutions complètes pour sa constitution.</p>
+                    </div>
+                    <div class="activities-element glass eng-content right">
+                        <i class="fas fa-plus-square fa-3x"></i><br>
+                        <h3>Company Setup</h3>
+                        <p>Start your business easily with our comprehensive solutions for company setup.</p>
+                    </div>
+                </div>
+                <div class="activities-elements" id="activities-elements-second-row">
+                    <div class="activities-element glass eng-content left">
+                        <i class="fas fa-exchange-alt fa-3x"></i>
+                        <h3>Changing articles of association</h3>
+                        <p>We assist you in modifying your company’s statutes quickly and efficiently.</p>
+                    </div>
+                    <div class="activities-element glass fr-content left">
+                        <i class="fas fa-exchange-alt fa-3x"></i>
+                        <h3>Changement des statuts</h3>
+                        <p>Nous vous accompagnons dans la modification des statuts de votre société, rapidement et efficacement.</p>
+                    </div>
+                    <div class="activities-element glass ar-content left">
+                        <i class="fas fa-exchange-alt fa-3x"></i>
+                        <h3>تغيير نظام أو نشاط الشركة</h3>
+                        <p>نقدم لكم المساعدة في تعديل النظام الأساسي لشركتكم بسرعة وكفاءة</p>
+                    </div>
+                    <div class="activities-element glass eng-content center">
+                        <i class="fas fa-comment-medical fa-3x"></i>
+                        <h3>Advice and assistance</h3>
+                        <p>Benefit from our expertise with personalized advice and tailored support.</p>
+                    </div>
+                    <div class="activities-element glass fr-content center">
+                        <i class="fas fa-comment-medical fa-3x"></i>
+                        <h3>Conseils et assistance</h3>
+                        <p>Bénéficiez de notre expertise pour des conseils personnalisés et un soutien sur-mesure.</p>
+                    </div>
+                    <div class="activities-element glass ar-content center">
+                        <i class="fas fa-comment-medical fa-3x"></i>
+                        <h3>استشارة و متابعة</h3>
+                        <p>استفيدوا من خبراتنا للحصول على نصائح مخصصة ودعم يلبي احتياجاتكم</p>
+                    </div>
+                    <div class="activities-element glass eng-content right">
+                        <i class="fas fa-power-off fa-3x"></i>
+                        <h3>Dissolution and Liquidation</h3>
+                        <p>Manage the closure of your business smoothly with our assistance.</p>
+                    </div>
+                    <div class="activities-element glass fr-content right">
+                        <i class="fas fa-power-off fa-3x"></i>
+                        <h3>Dissolution et Liquidation</h3>
+                        <p>Gérez la fin d’activité de votre société en toute sérénité avec notre accompagnement.</p>
+                    </div>
+                    <div class="activities-element glass ar-content right">
+                        <i class="fas fa-power-off fa-3x"></i>
+                        <h3> فسخ و تصفية الشركة</h3>
+                        <p>ندير عملية إنهاء نشاط شركتكم بسلاسة مع توجيهنا ودعمنا الكامل</p>
+                    </div>
+                </div>
+                <div class="activities-elements" id="activities-elements-third-row">
+                    <div class="activities-element glass eng-content left">
+                        <i class="fas fa-globe fa-3x"></i>
+                        <h3>Website Development</h3>
+                        <p>Build your online presence with modern and customized websites that meet your needs.</p>
+                    </div>
+                    <div class="activities-element glass fr-content left">
+                        <i class="fas fa-globe fa-3x"></i>
+                        <h3>Création de site web</h3>
+                        <p>Développez votre présence en ligne grâce à des sites web modernes et adaptés à vos besoins.</p>
+                    </div>
+                    <div class="activities-element glass ar-content left">
+                        <i class="fas fa-globe fa-3x"></i>
+                        <h3>إنشاء موقع على الويب</h3>
+                        <p>عززوا وجودكم الرقمي مع مواقع ويب حديثة ومصممة خصيصًا لتلبية احتياجاتكم</p>
+                    </div>
+                    <div class="activities-element glass eng-content center">
+                        <i class="fas fa-skiing-nordic fa-3x"></i>
+                        <h3>Advice and support</h3>
+                        <p>Receive strategic support for the development and management of your business.</p>
+                    </div>
+                    <div class="activities-element glass fr-content center">
+                        <i class="fas fa-skiing-nordic fa-3x"></i>
+                        <h3>Conseil et accompagnement</h3>
+                        <p>Obtenez un accompagnement stratégique pour le développement et la gestion de votre entreprise.</p>
+                    </div>
+                    <div class="activities-element glass ar-content center">
+                        <i class="fas fa-skiing-nordic fa-3x"></i>
+                        <h3>استشارة و مرافقة حسابية و قانونية</h3>
+                        <p>احصلوا على دعم استراتيجي لتطوير وإدارة أعمالكم</p>
+                    </div>
+                    <div class="activities-element glass eng-content right">
+                        <i class="fab fa-uncharted fa-3x"></i>
+                        <h3>Software Assistance</h3>
+                        <p>We offer you dedicated assistance for the use and integration of the LAMOME.APP application, designed for the creation and efficient management of your inventories and invoices.</p>
+                    </div>
+                    <div class="activities-element glass fr-content right">
+                        <i class="fab fa-uncharted fa-3x"></i>
+                        <h3>Assistance Software</h3>
+                        <p>Nous vous offrons une assistance dédiée pour l’utilisation et l'integration de l'application LAMOME.APP, conçu pour la création et la gestion efficace de vos inventaires et factures.</p>
+                    </div>
+                    <div class="activities-element glass ar-content right">
+                        <i class="fab fa-uncharted fa-3x"></i>
+                        <h3>الدعم البرمجي</h3>
+                        <p>نحن نقدم لك مساعدة مخصصة لاستخدام تطبيق LAMOME.APP ودمجه، المصمم لإنشاء قوائم الجرد والفواتير وإدارتها بكفاءة.</p>
+                    </div>
+                </div>
+                <div class="activities-call-to-action glass">
+                    <a href="./about.html" class="add-language-suffix">
+                        <span class="ar-content">للمزيد من المعلومات </span>
+                        <span class="eng-content">More Information</span>
+                        <span class="fr-content">Plus d'informations</span>
+                    </a>
+                </div>
+            </section>
+            <section id="actualities">
+                <div class="actualities-header glass">
+                    <h2 class="fr-content-block">Actualités</h2>
+                    <h2 class="eng-content-block">News</h2>
+                    <h2 class="ar-content-block">آخر الأنباء</h2>
+                </div>
+                <div class="actuality glass">
+                    <div class="fr-content-block">
+                        <h3>Nous avons déménagé !</h3>
+                        <span class="timestamp">6 juin 2026 à 15h30</span>
+                        <p>Afin de mieux servir nos clients, LAMOME Business a déménagé dans de nouveaux bureaux. Veuillez noter que notre adresse ainsi que notre numéro de téléphone fixe ont changé. 
+                        Notre nouvelle adresse est désormais 2e étage 17, ARSAT BATA 36, Boulevard du Prince Moulay Abdellah, Marrakesh 40000, Maroc
+                        et notre nouveau numéro est le +212 524 43 71 61.
+                        Nos adresses e-mail et notre engagement envers votre réussite financière restent inchangés.</p>
+                        <a href="https://www.linkedin.com/posts/nous-avons-le-plaisir-dinformer-nos-partenaires-share-7469004092766380034-2L0I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" aria-label="LinkedId Post" class="add-language-suffix">Plus d'informations</a>
+                    </div>
+
+                    <div class="eng-content-block">
+                        <h3>We Have Moved! Update Your Records</h3>
+                        <span class="timestamp">6 June 2026 at 15:30</span>
+                        <p>To better serve our clients, LAMOME Business has relocated to a new office space.
+                        Please note that both our physical address and our landline number have changed.
+                        Effective immediately, our new address is 2nd floor 17, ARSAT BATA 36, Boulevard Prince Moulay Abdellah, Marrakesh 40000, Morocco and our new phone number is +212 524 43 71 61.
+                        Our email addresses and commitment to your financial success remain exactly the same.</p>
+                        <a href="https://www.linkedin.com/posts/nous-avons-le-plaisir-dinformer-nos-partenaires-share-7469004092766380034-2L0I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" aria-label="LinkedId Post" class="add-language-suffix">More Information</a>
+                    </div>
+
+                    <div class="ar-content-block" dir="rtl">
+                        <h3>لقد انتقلنا إلى مقرنا الجديد! يرجى تحديث بياناتنا لديكم</h3>
+                        <span class="timestamp">6 يونيو 2026 في الساعة 15:30</span>
+                        <p>حرصاً منا على تقديم أفضل LAMOME Business قد انتقلت إلى مقر جديد.
+                        يرجى العلم بأن عنواننارقم الهاتف الأرضي قد تغيرا؛ عنواننا الجديد الحالي هو الطابق الثاني، رقم 17، عرصة باطا 36، شارع الأمير مولاي عبد الله، مراكش 40000، المغرب ورقم الهاتف الجديد هو 212 524 43 71 6
+                        نود أن نؤكد لكم أن بريدنا الإلكتروني والتزامنا الراسخ بنجاحكم المالي لم يتغيرا.</p>
+                        <a href="https://www.linkedin.com/posts/nous-avons-le-plaisir-dinformer-nos-partenaires-share-7469004092766380034-2L0I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" aria-label="LinkedId Post" class="add-language-suffix">للمزيد من المعلومات</a>
+                        <a href="tel:+212524437161">اتصل بنا</a>
+                    </div>
+                </div>
+                <div class="actuality glass">
+                    <div class="fr-content-block">
+                        <h3>LAMOME.APP Deployment</h3>
+                        <span class="timestamp">1er mai 2025 à 12h30</span>
+                        <p>La famille LA MOME compte un nouveau membre, qui aidera nos clients à assurer un processus de facturation rigoureux et fiable. Pour les commerciaux, le suivi de l'inventaire et des produits accompagne la facturation afin d'assurer une comptabilité analytique et bénéficiaire précise. Nous sommes le premier cabinet comptable à utiliser LAMOME.app pour réduire le coût de la comptabilité et aider nos clients à assurer le plus haut niveau de conformité fiscale en ce qui concerne la facturation et à réduire les pertes par le processus de suivi de leurs inventaires.</p>
+                        <a href="https://lamome.app"aria-label="LAMOME.APP Business Application"  class="add-language-suffix">Plus d'informations</a>
+                    </div>
+                    <div class="eng-content-block">
+                        <h3>Déploiement d'application web LAMOME.app</h3>
+                        <span class="timestamp">1 May 2025 at 12:30</span>
+                        <p>LA MOME family has a new member, that will help our clients ensure a thorough and rigorous facturation process. As for for the commercials the follow-up of the inventory and the products is coupled with the facturation to ensure precise cost and profit accounting. We are the first accounting firm using LAMOME.app to reduce the cost of accounting and help our clients by ensuring the highest level of fiscal-compliance with regards to invoicing and reduce the losses by process tracking of their inventories.</p>
+                        <a href="https://lamome.app" aria-label="LAMOME.APP Business Application" class="add-language-suffix">More Information</a>
+                    </div>
+                    <div class="ar-content-block">
+                        <h3>طرح تطبيق الويب LAMOME.app</h3>
+                        <span class="timestamp">1 مايو 2025 في الساعة 12:30</span>
+                        <p>تضم عائلة LA MOME عضوًا جديدًا سيساعد عملاءنا على ضمان عملية تحاليل دقيقة ومنتظمة. أما بالنسبة للتجاريين، فإن متابعة المخزون والمنتجات تقترن بعملية التحصيل لضمان دقة محاسبة التكاليف والأرباح. نحن شركة خدمات المحاسبة الأولى التي تستخدم تطبيق LAMOME.app لتقليل تكلفة المحاسبة ومساعدة عملائنا من خلال ضمان أعلى مستوى من الامتثال المالي فيما يتعلق بالفواتير وتقليل الخسارة من خلال عملية تتبع المخزون.</p>
+                        <a href="https://lamome.app" aria-label="LAMOME.APP Business Application" class="add-language-suffix">للمزيد من المعلومات</a>
+                    </div>
+                </div>
+                <div class="actuality glass">
+                    <div class="fr-content-block">
+                        <h3>Partenariat Franco-Marocain</h3>
+                        <span class="timestamp">1er janvier 2025 à 12h00</span>
+                        <p>LA MOME BUSINESS a le plaisir d'annoncer son partenariat stratégique avec AXELIUM 52-55, spécialisé dans les activités de soutien aux entreprises en France.</br> Grâce à cette collaboration, nous offrons aux entreprises marocaines et françaises un accompagnement comptable, fiscal et de gestion, expert et coordonné des deux côtés de la Méditerranée.</br>Ce partenariat renforce notre mission :</p>
+                        <ul>
+                            <li>Vous accompagner avec rigueur,</li>
+                            <li>Vous proposer des solutions adaptées aux deux contextes juridiques,</li>
+                            <li>Et vous offrir une expertise binationale fiable et sur mesure.</li>
+                        </ul>
+                        <a aria-label="linkedID-Post" href="https://www.linkedin.com/posts/la-mome-business_partenariatfrancomarocain-expertisebinationale-activity-7330922863765377025-G3q0?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" class="add-language-suffix"> <span style="display: inline-block;">Plus d'informations</span> </a>
+                    </div>
+                    <div class="eng-content-block">
+                        <h3>Franco-Moroccan partnership</h3>
+                        <span class="timestamp">1 January 2025 at 12:00</span>
+                        <p>LA MOME BUSINESS is pleased to announce its strategic partnership with AXELIUM 52-55, which specialises in business support activities in France.</br> Thanks to this collaboration, we are able to offer Moroccan and French companies expert and coordinated accounting, tax and management support on both sides of the Mediterranean.</br>This partnership strengthens our mission:</p>
+                        <ul>
+                            <li>Accompanying you with rigour,</li>
+                            <li>To offer you solutions tailored to both legal contexts,</li>
+                            <li>And offer you reliable, tailor-made bi-national expertise.</li>
+                        </ul>
+                        <a aria-label="linkedID-Post" href="https://www.linkedin.com/posts/la-mome-business_partenariatfrancomarocain-expertisebinationale-activity-7330922863765377025-G3q0?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" class="add-language-suffix"> <span style="display: inline-block;">More Information</span> </a>
+                    </div>
+                    <div class="ar-content-block">
+                        <h3>شراكة فرنسية مغربية</h3>
+                        <span class="timestamp">1 يناير 2025 الساعة 12:00</span>
+                        <p>يسرّ شركة LA MOME BUSINESS أن تعلن عن شراكتها الاستراتيجية مع شركة AXELIUM 52-55 المتخصصة في أنشطة دعم الأعمال في فرنسا.</br> بفضل هذا التعاون، يمكننا أن نقدم للشركات المغربية والفرنسية دعماً محاسبياً وضريبياً وإدارياً متخصصاً ومنسقاً على جانبي البحر الأبيض المتوسط.</br> هذه الشراكة تعزز مهمتنا:</p>
+                        <ul>
+                            <li>مرافقتك بحزم</li>
+                            <li>نقدم لك حلولًا مصممة خصيصًا لكلا السياقين القانونيين</li>
+                            <li>ونقدم لك خبرات موثوقة ومصممة خصيصاً لك على أساس ثنائي.</li>
+                        </ul>
+                        <a aria-label="linkedID-Post" href="https://www.linkedin.com/posts/la-mome-business_partenariatfrancomarocain-expertisebinationale-activity-7330922863765377025-G3q0?utm_source=share&utm_medium=member_desktop&rcm=ACoAABoQIjoB9Pfq3HIWmXZboG8ZTHL8AazYF6c" class="add-language-suffix"> <span style="display: inline-block;">للمزيد من المعلومات </span> </a>
+                    </div>
+                </div>
+            </section>
+            <section id="collaborators">
+                <div class="collaborators-header glass">
+                    <h2 class="fr-content">Collaborateurs</h2>
+                    <h2 class="eng-content">Collaborateurs</h2>
+                    <h2 class="ar-content">إفادات</h2>
+                </div>
+                <div class="collaborator glass">
+                    <div class="presentation">
+                        <h3>Mohamed Ghazal</h3>
+                        <img src="./img/mohamed_ghazal.webp" style="width: 150px;" alt="Mohamed Ghazal">
+                        <h4>TU Kaiserslautern</h4>
+                        <h5 class="fr-content">Software engineer</h5>
+                        <h5 class="eng-content">Software engineer</h5>
+                        <h5 class="ar-content">مهندس برمجيات</h5><br>
+                    </div>
+                    <div class="presentation-text glass">
+                        <p>The managing owner of LA MOME Business is one of the dedicated people I ever know. She has an effinity with bookkeeping and shows resilience in the face of harsh deadlines. She always comes through at the end with perfect results no matter the circumstances.</p>
+                    </div>		
+                </div>
+                <div class="collaborator glass">
+                    <div class="presentation">
+                        <h3>Philippe Brunet</h3>
+                        <img src="./img/p_brunet.webp" style="width: 150px;" alt="Philippe Brunet">
+                        <h4>Filovent</h4>
+                        <h5 class="fr-content">Gérant</h5>
+                        <h5 class="eng-content">Managing Director</h5>
+                        <h5 class="ar-content">المدير العام</h5><br>
+                    </div>
+                    <div class="presentation-text glass">
+                        <p>Je collabore avec Latifa depuis 2007 et j’ai toujours été satisfait de son travail. 
+                        Je la recommande vivement. Merci et tous mes voeux de réussite pour votre entreprise</p>
+                    </div>		
+                </div>
+                <div class="collaborator glass">
+                    <div class="presentation">
+                        <h3>Zakaria Talib</h3>
+                        <img src="./img/ztalibe.webp" style="width: 150px;" alt="Zakaria Talib">
+                        <h4>webcinq</h4>
+                        <h5 class="fr-content">Web developer</h5>
+                        <h5 class="eng-content">Développeur web</h5>
+                        <h5 class="ar-content">مطور ويب</h5><br>
+                    </div>
+                    <div class="presentation-text glass">
+                        <p>Vraiment j'ai beaucoup de chance pour collaborer avec Mme LAtifa gérante de LA MOME business, C'est rare de trouver des personnes compétentes, honnêtes et serviables</p>
+                    </div>		
+                </div>
+                <div class="controls">
+                    <button class="prev" onclick="plusSlidesCollaborators(-1)">&#10094;</button>
+                    <button class="next" onclick="plusSlidesCollaborators(1)">&#10095;</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="consultation" id="form">
+                <h2 class="fr-content">Contact</h2>
+                <h2 class="eng-content">Contact</h2>
+                <h2 class="ar-content" dir="rtl">للتواصل</h2>
+                <div class="infos eng-content">
+                    We are available during the following business hours:
+                    <ul>
+                        <li> <b>Monday - Friday</b> </li>
+                        <li> 09:00 - 13:00 | 14:00 - 19:00 </li>
+                        <li> <b>Saturday</b> </li>
+                        <li> 09:00 - 13:00 </li>
+                    </ul>
+                    <a href="tel:+212662401636">Mobile / Whatsapp</a>
+                    <a href="tel:+212524437161">Landline</a>
+                </div>
+                <div class="infos fr-content">
+                    Nous sommes disponibles pendant les heures d'ouverture suivantes :
+                    <ul>
+                        <li> <b>Lundi - Vendredi</b> </li>
+                        <li> 09:00 - 13:00 | 14:00 - 19:00 </li>
+                        <li> <b>Samedi</b> </li>
+                        <li> 09:00 - 13:00 </li>
+                    </ul>
+                    <a href="tel:+212662401636">Mobile / Whatsapp</a>
+                    <a href="tel:+212524437161">Fixe</a>
+                </div>
+                <div class="infos ar-content" dir="rtl">
+                    نحن متواجدون خلال ساعات العمل التالية:
+                    <ul>
+                        <li> <b>من الإثنين إلى الجمعة</b> </li>
+                        <li> 09:00 - 13:00 | 14:00 - 19:00 </li>
+                        <li> <b>السبت</b> </li>
+                        <li> 09:00 - 13:00 </li>
+                    </ul>
+                    <a href="tel:+212662401636">الاتصال بالمحمول / واتساب</a>
+                    <a href="tel:+212524437161">الاتصال بالهاتف الثابت</a>
+                </div>
+                <div class="address fr-content">
+                    <strong>2e étage 17, ARSAT BATA 36, Boulevard du Prince Moulay Abdellah, Marrakesh 40000, Maroc</strong>
+                </div>
+                <div class="address eng-content">
+                    <strong>2nd floor 17, ARSAT BATA 36, Boulevard Prince Moulay Abdellah, Marrakesh 40000, Morocco</strong>
+                </div>
+                <div class="address ar-content" dir="rtl">
+                    <strong>الطابق الثاني، رقم 17، عرصة باطا 36، شارع الأمير مولاي عبد الله، مراكش 40000، المغرب</strong>
+                </div>
+            </div>
+            <div class="form">
+                <h2 class="fr-content">Formulaire de contact</h2>
+                <h2 class="eng-content">Contact Form</h2>
+                <h2 class="ar-content">استمارة الاتصال</h2>
+                <form class="contact" name="contact" method="POST" netlify-honeypot="bot-field" netlify data-netlify="true">
+                    <input name="bot-field" style="display:none"/>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="tel" name="tel" placeholder="Tel" required>
+                    <input type="email" name="email" placeholder="E-Mail" required>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn-link">
+                        <span class="eng-content">Submit</span>
+                        <span class="fr-content">Envoyer</span>
+                        <span class="ar-content">إرسال</span>
+                    </button>
+                </form>
+            </div>
+            <div class="copyright">
+                <div class="f-social" style="text-align: center">
+                    <a aria-label="Email" href="mailto:infos@lamome.business" class="footer-social"><i class="far fa-envelope"></i></a>
+                    <a aria-label="LinkedIn" href="https://www.linkedin.com/company/la-mome-business/" class="footer-social"><i class="fab fa-linkedin"></i></a>
+                    <a aria-label="Facebook" href="https://web.facebook.com/lamomebusiness" class="footer-social"><i class="fab fa-facebook"></i></a>
+                </div>
+                LA MOME Business&copy; 
+                <a href="./privacyPolicy.html" class="privacyPolicy fr-content">Politique de Confidentialité</a>
+                <a href="./privacyPolicy.html" class="privacyPolicy eng-content">Privacy Policy</a>
+                <a href="./privacyPolicy.html" class="privacyPolicy ar-content">سياسة الحفاظ على الخصوصية</a>
+                , 2026
+            </div>
+        </footer>
         <script type="text/javascript" src="./js/app.js" defer></script>
     </body>
 </html>
