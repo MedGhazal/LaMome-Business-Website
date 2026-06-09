@@ -850,33 +850,18 @@ input:focus, textarea:focus, input:hover, textarea:hover {
     :where(.left, .center, .right):hover p {
         display: block;
     }
-    #activities-elements-first-row:has(.left:hover) {
-        grid-template-columns: 1.6fr 0.7fr 0.7fr;
-    }
-    #activities-elements-first-row:has(.center:hover) {
-        grid-template-columns: 0.7fr 1.6fr 0.7fr;
-    }
-    #activities-elements-first-row:has(.right:hover) {
-        grid-template-columns: 0.7fr 0.6fr 1.6fr;
-    }
-    #activities-elements-second-row:has(.left:hover) {
-        grid-template-columns: 1.6fr 0.7fr 0.7fr;
-    }
-    #activities-elements-second-row:has(.center:hover) {
-        grid-template-columns: 0.7fr 1.6fr 0.7fr;
-    }
-    #activities-elements-second-row:has(.right:hover) {
-        grid-template-columns: 0.7fr 0.7fr 1.6fr;
-    }
-    #activities-elements-third-row:has(.left:hover) {
-        grid-template-columns: 1.6fr 0.7fr 0.7fr;
-    }
-    #activities-elements-third-row:has(.center:hover) {
-        grid-template-columns: 0.7fr 1.6fr 0.7fr;
-    }
-    #activities-elements-third-row:has(.right:hover) {
-        grid-template-columns: 0.7fr 0.7fr 1.6fr;
-    }
+    #activities-elements-first-row:has(.left:hover) { grid-template-columns: 1.6fr 0.7fr 0.7fr; }
+    #activities-elements-first-row:has(.center:hover) { grid-template-columns: 0.7fr 1.6fr 0.7fr; }
+    #activities-elements-first-row:has(.right:hover) { grid-template-columns: 0.7fr 0.6fr 1.6fr; }
+    #activities-elements-second-row:has(.left:hover) { grid-template-columns: 1.6fr 0.7fr 0.7fr; }
+    #activities-elements-second-row:has(.center:hover) { grid-template-columns: 0.7fr 1.6fr 0.7fr; }
+    #activities-elements-second-row:has(.right:hover) { grid-template-columns: 0.7fr 0.7fr 1.6fr; }
+    #activities-elements-third-row:has(.left:hover) { grid-template-columns: 1.6fr 0.7fr 0.7fr; }
+    #activities-elements-third-row:has(.center:hover) { grid-template-columns: 0.7fr 1.6fr 0.7fr; }
+    #activities-elements-third-row:has(.right:hover) { grid-template-columns: 0.7fr 0.7fr 1.6fr; }
+    #activities-elements-fourth-row:has(.left:hover){grid-template-columns:1.6fr .7fr .7fr}
+    #activities-elements-fourth-row:has(.center:hover){grid-template-columns:.7fr 1.6fr .7fr}
+    #activities-elements-fourth-row:has(.right:hover){grid-template-columns:.7fr .7fr 1.6fr}
 }
 
 @media(min-width: 1024px) {
