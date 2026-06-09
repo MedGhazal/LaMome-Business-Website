@@ -39,8 +39,8 @@ html, body {
 	line-height: 1.6;
     font-weight: 400;
 	position: relative;
-	color: var(--primary-color);
-	background-color: var(--secondary-color);
+	color: var(--secondary-color);
+	background-color: var(--primary-color);
 }
 h1 {
     font-size: clamp(1.6rem, 1.2rem + 3vw, 2.2rem); 
