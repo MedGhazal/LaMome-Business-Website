@@ -178,11 +178,11 @@ function showPage() {
         loader.style.opacity = '0';
         setTimeout(() => { loader.style.display = 'none'; }, 400);
       }
-      document.getElementById('content').style.display = 'block';
+      // document.getElementById('content').style.display = 'block';
       initializePage();
     }, 300);
   } else {
-    document.getElementById('content').style.display = 'block';
+    // document.getElementById('content').style.display = 'block';
     initializePage();
   }
 }
