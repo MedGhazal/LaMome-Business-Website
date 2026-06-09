@@ -77,7 +77,25 @@
 }
         </script>
     </head>
-    <body onload="initializePage()" class="background show-after-load">
+    <body onload="initialLoad()" class="background show-after-load">
+        <div id="loader-container">
+            <div class="loader-rings">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+            </div>
+            <div class="loader-glass">
+                <div class="loader-dots">
+                    <div class="loader-dot"></div>
+                    <div class="loader-dot"></div>
+                    <div class="loader-dot"></div>
+                </div>
+            </div>
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill" id="loader-bar"></div>
+            </div>
+            <div class="loader-label">LA MOME Business</div>
+        </div>
         <header>
             <img src="./img/lamome-small.svg" style="display: block" id="lamome-business-logo" alt="LA MOME Business LOGO">
             <div id="side-nav-panel">
@@ -255,8 +273,8 @@
                     </div>
                     <div class="showcase-text-more glass">
                         <p class="fr-content">Chez La MOME Business, nous vous proposons avant tout une disponibilité totale, pour répondre à vos besoins à chaque étape de votre parcours comptable, que ce soit pour des conseils urgents ou un suivi continu. Nous nous engageons également à garantir une conformité absolue avec les réglementations fiscales et comptables, tant en France qu’au Maroc, afin de vous assurer tranquillité d’esprit. Enfin, la transparence est essentielle pour nous : nous vous fournissons des rapports clairs et détaillés, avec une communication ouverte à chaque étape de notre collaboration.</b>
-                        <p class="eng-content">At La MOME Business, we offer you, first and foremost, total availability to meet your needs at every stage of your accounting journey, whether for urgent advice or continuous follow-up. We are also committed to ensuring absolute compliance with both Moroccan and French tax and accounting regulations to guarantee your peace of mind. Finally, transparency is key for us: we provide clear and detailed reports, with open communication at every step of our collaboration.</p>
-                        <p class="ar-content">في LA MOME Business، نقدم لكم أولاً توفرًا تامًا لتلبية احتياجاتكم في كل مرحلة من مراحل مساركم المحاسبي، سواء كان ذلك للحصول على نصائح عاجلة أو متابعة مستمرة. كما نلتزم بضمان الامتثال التام مع اللوائح الضريبية والمحاسبية في كل من فرنسا والمغرب لضمان راحتكم النفسية. وأخيرًا، فإن الشفافية أساسية بالنسبة لنا: نحن نقدم تقارير واضحة ومفصلة، مع اتصال مفتوح في كل مرحلة من مراحل تعاوننا</p>
+                    <p class="eng-content">At La MOME Business, we offer you, first and foremost, total availability to meet your needs at every stage of your accounting journey, whether for urgent advice or continuous follow-up. We are also committed to ensuring absolute compliance with both Moroccan and French tax and accounting regulations to guarantee your peace of mind. Finally, transparency is key for us: we provide clear and detailed reports, with open communication at every step of our collaboration.</p>
+                    <p class="ar-content">في LA MOME Business، نقدم لكم أولاً توفرًا تامًا لتلبية احتياجاتكم في كل مرحلة من مراحل مساركم المحاسبي، سواء كان ذلك للحصول على نصائح عاجلة أو متابعة مستمرة. كما نلتزم بضمان الامتثال التام مع اللوائح الضريبية والمحاسبية في كل من فرنسا والمغرب لضمان راحتكم النفسية. وأخيرًا، فإن الشفافية أساسية بالنسبة لنا: نحن نقدم تقارير واضحة ومفصلة، مع اتصال مفتوح في كل مرحلة من مراحل تعاوننا</p>
                     </div>
                 </div>
                 <div class="controls">

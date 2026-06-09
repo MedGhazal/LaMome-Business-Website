@@ -157,3 +157,32 @@ function toggelMenu() {
 		}
 	});
 }
+
+function initialLoad() {
+  const bar = document.getElementById('loader-bar');
+  if (bar) {
+    bar.style.transition = 'width 0.8s cubic-bezier(0.4,0,0.2,1)';
+    bar.style.width = '75%';
+  }
+  timeout = setTimeout(showPage, 900);
+}
+
+function showPage() {
+  const bar = document.getElementById('loader-bar');
+  if (bar) {
+    bar.style.width = '100%';
+    setTimeout(() => {
+      const loader = document.getElementById('loader-container');
+      if (loader) {
+        loader.style.transition = 'opacity 0.4s ease';
+        loader.style.opacity = '0';
+        setTimeout(() => { loader.style.display = 'none'; }, 400);
+      }
+      document.getElementById('content').style.display = 'block';
+      initializePage();
+    }, 300);
+  } else {
+    document.getElementById('content').style.display = 'block';
+    initializePage();
+  }
+}
