@@ -24,10 +24,7 @@ function getContent(language_tag){
 	);
 	document.querySelectorAll(`.${language_tag}`)
 		.forEach(
-			el => el.style.display = 'inline-block'
-	);
-	document.querySelectorAll(`.${language_tag}-block`)
-		.forEach(
+			// el => el.style.display = 'inline-block'
 			el => el.style.display = 'block'
 	);
 	if (`${language_tag}` === 'fr-content') {
@@ -35,19 +32,19 @@ function getContent(language_tag){
 		tel.placeholder = data['french']['tel'];
 		email.placeholder = data['french']['email'];
 		message.placeholder = data['french']['message'];
-		// document.getElementById('content').setAttribute('dir', 'ltr');
+		document.getElementById('content').setAttribute('dir', 'ltr');
 	} else if (`${language_tag}`=== 'ar-content') {
 		name.placeholder = data['arabic']['name'];
 		tel.placeholder = data['arabic']['tel'];
 		email.placeholder = data['arabic']['email'];
 		message.placeholder = data['arabic']['message'];
-		// document.getElementById('content').setAttribute('dir', 'rtl');
+		document.getElementById('content').setAttribute('dir', 'rtl');
 	} else if (`${language_tag}` === 'eng-content') {
 		name.placeholder = data['english']['name'];
 		tel.placeholder = data['english']['tel'];
 		email.placeholder = data['english']['email'];
 		message.placeholder = data['english']['message'];
-		// document.getElementById('content').setAttribute('dir', 'ltr');
+		document.getElementById('content').setAttribute('dir', 'ltr');
 	}
 	document.querySelectorAll(".add-language-suffix").forEach(
 		el => el.href = el.href.split('#')[0] + "#" + language_tag

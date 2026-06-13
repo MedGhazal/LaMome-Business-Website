@@ -364,9 +364,7 @@ header {
     align-items: center;
     width: 100%;
     display: block;
-    margin: 1.5rem auto;
     grid-template-columns: 1fr;
-    gap: 15px;
 }
 .about-heading {
     padding: 1.5rem;
@@ -830,6 +828,9 @@ input:focus, textarea:focus, input:hover, textarea:hover {
         display: flex;
         flex-direction: row;
     }
+    #content[dir="rtl"] #submenu-content-languages {
+        right: 80px;
+    }
     #submenu-content-languages a {
         background-color: #ffffff00;
         padding: 5px;
@@ -912,6 +913,8 @@ input:focus, textarea:focus, input:hover, textarea:hover {
     }
     .activities-element {
         margin: 1rem;
+        display: flex;
+        flex-direction: column;
     }
     .activities-element p {
         opacity: 0;
@@ -942,21 +945,21 @@ input:focus, textarea:focus, input:hover, textarea:hover {
     :where(.left, .center, .right):hover p {
         display: block;
     }
-    #activities-elements-first-row:has(.left:hover) { grid-template-columns: 1.6fr 0.7fr 0.7fr; }
-    #activities-elements-first-row:has(.center:hover) { grid-template-columns: 0.7fr 1.6fr 0.7fr; }
-    #activities-elements-first-row:has(.right:hover) { grid-template-columns: 0.7fr 0.6fr 1.6fr; }
-    #activities-elements-second-row:has(.left:hover) { grid-template-columns: 1.6fr 0.7fr 0.7fr; }
-    #activities-elements-second-row:has(.center:hover) { grid-template-columns: 0.7fr 1.6fr 0.7fr; }
-    #activities-elements-second-row:has(.right:hover) { grid-template-columns: 0.7fr 0.7fr 1.6fr; }
-    #activities-elements-third-row:has(.left:hover) { grid-template-columns: 1.6fr 0.7fr 0.7fr; }
-    #activities-elements-third-row:has(.center:hover) { grid-template-columns: 0.7fr 1.6fr 0.7fr; }
-    #activities-elements-third-row:has(.right:hover) { grid-template-columns: 0.7fr 0.7fr 1.6fr; }
-    #activities-elements-fourth-row:has(.left:hover){grid-template-columns:1.6fr .7fr .7fr}
-    #activities-elements-fourth-row:has(.center:hover){grid-template-columns:.7fr 1.6fr .7fr}
-    #activities-elements-fourth-row:has(.right:hover){grid-template-columns:.7fr .7fr 1.6fr}
-    #activities-elements-fifth-row:has(.left:hover){grid-template-columns:1.6fr .7fr .7fr}
-    #activities-elements-fifth-row:has(.center:hover){grid-template-columns:.7fr 1.6fr .7fr}
-    #activities-elements-fifth-row:has(.right:hover){grid-template-columns:.7fr .7fr 1.6fr}
+    #activities-elements-first-row:has(.left:hover) { grid-template-columns: 2fr 0.7fr 0.7fr; }
+    #activities-elements-first-row:has(.center:hover) { grid-template-columns: 0.7fr 2fr 0.7fr; }
+    #activities-elements-first-row:has(.right:hover) { grid-template-columns: 0.7fr 0.6fr 2fr; }
+    #activities-elements-second-row:has(.left:hover) { grid-template-columns: 2fr 0.7fr 0.7fr; }
+    #activities-elements-second-row:has(.center:hover) { grid-template-columns: 0.7fr 2fr 0.7fr; }
+    #activities-elements-second-row:has(.right:hover) { grid-template-columns: 0.7fr 0.7fr 2fr; }
+    #activities-elements-third-row:has(.left:hover) { grid-template-columns: 2fr 0.7fr 0.7fr; }
+    #activities-elements-third-row:has(.center:hover) { grid-template-columns: 0.7fr 2fr 0.7fr; }
+    #activities-elements-third-row:has(.right:hover) { grid-template-columns: 0.7fr 0.7fr 2fr; }
+    #activities-elements-fourth-row:has(.left:hover){grid-template-columns:2fr .7fr .7fr}
+    #activities-elements-fourth-row:has(.center:hover){grid-template-columns:.7fr 2fr .7fr}
+    #activities-elements-fourth-row:has(.right:hover){grid-template-columns:.7fr .7fr 2fr}
+    #activities-elements-fifth-row:has(.left:hover){grid-template-columns:2fr .7fr .7fr}
+    #activities-elements-fifth-row:has(.center:hover){grid-template-columns:.7fr 2fr .7fr}
+    #activities-elements-fifth-row:has(.right:hover){grid-template-columns:.7fr .7fr 2fr}
 }
 
 @media(min-width: 1150px) {
@@ -974,9 +977,6 @@ input:focus, textarea:focus, input:hover, textarea:hover {
         background-size: cover;          /* Forces image to scale proportionally and fill the box */
         background-position: center;     /* Keeps the center of the photo perfectly focused */
         background-repeat: no-repeat;
-    }
-    .showcase {
-        border-radius: 15px;
     }
     .showcase-text {
         min-height: 500px;
