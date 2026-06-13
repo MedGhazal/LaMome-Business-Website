@@ -96,12 +96,6 @@ function showSlides(n) {
 		for (var i = 0; i < slides.length; i++) {
 			slides[i].style.display = "none";
 		}
-		if (document.querySelector(".fr-content").style.display === "block") {
-			slides = document.querySelectorAll(".showcase-text.fr");
-		}
-		else if (document.querySelector(".eng-content").style.display === "block") {
-			slides = document.querySelectorAll(".showcase-text.eng");
-		}
 		var dots = document.getElementsByClassName("dot");
 		if (n > slides.length) { slideIndex = 1; }
 		if (n < 1) { slideIndex = slides.length }
@@ -109,6 +103,8 @@ function showSlides(n) {
 			slides[i].style.display = "none";
 			dots[i].className = dots[i].className.replace(" active", "");
 		}
+        console.log(slides);
+        console.log(slideIndex-1);
 		slides[slideIndex-1].style.display = "grid";
 		dots[slideIndex-1].className += " active";
 	}
