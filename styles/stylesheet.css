@@ -981,6 +981,13 @@ input:focus, textarea:focus, input:hover, textarea:hover {
     .showcase-text {
         min-height: 500px;
     }
+    #owner {
+        max-width: 1000px;
+    }
+    #about {
+        max-width: 1000px;
+        margin: 1.2rem auto;
+    }
 }
 
 @media(min-width: 1725px) {
