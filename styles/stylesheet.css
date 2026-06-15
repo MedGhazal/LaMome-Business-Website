@@ -1164,6 +1164,9 @@ Breakpoint: >= 1725px
         width: 50px;
         flex-direction: column;
     }
+    #content[dir="rtl"] #submenu-content-languages {
+        right: 0;
+    }
 }
 
 /* =================================================================
