@@ -953,7 +953,7 @@ textarea:hover { outline: none; }
    ================================================================= */
 @media (min-width: 1024px) {
     #hamburger { display: none; }
-    #lamome-business-logo { height: 80px; }
+    #lamome-business-logo { height: 120px; }
 
     header {
         max-width: 1000px;
@@ -985,7 +985,7 @@ textarea:hover { outline: none; }
 
     #submenu-content-languages {
         position: absolute;
-        left: 80px;
+        left: 350px;
         top: 0;
         width: 145px;
         display: flex;
